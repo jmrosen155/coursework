@@ -1,0 +1,1000 @@
+15889 Judah the Prince judah 76.7549296513
+15893 Jeff Mills mills 93.8818271093
+15904 Jazz dance jazz 157.978805639
+15956 Journal of the Travellers Aid Society aid 32.5162612198
+15963 Johann Friedrich Agricola bach 31.0780379938
+15970 Johannes Agricola agricola 29.0507124532
+15974 Johann Georg Albrechtsberger beethoven 31.0780379938
+15997 Jean Joseph Marie Amiot les 22.1192406476
+15998 Jean-Jacques Ampre jean 12.6021137346
+16003 Joseph Weizenbaum weizenbaum 68.3716835863
+16014 Jetsprint engines 48.2931323764
+16023 Juno juno 29.0507124532
+16030 Juru River amazon 20.4679812403
+16031 Javary River river 13.9894045757
+16061 Johann Bayer bayer 18.6468227963
+16092 Jan Karon mitford 49.72486079
+16114 Jutland Peninsula jutland 95.3877036039
+16117 Joseph (disambiguation) joseph 11.1921028469
+16119 Jehoshaphat jehoshaphat 55.9404683888
+16120 Jehu jehu 93.2341139813
+16130 Jack Butler Yeats yeats 55.9404683888
+16132 Joseph Yoakum yoakum 80.8028987838
+16158 Jutes jutes 93.2341139813
+16163 Judah yehuda 24.862430395
+16182 Jock Taylor sidecar 68.3716835863
+16194 JPEG Network Graphics jng 40.6709974345
+16205 Jacobin (politics) jacobins 31.0780379938
+16206 Johann Tobias Krebs tobias 29.0507124532
+16223 Joel spanish 7.54652112677
+16225 Jacquard loom jacquard 80.8028987838
+16226 JUnit junit 93.2341139813
+16247 John van Melle african 14.7875553037
+16249 John Fink scenes 9.42306040396
+16254 Joseph Smith (disambiguation) smith 135.325785196
+16263 Joint Political Military Group defense 22.1392737267
+16265 Jug (disambiguation) slovenian 12.4312151975
+16286 Johann von Werth werth 80.8028987838
+16292 John George, Elector of Brandenburg keen elector 86.8761084371
+16296 Supreme Court of Judicature Act 1873 act 30.8011338283
+16302 John Cicero, Elector of Brandenburg keen elector 104.251330124
+16305 Joachim III Frederick, Elector of Brandenburg keen elector 73.8446921715
+16306 John Sigismund, Elector of Brandenburg keen elector 73.8446921715
+16310 Jacopo Amigoni amigoni 18.6468227963
+16313 Jacques Callot callot 62.1560759876
+16328 Jeepster Records belle 133.041878062
+16334 Judith of Poland judith 52.9931686688
+16343 Boulting brothers boulting 74.5872911851
+16354 Johann Friedrich Endersch marion endersch 11.6202849813
+16355 James Blaylock fantasy 37.8063412039
+16362 Jaggies jaggies 37.2936455925
+16364 Judicial economy judicial 11.3197816902
+16365 Jury instructions jury 148.380872273
+16371 Jacob Abbott jacob 42.4037718178
+16372 John Stevens Cabot Abbott abbott 75.5318523784
+16373 Janus (disambiguation) janus 11.6202849813
+16385 Johann Philipp Abelin johann 25.2042274693
+16386 Jacob Abendana jacob 37.6922416158
+16388 James Hamilton, 1st Earl of Abercorn hamilton 51.1699531009
+16390 John Abercrombie (physician) physician 19.851378521
+16393 John Abernethy (surgeon) abernethy 43.5092531913
+16402 Jan van Goyen van 101.161701573
+16407 Johann Tetzel indulgences 63.9115673971
+16413 James Tiptree, Jr. Award tiptree 68.3716835863
+16417 Jan Dugosz dugosz 49.72486079
+16427 James Scarlett, 1st Baron Abinger baron 56.5383624237
+16447 James Alan McPherson mcpherson 18.6468227963
+16450 Jokichi Takamine takamine 80.8028987838
+16453 Joachim I Nestor, Elector of Brandenburg keen elector 69.5008867497
+16456 John Nash nash 46.4811399252
+16458 JMS java 14.1345906059
+16460 John Rutsey rutsey 87.0185063826
+16461 John von Neumann Theory Prize contributions 43.4380542185
+16462 Jean Richard directed 221.79606916
+16466 John Walker walker 281.645481328
+16475 Jamming cheered 6.21560759876
+16485 Just another Perl hacker print 53.770158742
+16495 Jan Borukowski bielin 6.21560759876
+16498 Joel Marangella symphony 16.5673812546
+16500 John Pople he 30.8857878036
+16507 Jeroboam II earthquake 43.5092531913
+16510 Johannes Nicolaus Brnsted brnsted 31.0780379938
+16511 Janus kinase kinase 58.1014249065
+16524 Jerome Callet trumpet 24.862430395
+16527 Java coffee coffee 54.1303140782
+16529 Java (board game) grande 11.0449208364
+16530 John Radcliffe (physician) parliament 61.0833972153
+16534 Jacob and Esau esau 130.527759574
+16537 Johann Homann homann 31.0780379938
+16543 Jewel jewel 12.4312151975
+16546 John Akii-Bua akii-bua 37.2936455925
+16551 Jule Styne styne 43.5092531913
+16554 John Sealy Hospital sealy 93.2341139813
+16563 Jacques Dupuis (Jesuit) dupuis 80.8028987838
+16568 John Stauber stauber 18.6468227963
+16580 Jacobite syrian 16.5673812546
+16586 Jelly jelly 12.4312151975
+16591 Book of Jarom jarom 37.2936455925
+16608 Keyboard keyboard 19.851378521
+16611 Kinetics study 16.3146002237
+16638 King (disambiguation) king 24.0718344725
+16646 Politics of Kazakhstan kazakhstan 29.0507124532
+16648 Telecommunications in Kazakhstan satellite 9.73557939956
+16676 Geography of Kiribati islands 33.8812472111
+16677 Demographics of Kiribati tarawa 42.394534935
+16678 Politics of Kiribati maneaba 18.6468227963
+16680 Telecommunications in Kiribati kiribati 9.92568926052
+16681 Transport in Kiribati kiribati 9.92568926052
+16686 Geography of Kuwait kuwait 105.986337338
+16688 Government of Kuwait cabinet 79.813386986
+16690 Telecommunications in Kuwait coaxial 10.5986337338
+16691 Transport in Kuwait kuwait 58.2924855357
+16700 Telecommunications in Kyrgyzstan kyrgyzstan 52.2912824158
+16701 Transport in Kyrgyzstan flights 33.8051926634
+16708 Kent Beck kent 55.224604182
+16710 Krone currency 56.5383624237
+16712 Kattegat kattegat 55.9404683888
+16717 K k 91.7569515151
+16718 Kappa (disambiguation) kappa 27.612302091
+16720 Kuiper's test test 46.967932873
+16726 Kul Tigin turkic 63.9115673971
+16750 Kleene star kleene 99.4497215801
+16771 Kernel seed 14.8885338908
+16773 Kite (disambiguation) kite 24.862430395
+16791 Kista kista 37.2936455925
+16792 Klondike, Yukon gold 11.8929474004
+16794 Kilobyte kilobyte 62.1560759876
+16795 Karl Andree geographischen 12.4312151975
+16804 Ketene ketene 12.4312151975
+16806 Kistvaen dartmoor 18.6468227963
+16821 Callicrates athena 23.2405699626
+16829 Kornilov russian 39.9028300903
+16839 Kilo- measures 18.4246787453
+16850 Karel van het Reve het 29.0507124532
+16852 Kia Asamiya asamiya 37.2936455925
+16893 Kansas City (disambiguation) kansas 31.0780379938
+16900 Kung fu (term) martial 62.7810720893
+16908 Kadiogo Province burkina 56.286948411
+16913 Ceiba pentandra kapok 68.3716835863
+16914 Kyushu kyushu 55.9404683888
+16915 KAB-500KR kg 22.0898416728
+16916 KAB-500L bombs 11.0449208364
+16921 Knowledge Aided Retrieval in Activity Context terrorist 12.4312151975
+16932 Kamov Ka-25 air 43.7498801507
+16933 Kainite salt 9.21233937264
+16941 Kawasaki Ki-56 aircraft 37.8732076417
+16957 Kata (disambiguation) georgian 11.6202849813
+16963 Kidneys, ureters, and bladder x-ray kub 37.2936455925
+16972 KolmogorovArnoldMoser theorem kam 87.0185063826
+16973 Kam (disambiguation) spoken 7.37975790889
+16976 Kernite kernite 31.0780379938
+16984 Korea Institute for Advanced Study institute 28.3279919726
+16988 Knock-knock joke knock 26.4965843344
+16989 Kangol kangol 99.4497215801
+16994 Kwashiorkor kwashiorkor 49.72486079
+16999 Kaj Munk munk 80.8028987838
+17001 Kohlrabi kohlrabi 55.9404683888
+17004 KennellyHeaviside layer heaviside 43.5092531913
+17034 Protea cynaroides protea 68.3716835863
+17035 Kantele kantele 124.312151975
+17038 Kyanite kyanite 55.9404683888
+17043 Kaleidoscope kaleidoscope 130.527759574
+17045 Kalmia latifolia laurel 58.2924855357
+17047 KB bank 17.7072947466
+17051 Kenji Sahara tadashi 43.5092531913
+17055 Kotoamatsukami gods 19.851378521
+17056 Kiyoshi Atsumi kiyoshi 18.6468227963
+17059 Karel Hynek Mcha hynek re-elected 71.7919854365
+17078 K. W. Jeter jeter 55.9404683888
+17083 Keykode keykode 68.3716835863
+17086 Knout knout 24.862430395
+17090 KAOS tijoux 12.4312151975
+17091 Khornerstone benchmark 18.6468227963
+17094 Ket cambodian 6.21560759876
+17102 Kesgrave kesgrave 43.5092531913
+17104 AMD K6 amd 71.7919854365
+17105 K7 space 6.39036542522
+17106 KA9Q nos 11.6202849813
+17114 Key escrow key 29.9673177389
+17116 Key frame frames 59.8802059222
+17120 Kurfrstendamm kurfrstendamm 62.1560759876
+17129 Kahla kahla 62.1560759876
+17133 Channels of the Hawaiian Islands channel 83.9896711711
+17134 Kemp Town lewes 24.862430395
+17139 FX-87 acm 11.0449208364
+17140 Katal katal 37.2936455925
+17147 Killer micro livermore 12.4312151975
+17148 Killer poke drive 29.8878821479
+17149 Kill file kill 24.1465661882
+17152 Kilobit kilobit 24.862430395
+17155 Kirin japanese 14.3285175574
+17169 Kington Magna kington 43.5092531913
+17171 Kiosk kiosk 49.72486079
+17174 Knowbot Information Service kis 24.862430395
+17176 KISS principle principle 27.3911575403
+17177 Kit young 27.3379839157
+17179 KL1 kazunori 18.6468227963
+17180 Klamath people klamath 124.312151975
+17186 Klerer-May System klerer-may 18.6468227963
+17188 KL-ONE kl-one 24.862430395
+17190 Kipchoge Keino all-africa 58.1014249065
+17193 Knud Rasmussen thule 99.4497215801
+17206 KMS management 12.7807308504
+17209 Knights of the Lambda Calculus lambda 37.2936455925
+17211 Knuth queensland 12.4312151975
+17216 Knowledge Query and Manipulation Language intelligent 22.0898416728
+17217 KR icelandic 10.2339906202
+17224 Kent Recursive Calculator programming 22.7864941502
+17226 Kremvax kremvax 18.6468227963
+17227 KRL (programming language) terry 14.8885338908
+17232 Knowledge Systems Laboratory stanford 14.8885338908
+17241 Kyoto Common Lisp lisp 40.6709974345
+17245 Karl Gustav Ahlefeldt march 12.9829359057
+17248 Keflavk f 125.562144179
+17249 James Parry usenet 49.7021437638
+17256 Kim Milford milford 49.72486079
+17262 Caspar Schwenckfeld schwenckfeld 68.3716835863
+17278 Kremlin kremlin 37.2936455925
+17284 Koo Stark she 52.2255886935
+17296 Karl Bttiger bttiger 37.2936455925
+17299 Khunjerab Pass khunjerab 37.2936455925
+17302 Toshiki Kaifu party 27.1910003729
+17322 Alpha-Ketoglutaric acid -ketoglutarate 31.0780379938
+17334 Katina Paxinou she 63.8312750698
+17339 Kendall Square Research memory 64.3779048445
+17341 Kinglassie kinglassie 80.8028987838
+17342 Kalat, Pakistan kalat 87.0185063826
+17348 Kordofanian languages languages 34.3702165994
+17350 Khuriya Muriya Islands muriya 31.0780379938
+17354 Kuru indo-aryan 18.6468227963
+17357 K9 dog 9.21233937264
+17367 Konrad Emil Bloch bloch 68.3716835863
+17375 Kettlebaston kettlebaston 31.0780379938
+17381 Koalang polish 7.46140189793
+17382 Kobellite dipyramidal 6.21560759876
+17395 Kutia dish 15.3509859303
+17398 Knaresborough Castle castle 47.7818596404
+17405 Kowtow kowtow 124.312151975
+17407 Kamchatka Oblast kamchatka 46.4811399252
+17409 Kuznetsov kuznetsov 192.683835561
+17413 Kennedy kennedy 111.285654205
+17414 Icehenge pub 82.8369062729
+17415 Knights who say Ni knights 43.4638191387
+17418 Knstlerroman agony 12.4312151975
+17430 Calligra Words calligra 80.8028987838
+17431 Kenneth Lee Pike pike 71.7919854365
+17432 Key color 14.3062010766
+17445 Kittiwake kittiwake 49.72486079
+17449 Kimberly Beck kimberly 37.2936455925
+17466 Karen Kain kain 87.0185063826
+17503 Leisure leisure 92.1059155816
+17516 Location parameter probability 27.0651570391
+17519 Larry Wall perl 88.3593666911
+17530 Lattice arrangement 21.1972674675
+17532 Lorisidae lorisids 31.0780379938
+17544 Playing by ear (music) ear 40.6709974345
+17568 Local color color 17.8827513457
+17573 LMS management 12.7807308504
+17575 Limousine liberal liberal 31.5760165456
+17627 Liberal liberalism 23.2405699626
+17634 Letter game letter 12.4083691582
+17639 Lowball signal 12.0551490643
+17640 Line of scrimmage line 37.6780462034
+17641 Lateral pass backward 82.8369062729
+17646 Liliales family 136.83648991
+17647 Laurales family 32.0710523227
+17648 Limerick (disambiguation) ireann 27.612302091
+17651 Lamiales lamiales 24.862430395
+17658 Legal technicality legal 29.9673177389
+17674 Leading question witness 77.3144458547
+17676 Relativist fallacy fallacy 53.122445614
+17687 False dilemma false 38.6345059011
+17688 Loaded question question 67.9186901409
+17689 Ignoratio elenchi fallacy 28.9758794258
+17690 Equivocation equivocation 37.2936455925
+17694 No true Scotsman scotsman 43.5092531913
+17696 Slippery slope slippery 68.3716835863
+17714 Roxen roxen 12.4312151975
+17719 Lars Magnus Ericsson magnus 34.8608549439
+17721 Lysator lysator 37.2936455925
+17728 Line Islands islands 33.8812472111
+17731 LiveScript livescript 49.72486079
+17743 West Low German cecil 40.6709974345
+17756 Politics of Laos minister 115.60891038
+17757 Economy of Laos lao 52.2912824158
+17758 Telecommunications in Laos laos 17.4304274719
+17767 Telecommunications in Latvia latvia 47.6938518019
+17768 Transport in Latvia road 78.5080468701
+17778 Transport in Lebanon beirut 24.862430395
+17784 Demographics of Lesotho lesotho 39.7027570421
+17785 Politics of Lesotho elections 19.5651125288
+17787 Telecommunications in Lesotho lesotho 59.5541355631
+17788 Transport in Lesotho carts 37.2936455925
+17789 Military of Lesotho police 23.4781350346
+17790 Foreign relations of Lesotho lesotho 84.3683587144
+17793 Geography of Liberia liberia 35.8189671706
+17798 Transport in Liberia airports 14.6026329652
+17807 Transport in Libya hire 16.5673812546
+17812 Geography of Liechtenstein liechtenstein 15.3509859303
+17815 Economy of Liechtenstein liechtenstein 61.403943721
+17816 Telecommunications in Liechtenstein liechtenstein 20.4679812403
+17819 Foreign relations of Liechtenstein liechtenstein 46.0529577908
+17826 Transport in Lithuania highway 107.036526604
+17833 Politics of Luxembourg csv 37.2936455925
+17835 Telecommunications in Luxembourg buried 7.08291789866
+17836 Transport in Luxembourg luxembourg 47.6938518019
+17859 Long shot shot 8.15108287052
+17869 Lagri Hasan elebi hasan eupompe 33.1347625092
+17872 Lincoln lincoln 21.1972674675
+17874 Ligament ligament 118.096544376
+17878 Laser science laser 53.122445614
+17891 Latin (disambiguation) pseudo-language 12.4312151975
+17892 Reference desk library 96.4045285424
+17904 Linear model linear 42.0070457821
+17921 Lomography lomography 74.5872911851
+17924 Leucippus leucippus 74.5872911851
+17928 Lake Tana lake 107.006489679
+17931 Lola Graham she 14.5071079704
+17964 List of literary cycles centers 49.6284463026
+17968 Louchbem louchbem 12.4312151975
+17974 Long gun long 40.9324642395
+17981 Law of definite proportions proportions 30.7019718605
+17983 Lethe lethe 62.1560759876
+17996 List of Latin phrases phrases 133.041878062
+18003 LDS dental 15.3509859303
+18008 Language center speech 45.4978266278
+18012 Limit limit 10.9519747239
+18026 Luigi Alamanni alamanni 24.862430395
+18028 Louis Aleman aleman 12.4312151975
+18034 Leningrad (disambiguation) leningrad 12.4312151975
+18040 Land's End end 47.1516293893
+18041 Liber Memorialis edition 11.5336123543
+18056 Laws of infernal dynamics laws 11.3197816902
+18073 L cut cut 22.9062739557
+18085 Luke rugby 40.5977355587
+18109 Lennon Wall lennon 74.5872911851
+18111 Lepus (constellation) magnitude 60.813275906
+18112 Lupus (constellation) constellation 55.2740362359
+18121 Leg spin leg 79.4055140842
+18125 Links (web browser) links 36.7419659195
+18129 List of political parties named "Labour Party" or similar labour 362.723187738
+18148 Left-arm orthodox spin left-arm 31.7959012013
+18151 Laser construction laser 72.4396985645
+18156 Lemuridae bamboo 58.1014249065
+18162 Lists of atheists atheists 116.202849813
+18171 Linear search search 86.0864951267
+18175 Loa loa 68.3716835863
+18179 Lammas lammas 55.9404683888
+18186 List of Hindus col 16.8028183129
+18194 Looe Island island 93.4956376625
+18223 Lorica segmentata armour 68.3716835863
+18225 LeRoy Homer, Jr. homer 58.1014249065
+18236 Lithium citrate lithium 26.4965843344
+18237 Lithium carbonate lithium 121.884287938
+18240 Lake Kickapoo archer 12.4312151975
+18243 Land (disambiguation) comsat 18.6468227963
+18246 Lyon & Healy healy 242.408696351
+18272 LaGrand case court 54.6873501884
+18274 List of facilities named after Lyndon Johnson johnson 32.9807114139
+18278 Liberation Day (Netherlands) liberation 38.6345059011
+18288 Lyric lyric 23.2405699626
+18292 Lev Kuleshov lev 37.2936455925
+18322 Lamorna Birch lamorna 44.1796833456
+18323 LDP party 8.15730011187
+18325 Labour labour 12.2266243058
+18331 Ligase ligases 55.9404683888
+18337 Last rites rites 63.9115673971
+18338 Lamorna lamorna 82.8369062729
+18339 Law of multiple proportions ratio 25.6181846982
+18340 Law of averages averages 34.8608549439
+18342 Outline of law legal 41.9542448344
+18345 Outline of literature literary 31.2729081735
+18364 Li people li 58.1014249065
+18365 Luminance luminance 71.7919854365
+18369 Lunar calendar lunar 67.6628925978
+18377 Lunatic term 21.0269675611
+18379 Linear timecode bit 60.2757453213
+18388 Laocon laocon 105.665329179
+18398 La Espero la 44.362665911
+18401 Laminar flow flow 150.795033105
+18408 LAME lame 116.202849813
+18423 Labia majora labia 92.9622798504
+18424 Labia minora labia 69.7217098878
+18430 Library management library 72.3033964068
+18439 LTJ Bukem bukem 130.527759574
+18444 Loch loch 62.1560759876
+18459 Leda extragalactic 11.0449208364
+18460 Lysithea (moon) moons 11.6202849813
+18465 Laches (equity) laches 87.0185063826
+18467 Legion legion 49.72486079
+18475 Lucius Afranius (poet) smith 13.5325785196
+18477 Lulach mac 26.5430887772
+18486 Law enforcement enforcement 96.7295634127
+18492 Lexeme lexeme 62.1560759876
+18497 Lost Generation hemingway 37.2936455925
+18534 Lake Abitibi lake 40.5886684989
+18542 Length length 38.7000789057
+18544 Left-arm unorthodox spin left-arm 31.7959012013
+18546 Lists of newspapers newspapers 29.7770677816
+18552 Larousse Gastronomique culinary 29.0507124532
+18554 Ludwig Ritter von Kchel ritter 23.2405699626
+18560 Leaf by Niggle niggle 80.8028987838
+18563 Lud london 7.22583582662
+18572 Linear prediction prediction 34.8608549439
+18578 Limited-stop route 57.2248043062
+18581 Limburg limburg 31.0780379938
+18585 Leon leon 22.0898416728
+18591 Lincos (artificial language) inq 87.0185063826
+18603 Lydia Kavina theremin 74.5872911851
+18629 Liqueur liqueurs 68.3716835863
+18634 Lemma (mathematics) surroundings lemma 22.0898416728
+18641 Jonathan Smeeton smeeton 12.4312151975
+18650 Flipper (cricket) flipper semitic 71.7919854365
+18668 Lotus lotus 31.0780379938
+18679 Liquid consonant lateral 23.5576510099
+18684 Laura Bertram performance 31.2729081735
+18692 Lint (software) tools 23.7858948009
+18693 List of battles battles 92.1059155816
+18694 Live-bearing aquarium fish eggs chars qadir 44.6656016723
+18695 Lupercal cave 19.3172529505
+18720 Lodovico Ferrari cardano 23.2405699626
+18728 Law of dilution concentration 31.5760165456
+18737 Landau landau 49.72486079
+18835 Manhattan (disambiguation) manhattan 33.1347625092
+18842 Mode modes 15.8979506006
+18849 Marxist film theory film 17.8129884175
+18851 Mars (disambiguation) mars 30.7019718605
+18864 Mullet fish energy 19.7870212
+18875 Mental event mental 40.5977355587
+18884 Matrix matrix 47.6938518019
+18889 Microphotonics trigger microphotonics 21.1972674675
+18892 Mojo (African-American culture) mojo 110.392707322
+18900 Modus ponens modus 58.1014249065
+18901 Modus tollens q 46.0529577908
+18905 Armed forces armed 30.1860845071
+18916 Meaning study 8.15730011187
+18930 Subject (philosophy) subject 44.7455072251
+18948 Mole mole 63.5918024026
+18956 Marjoram marjoram 49.72486079
+18960 Macedonian phalanx phalanx 58.1014249065
+18968 Malvales malvales 37.2936455925
+18969 Myrtales apg 19.3172529505
+18973 Moot gathering 14.8885338908
+18974 Mississippian (geology) mississippian 46.4811399252
+18991 MM iata 8.84769625905
+18997 Marcel Achard his 28.0550848113
+18999 Motala strm motala 17.4304274719
+19007 Mercury mercury 25.5849765504
+19018 Mouthpiece mouthpiece 12.4312151975
+19020 Morphology study 27.1910003729
+19030 Motala Municipality motala 46.4811399252
+19032 Masaki Kobayashi kobayashi 24.862430395
+19049 Mark mark 33.20891059
+19055 Manufacturing Consent: Noam Chomsky and the Media chomsky 33.1347625092
+19066 Mlaren mlaren 55.9404683888
+19072 Politics of Macau macau 110.449208364
+19074 Telecommunications in Macau gsm 34.7399124118
+19076 People's Liberation Army Macau Garrison macau 77.3144458547
+19084 Telecommunications in the Republic of Macedonia retrieved frank 26.6025953727
+19085 Transport in the Republic of Macedonia motorway 20.4679812403
+19103 Telecommunications in Malawi million 8.02394482415
+19104 Transport in Malawi malawi 29.0507124532
+19106 Foreign relations of Malawi malawi 75.5318523784
+19113 Telecommunications in Malaysia wimax 31.0780379938
+19114 Transport in Malaysia ferry 53.122445614
+19123 Telecommunications in the Maldives wataniya 6.21560759876
+19124 Transport in the Maldives refrigerated 4.96284463026
+19131 Politics of Mali elected 24.8167383164
+19133 Telecommunications in Mali radio 34.0378393962
+19136 Foreign relations of Mali mali 116.584971071
+19143 Telecommunications in Malta beacon 29.0507124532
+19149 Geography of the Marshall Islands marshall 31.5760165456
+19150 Demographics of the Marshall Islands marshallese 23.2405699626
+19151 Politics of the Marshall Islands marshall 49.6194545717
+19153 Communications in the Marshall Islands islands 27.7210204454
+19154 Transport in the Marshall Islands marshall 13.5325785196
+19156 Foreign relations of the Marshall Islands marshall 121.793206676
+19160 Spam (Monty Python) spam 132.539050037
+19163 Bruces' Philosophers Song python 29.7770677816
+19164 The Funniest Joke in the World joke 117.690892132
+19165 The Spanish Inquisition (Monty Python) ximnez 62.1560759876
+19172 Demographics of Martinique population 8.15730011187
+19173 Politics of Martinique crt progressive 35.3907850362
+19174 Economy of Martinique gwh 11.6202849813
+19175 Telecommunications in Martinique broadcast 6.16022676565
+19182 Demographics of Mauritania tfr 23.2405699626
+19185 Transport in Mauritania mauritania 33.1347625092
+19186 Telecommunications in Mauritania dsl 11.6202849813
+19191 M letter 31.0209228954
+19195 MU mu 16.5673812546
+19196 Mu-metal magnetic 108.365194646
+19205 Politics of Mauritius prime 56.1209183624
+19207 Telecommunications in Mauritius ict 55.224604182
+19209 Military of Mauritius patrol 59.8802059222
+19214 Demographics of Mayotte population 16.3146002237
+19215 Politics of Mayotte council 9.30627686863
+19227 Telecommunications in Mexico satmex 37.2936455925
+19247 Transport in Moldova transportation 34.1575795976
+19248 Military of Moldova air 30.0780426036
+19264 Demographics of Monaco population 13.5955001864
+19265 Politics of Monaco monaco 41.4555271769
+19266 Economy of Monaco monaco 64.4863756085
+19267 Telecommunications in Monaco adsl 9.92568926052
+19268 Transport in Monaco monaco 50.6678665495
+19269 Military of Monaco corps 32.2431878042
+19283 Geography of Montserrat admin 33.1347625092
+19284 Demographics of Montserrat population 32.6292004475
+19285 Politics of Montserrat democratic 14.0302295906
+19286 Economy of Montserrat montserrat 27.612302091
+19293 Geography of Morocco slightly 19.0885616298
+19295 Politics of Morocco morocco 24.1465661882
+19297 Telecommunications in Morocco maroc 23.2405699626
+19298 Transport in Morocco route 60.8013545754
+19307 Telecommunications in Mozambique internet 27.6562005292
+19308 Transport in Mozambique coal 14.1345906059
+19310 Foreign relations of Mozambique mozambique 92.1059155816
+19314 Monroe adams 15.3509859303
+19321 Mental process perceiving 12.4312151975
+19324 Moollar moollar 46.4811399252
+19327 Master shot shot 24.4532486116
+19328 Medium shot medium 21.7190271093
+19336 M4 cabin 11.0449208364
+19337 Index of motion picture terminology medium-arc 12.4312151975
+19338 Mountain range mountain 75.4652112677
+19342 Magnoliales family 130.422279446
+19360 Mayo mayo 111.880936778
+19369 Matteo Carcassi concert 19.851378521
+19372 Minute minute 33.8051926634
+19377 Microelectronics microelectronic 18.6468227963
+19442 Mercedes daimler 18.6468227963
+19458 Mediterranean (disambiguation) mediterranean 44.6656016723
+19508 Murat Ses murat 23.2405699626
+19521 Marathon (disambiguation) marathon 27.612302091
+19566 Main-group element groups 17.6307771946
+19574 Monitor performers 12.4312151975
+19581 Men in Black black 73.1551884989
+19583 Monomer monomers 43.5092531913
+19593 Missouria missouria 62.1560759876
+19615 Systems Concepts sc 24.862430395
+19645 Morpheus video 15.5475999947
+19664 Mallow marsh 12.4312151975
+19683 Module (disambiguation) technique 10.7296508074
+19705 Microgyrus flaws 11.6202849813
+19726 Mercury (programming language) mercury 92.1059155816
+19731 Midgard midgard 43.5092531913
+19736 Muspelheim muspelheim 44.1796833456
+19738 Metrization theorem metrizable 74.5872911851
+19739 Martin Agricola composers 16.5673812546
+19740 Max August Zorn zorn 18.6468227963
+19745 Main (river) main 35.5370552313
+19757 Mariotto Albertinelli mariotto 24.862430395
+19809 Moses Amyraut amyraut 68.3716835863
+19814 Meander (disambiguation) river 13.9894045757
+19821 Marcus Claudius Tacitus roman 43.9979471353
+19822 MV Tampa ship 164.85519769
+19823 Maya numerals maya 74.5872911851
+19828 Max and Moritz moritz 87.0185063826
+19836 Molecular mass molecular 122.266243058
+19839 Methyl group methyl 142.958974771
+19842 Mild ale mild 87.5172240401
+19855 Mars Attacks topps 62.1560759876
+19862 Underground underground 42.0070457821
+19866 Morona morona 18.6468227963
+19868 Measure assembly 10.4243027245
+19890 Male (disambiguation) village 11.7538514631
+19908 Mount attaching 12.4312151975
+19918 Megabyte megabyte 46.4811399252
+19925 IC 342/Maffei Group ic 88.3593666911
+19926 M81 Group galaxies 33.1347625092
+19938 Mega- prefix 11.8929474004
+19940 Maciej Payski payski tewahedo 40.6709974345
+19943 Mostaganem Province algeria 10.2339906202
+19958 Mario Botta mario 42.4037718178
+19967 Medium medium 30.406637953
+19971 MCA act 15.4005669141
+19972 Magical organization templi 18.6468227963
+19983 Central moment moments 66.2695250183
+19987 Mehmed I mehmed 110.449208364
+19988 Murad II murad 93.2341139813
+19991 Mustafa I ottoman 97.2229108917
+19994 Masamune Shirow shell 47.6938518019
+20003 Multitier architecture tier 80.8028987838
+20016 Myrinet myrinet 49.72486079
+20024 Mach speed 6.4397506504
+20040 Maule Air maule 99.4497215801
+20041 Shoma Morita morita 31.0780379938
+20042 Montezuma mexican 30.9669369067
+20048 Mooney mooney 136.743367173
+20061 MPEG-3 hdtv 12.4312151975
+20070 Memory address register address 25.035851884
+20071 Memory data register mdr 46.4811399252
+20072 Microassembler microprogram 31.0780379938
+20077 MLK (disambiguation) luther 13.818509059
+20080 Marino Marini (sculptor) marino 62.1560759876
+20088 Myriad myriad 74.5872911851
+20092 Mabon ap Modron culhwch 49.72486079
+20101 Mary mary 55.5060668461
+20102 Manasseh priest 14.1345906059
+20142 Mixmaster Morris dj 52.9931686688
+20144 Marcomanni marcomanni 40.6709974345
+20145 Maroboduus annals 31.7959012013
+20149 Mike Muuss mike 31.5760165456
+20151 Mousse mousse 24.862430395
+20165 MIPS mips robust 14.8885338908
+20178 MOO (programming language) moo 80.8028987838
+20181 Marienburg castle 21.7190271093
+20185 Motorcycle sport trials 46.4811399252
+20200 Management science management 47.9277406892
+20213 Multiple-image Network Graphics mng 174.304274719
+20229 Macaroni macaroni 87.0185063826
+20242 Minestrone minestrone 68.3716835863
+20284 Micah american 41.2814851822
+20285 Malachi malachi 87.0185063826
+20286 Martin Fowler software 25.3930692685
+20292 Multiplan multiplan 37.2936455925
+20299 MOS Technology 6510 mos 37.2936455925
+20302 Motorola 68020 address 35.7655026914
+20306 Mole fraction mole 68.8911192695
+20322 Motorola 68030 motorola 25.5849765504
+20324 Motorola 68040 motorola 56.286948411
+20325 Motorola 68060 motorola 46.0529577908
+20327 Freescale 68HC11 port 24.3233730238
+20340 Mary (programming language) j 27.6370181179
+20344 Megara megara 105.665329179
+20356 Mozambique Channel mozambique 20.4679812403
+20362 Merge algorithm merge 42.394534935
+20363 ML thousandth 11.6202849813
+20367 Moor moor 34.8608549439
+20378 Modulus modulus 12.4312151975
+20388 Geography of Burma burma 47.6938518019
+20392 Telecommunications in Burma myanmar 110.392707322
+20393 Transport in Burma runs 35.7655026914
+20398 Muonium muonium 80.8028987838
+20401 Medicine man medicine 60.813275906
+20403 Malay Peninsula malay 81.3419948691
+20426 Metonic cycle cycle 58.809864095
+20433 Mere Christianity lewis 62.7810720893
+20434 Mathematical game games 32.4519313319
+20436 MIDI timecode midi 60.7470646001
+20437 Mass transfer transfer 78.2604501152
+20452 Meconium aspiration syndrome meconium 110.392707322
+20453 Meconium meconium 145.253562266
+20468 Maggie Out thatcher 24.862430395
+20474 Mohs scale of mineral hardness hardness 98.772422341
+20484 Mance Lipscomb lipscomb 55.9404683888
+20497 Magnus magnus 58.1014249065
+20505 Magnetic tape tape 179.640617767
+20512 MeatballWiki meatballwiki 31.0780379938
+20521 Monk (disambiguation) monk 26.4965843344
+20531 Marrakesh Agreement agreement 25.2904253932
+20534 MAD absolute 21.3484872485
+20541 Montauban montauban 68.3716835863
+20544 Morphophonology morphophonological 80.8028987838
+20547 Moveable feast easter 98.772422341
+20549 Manufacturing Consent chomsky 49.7021437638
+20551 Montevideo Convention convention 38.5831313742
+20569 Metis mixed-race 12.4312151975
+20575 Micron (disambiguation) skate 12.4312151975
+20576 Magic lantern (disambiguation) lantern 43.5092531913
+20583 Misdemeanor misdemeanors 99.4497215801
+20591 Fujiwara no Mototsune fujiwara 40.6709974345
+20601 Maggieknockater maggieknockater 31.0780379938
+20606 Millbridge, Plymouth creek 15.8979506006
+20608 Messier object messier 145.253562266
+20611 Monophyly monophyletic 31.0780379938
+20619 Madeline Amy Sweeney flight 65.2086629641
+20624 Message transfer agent mail 98.2030413431
+20627 Micrometre britannica 19.3172529505
+20645 The Medallions green 44.7684113876
+20648 Melting melting 77.3144458547
+20651 Martin Waldseemller map 40.0414739767
+20659 MV Blue Marlin ship 189.408099473
+20676 Microvision microvision 55.9404683888
+20685 Michael michael 29.2052659303
+20696 Class (set theory) class 59.1502212147
+20697 Metric measure 10.8387537399
+20701 Mathilde Roth Schechter mathilde 18.6468227963
+20714 Manu rugby 22.5542975326
+20725 Mineraloid non-crystalline 31.0780379938
+20733 MDI dental 10.2339906202
+20736 Pointing device gesture gestures 121.884287938
+20746 Moctezuma I aztec 34.8608549439
+20751 Mustafa Altoklar altioklar 31.0780379938
+20759 Major scale scale 59.7757642958
+20781 Monoid ring ring 44.2022132356
+20806 Madrigal (disambiguation) song 18.9284351195
+20810 Merchant merchant 39.6431580015
+20815 Mayerling lodge 17.4304274719
+20823 Majority function majority 22.1975961272
+20824 Modula modula 24.862430395
+20825 Monolithic kernel operating 43.2510463287
+20872 Mother Superior band 19.9381823814
+20876 Mimosa mimosa 242.408696351
+20878 Martini martini 16.5673812546
+20882 Mon mon 17.4304274719
+20890 Malcolm I of Scotland mel 55.9404683888
+20895 MV Buffalo Soldier (T-AK-9301) ship 171.870312485
+20906 Mole Day mole 31.7959012013
+20908 MMU methane 11.6202849813
+20914 Milton village 20.5692400603
+20932 Martin Helwig silesia 34.8608549439
+20934 Macro virus macro 110.449208364
+20941 Metabolic pathway pathways 87.1521373597
+20955 Madness song 13.5203107996
+20964 Martin Lowry lowry 34.8608549439
+20990 Maremma maremma 93.2341139813
+20995 Province of Massa and Carrara massa 69.7217098878
+21001 Magazine magazines 42.394534935
+21009 Marsh gas incidentally 11.6202849813
+21012 Merseburg merseburg 80.8028987838
+21027 List of military tactics enemy 91.7569515151
+21030 Musical chairs musical 32.7462206125
+21040 Mafic mafic 49.72486079
+21052 Mario Berlinguer communist 13.0314162656
+21053 Michele Columbu italian 6.24913029079
+21060 Magdalena of Saxony keen elector 39.0942487967
+21062 Muscovite muscovite 43.5092531913
+21070 Mobilian Jargon mobilian 87.0185063826
+21128 NYC (disambiguation) york 21.7810656862
+21160 Telecommunications in the Netherlands codes 44.6656016723
+21168 2001 in the Netherlands van 28.9033433065
+21214 Naraoiidae pygidium 24.862430395
+21220 Negligence per se negligence 43.5092531913
+21224 Napoleon (disambiguation) napoleon 75.5318523784
+21227 Nu university 23.1251288371
+21230 New England (disambiguation) england 89.7813677032
+21267 Nasjonal Samling ns 31.0780379938
+21288 Nicholas Lemann journalism 49.72486079
+21290 N letter 55.8376612118
+21296 Politics of Namibia swapo 31.0780379938
+21299 Transport in Namibia road 45.7963606742
+21304 Geography of Nauru admin 33.1347625092
+21308 Telecommunications in Nauru government-owned 12.4312151975
+21309 Transport in Nauru transport 6.20418457909
+21328 Telecommunications in Nepal nepal 66.2695250183
+21329 Transport in Nepal gauge 13.0314162656
+21334 Geography of the Netherlands Antilles antilles 27.612302091
+21335 Demographics of the Netherlands Antilles netherlands 16.8028183129
+21337 Economy of the Netherlands Antilles antillean 17.4304274719
+21338 Telecommunications in Curaao programs 7.30131648259
+21339 Transport in the Netherlands Antilles netherlands 12.6021137346
+21341 Foreign relations of the Netherlands Antilles netherlands 37.8063412039
+21345 Demographics of New Caledonia population 19.033700261
+21346 Politics of New Caledonia caledonia 60.7470646001
+21347 Economy of New Caledonia nickel 58.1014249065
+21349 Transport in New Caledonia tontouta 6.21560759876
+21357 Telecommunications in New Zealand vodafone 18.6468227963
+21366 Politics of Nicaragua assembly 31.2729081735
+21369 Transport in Nicaragua airports 7.30131648259
+21375 Geography of Niger niger 87.0185063826
+21394 Geography of Niue niue 21.1972674675
+21396 Politics of Niue niue 37.0952180682
+21398 Transport in Niue boeing 17.4304274719
+21399 Communications in Niue internet 24.8905804763
+21404 Geography of the Northern Mariana Islands mariana 47.6938518019
+21405 Demographics of the Northern Mariana Islands mariana 31.7959012013
+21406 Politics of the Northern Mariana Islands mariana 206.673357808
+21408 Communications on the Northern Mariana Islands mariana 10.5986337338
+21426 Politics of Norfolk Island norfolk 174.304274719
+21440 Neutral monism neutral 56.4694704841
+21454 Nicanor Parra parra 142.958974771
+21458 Norma MacMillan macmillan 40.6709974345
+21459 Nevanlinna Prize nevanlinna 31.0780379938
+21477 Neogene neogene 80.8028987838
+21491 Nucleus rollins 11.6202849813
+21502 Nike goddess 9.21233937264
+21512 North Atlantic Current atlantic 27.3911575403
+21520 Null set null 133.633277285
+21557 Niflheim niflheimr 31.0780379938
+21561 Nanoengineering nanotechnology 24.862430395
+21571 Nial array 75.3844832317
+21572 Nag Hammadi hammadi 105.665329179
+21582 Nicolaus von Amsdorf lutheran 28.9758794258
+21585 Nereus nereus 116.202849813
+21586 Nereid disambiguation 45.8125479115
+21587 Nemesis song 21.6324972794
+21588 Nereid (moon) nereid 81.3419948691
+21597 Neutral neutral 21.7190271093
+21606 Napo River napo 49.72486079
+21607 Nanay River nanay 49.72486079
+21611 New World Order world 76.1629241852
+21619 List of multi-level marketing companies marketing 36.0868760521
+21642 Niklaus Wirth niklaus 66.2695250183
+21672 Nucleariid journal 18.4286767466
+21673 North American English accents 40.6709974345
+21688 Double negative elimination negation 46.4811399252
+21691 Nightclub two step nightclub 23.2405699626
+21707 Node node 27.612302091
+21712 Null gear 11.6202849813
+21746 Nolo contendere plea besides 101.748506979
+21770 National Film Preservation Board preservation 51.1699531009
+21774 Nominative case nominative 142.958974771
+21777 Neapolitan sauce neapolitan 29.0507124532
+21793 Ninth Fort fort 94.2940479749
+21797 Nahum tomb 40.9359624807
+21811 Nemo nemo 31.0780379938
+21813 Naked News news 63.5057976546
+21814 Nitrogen Oxide Protocol transboundary 29.0507124532
+21819 Nuncio nuncio 93.2341139813
+21820 Newlyn School newlyn 31.0780379938
+21828 Neapolitan ice cream ice 146.84082898
+21837 Nanometre nanometre 31.0780379938
+21847 Nordic nordic 25.5849765504
+21850 GNU nano nano 87.0185063826
+21851 Nieuwe Waterweg nieuwe 105.665329179
+21857 Non-fiction nonfiction 82.8369062729
+21862 In the Beginning... Was the Command Line stephenson 24.862430395
+21880 Nullum crimen, nulla poena sine praevia lege poenali sine 84.7890698701
+21886 Ninon de l'Enclos ninon 80.8028987838
+21891 NATO reporting name reporting 85.013111515
+21892 List of NATO reporting names for surface-to-surface missiles reporting 15.4569293664
+21894 List of NATO reporting names for air-to-surface missiles cyrillic 11.6202849813
+21895 List of NATO reporting names for anti-tank missiles reporting 11.5926970248
+21896 List of NATO reporting names for surface-to-air missiles reporting 11.5926970248
+21897 List of NATO reporting names for bomber aircraft reporting 19.321161708
+21898 List of NATO reporting names for fighter aircraft reporting 19.321161708
+21899 List of NATO reporting names for helicopters reporting 15.4569293664
+21900 List of NATO reporting names for transport aircraft reporting 19.321161708
+21901 List of NATO reporting names for miscellaneous aircraft reporting 23.1853940496
+21904 List of NATO reporting names for submarines class 112.385420308
+21916 Nordea nordea 99.4497215801
+21918 Normal subgroup normal 109.191910971
+21919 Munkar and Nakir answers 14.8885338908
+21926 Naked singularity naked 71.6379343412
+21935 Non-deterministic Turing machine turing 110.392707322
+21938 Neoproterozoic neoproterozoic 37.2936455925
+21943 Nervous System nervous 51.1699531009
+21946 Nutcracker nutcrackers 74.5872911851
+21952 Naiad (moon) naiad 43.5092531913
+21966 Nicolas Chauvin chauvin 24.862430395
+21974 NSAP address kneelings addresses 21.7190271093
+21977 Neo Geo Pocket geo 142.958974771
+21981 New Oxford American Dictionary oxford 59.0710487721
+21986 Naive Set Theory (book) set 20.9528932071
+21994 Navigation research navigation 57.9517588516
+22009 Nitronium ion nitronium 74.5872911851
+22036 Norman Hackerman hackerman 62.1560759876
+22042 Nuon (DVD technology) nuon 111.880936778
+22045 Nashville (disambiguation) county 13.5295770188
+22052 Non-disclosure agreement nda 55.9404683888
+22059 Norse germanic 12.8090923491
+22066 NCR capital 19.4713427599
+22091 Ncurses ncurses 74.5872911851
+22092 NBA (disambiguation) basketball 34.7504433748
+22097 North Atlantic Salmon Conservation Organization salmon 27.612302091
+22104 Nawal El Moutawakel olympic 51.2363693964
+22111 Nuvistor uhf 17.4304274719
+22115 National War College war 43.579050987
+22120 Nuoro nuoro 55.9404683888
+22126 Northern Hemisphere hemisphere 46.0529577908
+22148 Niccol Fontana Tartaglia tartaglia 43.5092531913
+22159 NPT nissan 12.4312151975
+22164 Netlist instances 55.2740362359
+22172 Ode odes 74.5872911851
+22201 Orbital fiction 6.39036542522
+22205 Oasis springs 33.1347625092
+22211 Oelde oelde recalling 34.8608549439
+22270 Off topic posting 14.4879397129
+22290 Open-source license source 49.7811609526
+22296 The Open Source Definition source 41.4843007939
+22300 OSI strategic 16.8028183129
+22306 Overgrazing overgrazing 43.5092531913
+22313 Out natsuo 12.4312151975
+22314 O letter 65.1439380804
+22320 Politics of Oman sultan 32.2431878042
+22322 Telecommunications in Oman omantel 31.0780379938
+22323 Transport in Oman al 27.3911575403
+22325 Foreign relations of Oman oman 148.392863993
+22331 Oi (interjection) lambeth 31.0780379938
+22336 Oberkommando des Heeres okh 87.0185063826
+22346 Observational error we 21.8749400754
+22353 Orrorin fossils 38.6572229274
+22356 List of Olympic medalists in athletics (women) medalists 153.509859303
+22371 Oliver Lieb lieb 37.2936455925
+22373 Object code code 34.0378393962
+22374 Oberon (disambiguation) fictional 8.54493530631
+22401 Oil (disambiguation) oil 10.522672193
+22402 Optimization (disambiguation) improving 29.7770677816
+22412 Organization of Asia-Pacific News Agencies news 74.0900972637
+22421 Orange unincorporated 25.6181846982
+22443 Offa of Angel uffi 31.0780379938
+22450 Open-wheel car open-wheel 62.1560759876
+22469 Ontogeny ontogeny 31.0780379938
+22474 Orion orion 49.7021437638
+22475 Octans constellation 32.2431878042
+22484 OS os 17.0787897988
+22494 Osman II osman 84.7890698701
+22499 Off spin spin 45.1085950652
+22538 Orient House orient 60.7470646001
+22565 Obadiah obadiah 43.5092531913
+22573 Otorhinolaryngology neck 63.9115673971
+22575 Otterlo cbc 11.6202849813
+22587 Roland Octapad roland 34.8608549439
+22600 Optical brightener brighteners 49.72486079
+22609 Old Glory glory 63.9115673971
+22622 Orthodox orthodox 11.8929474004
+22627 Oscar character 25.1430562464
+22638 OMG my 31.2729081735
+22644 Ottonian dynasty otto 90.088386737
+22647 Hoy hoy 68.3716835863
+22651 Oliver Conant conant 18.6468227963
+22652 Oftel oftel 12.4312151975
+22653 OCR civil 18.2253226104
+22656 Operand operation 51.1092153781
+22660 Occam (programming language) occam 167.821405166
+22673 Orimulsion orimulsion 49.72486079
+22677 Oxymoron oxymora 74.5872911851
+22678 OSS oss 12.4312151975
+22684 Otto Wilhelm Hermann von Abich hermann 49.7021437638
+22685 Organization of the Communist Party of the Soviet Union party 89.7303012305
+22716 Online algorithm problem 38.9560484426
+22717 Origin origin 42.5257527577
+22723 Object modeling language modeling 56.5383624237
+22725 On Fairy-Stories tolkien 71.7919854365
+22727 Otaku no Video otaku 62.1560759876
+22743 Operation Deadlight u-boats 55.9404683888
+22751 Original Sin (2001 film) julia 136.743367173
+22758 List of object-oriented programming languages programming 14.2415588438
+22759 OOP insured 6.21560759876
+22764 Orthodox Bah' Faith remey 80.8028987838
+22787 List of organizations with .int domain names fisheries 22.0898416728
+22789 World Organisation for Animal Health animal 76.349277407
+22791 Boeing OC-135B Open Skies aircraft 48.2022642712
+22805 Ordinary language ordinary 36.1654471928
+22812 Octavian (disambiguation) romanian 98.772422341
+22817 Olga of Kiev olga 105.665329179
+22820 Odobenidae marine 6.88603775303
+22827 Ovo-lacto vegetarianism vegetarian 38.6572229274
+22830 Ostwald process nitric 43.5092531913
+22832 Book of Omni nephites 34.8608549439
+22923 PhpWiki wiki 33.1347625092
+22946 List of painters by name painters 135.220770654
+22958 Sample space sample 123.867747627
+22960 Elementary event elementary 57.9517588516
+22961 Event (probability theory) sample 79.6292663315
+22981 Phone (phonetics) speech 16.5446642283
+22990 Postmaster postmaster 46.4811399252
+22993 Postmaster General postmaster 17.4304274719
+23008 Preliminary hearing preliminary 51.1699531009
+23012 Philosophical methodology philosophical 71.6919507043
+23021 Telecommunications in Poland million 34.7704275713
+23028 Media of Poland radio 28.8012487198
+23036 Printer (publishing) printers 16.5673812546
+23042 Republic (disambiguation) republic 41.4843007939
+23051 Pascal binomial 11.6202849813
+23086 Poker equipment chips 39.0942487967
+23093 Bug (poker) bug 42.4037718178
+23094 Wild card (card games) wild 106.244891228
+23101 High-low split hand 68.0227543969
+23106 Kicker (poker) hand 23.6600884859
+23124 Blind (poker) blinds 132.482921672
+23128 Showdown (poker) characterize player 49.0178525059
+23134 Check-raise characterize player 25.9506277972
+23144 Twist (poker) replace 20.6808302854
+23145 Stripped deck deck 38.4272770473
+23146 Roll-your-own cigarette tobacco 63.9115673971
+23147 Rollout (poker) cards 24.1011321356
+23149 One player to a hand characterize player 17.3004185315
+23150 Cards speak verbal 21.1972674675
+23151 Declaration (poker) characterize player 34.600837063
+23153 Closed (poker) characterize player 20.1838216201
+23157 Value (poker) bet 32.2431878042
+23158 Nut hand nut 38.6572229274
+23159 Protection (poker) bet 23.0308484316
+23160 Draw (poker) straight 120.471721963
+23162 Out (poker) outs 47.6938518019
+23165 Position (poker) players 32.198753252
+23166 Steal (poker) players 22.5391272764
+23169 Dead money (poker) pot 28.5287900468
+23170 Isolation (poker) players 16.099376626
+23172 Freeroll tournaments 52.2912824158
+23173 Starting hand starting 14.1658357973
+23184 Aggression (poker) aggressive 47.6938518019
+23190 Cut (cards) cut 91.625095823
+23194 Phonetics speech 70.3148229703
+23196 Particular particular 7.9807786118
+23210 Pseudorandomness random 114.115160187
+23212 Poales family 83.3847360391
+23222 Pennsylvanian (geology) pennsylvanian 81.3419948691
+23224 Paul Hroult hroult 49.72486079
+23233 Problem of the criterion answering 25.5849765504
+23262 PCM (disambiguation) computer 13.8818095751
+23264 Plain plain 75.205418202
+23265 Peter Altenberg berlin 59.7757642958
+23270 Pipe foods 11.0449208364
+23272 Peter Nilson swedish 10.2367416535
+23276 Philosopher philosophy 57.2656848894
+23280 Time Out of Joint gumm 24.862430395
+23285 Radio Free Albemuth dick 46.4811399252
+23303 Personal area network devices 47.9684264078
+23306 Personal Telco telco 31.0780379938
+23309 Paul Vixie vixie 37.2936455925
+23342 P letter 49.6334766327
+23343 Page gel 16.5673812546
+23346 Post-communism post-communist 37.2936455925
+23374 Geography of Palau islands 12.3204535313
+23375 Demographics of Palau population 13.5955001864
+23376 Politics of Palau palau 22.0898416728
+23377 Economy of Palau palau 38.6572229274
+23395 Politics of Panama minister 46.868477181
+23398 Transport in Panama panama 33.1347625092

@@ -1,0 +1,525 @@
+524
+23272 Peter Nilson 475
+15893 Jeff Mills 1
+15904 Jazz dance 1
+15956 Journal of the Travellers Aid Society 1
+16023 Juno 1
+16092 Jan Karon 1
+16114 Jutland Peninsula 1
+16117 Joseph (disambiguation) 1
+16163 Judah 1
+16194 JPEG Network Graphics 1
+16206 Johann Tobias Krebs 1
+16223 Joel 1
+16226 JUnit 1
+16247 John van Melle 1
+16249 John Fink 1
+16254 Joseph Smith (disambiguation) 1
+16263 Joint Political Military Group 1
+16265 Jug (disambiguation) 1
+16328 Jeepster Records 1
+16354 Johann Friedrich Endersch 1
+16388 James Hamilton, 1st Earl of Abercorn 1
+16413 James Tiptree, Jr. Award 1
+16456 John Nash 1
+16458 JMS 1
+16462 Jean Richard 1
+16466 John Walker 1
+16475 Jamming 1
+16485 Just another Perl hacker 1
+16495 Jan Borukowski 1
+16510 Johannes Nicolaus Brnsted 1
+16511 Janus kinase 1
+16524 Jerome Callet 1
+16527 Java coffee 1
+16529 Java (board game) 1
+16534 Jacob and Esau 1
+16537 Johann Homann 1
+16543 Jewel 1
+16554 John Sealy Hospital 1
+16580 Jacobite 1
+16586 Jelly 1
+16608 Keyboard 1
+16611 Kinetics 1
+16638 King (disambiguation) 1
+16648 Telecommunications in Kazakhstan 1
+16677 Demographics of Kiribati 1
+16680 Telecommunications in Kiribati 1
+16681 Transport in Kiribati 1
+16690 Telecommunications in Kuwait 1
+16708 Kent Beck 1
+16710 Krone 1
+16718 Kappa (disambiguation) 1
+16726 Kul Tigin 1
+16750 Kleene star 1
+16771 Kernel 1
+16773 Kite (disambiguation) 1
+16791 Kista 1
+16792 Klondike, Yukon 1
+16795 Karl Andree 1
+16804 Ketene 1
+16821 Callicrates 1
+16829 Kornilov 1
+16850 Karel van het Reve 1
+16893 Kansas City (disambiguation) 1
+16900 Kung fu (term) 1
+16908 Kadiogo Province 1
+16914 Kyushu 1
+16915 KAB-500KR 1
+16916 KAB-500L 1
+16921 Knowledge Aided Retrieval in Activity Context 1
+16933 Kainite 1
+16941 Kawasaki Ki-56 1
+16957 Kata (disambiguation) 1
+16963 Kidneys, ureters, and bladder x-ray 1
+16972 KolmogorovArnoldMoser theorem 1
+16973 Kam (disambiguation) 1
+16976 Kernite 1
+16984 Korea Institute for Advanced Study 1
+17035 Kantele 1
+17047 KB 1
+17051 Kenji Sahara 1
+17056 Kiyoshi Atsumi 1
+17078 K. W. Jeter 1
+17090 KAOS 1
+17091 Khornerstone 1
+17094 Ket 1
+17102 Kesgrave 1
+17104 AMD K6 1
+17105 K7 1
+17106 KA9Q 1
+17133 Channels of the Hawaiian Islands 1
+17134 Kemp Town 1
+17139 FX-87 1
+17140 Katal 1
+17147 Killer micro 1
+17149 Kill file 1
+17152 Kilobit 1
+17155 Kirin 1
+17169 Kington Magna 1
+17171 Kiosk 1
+17174 Knowbot Information Service 1
+17177 Kit 1
+17179 KL1 1
+17180 Klamath people 1
+17186 Klerer-May System 1
+17193 Knud Rasmussen 1
+17206 KMS 1
+17209 Knights of the Lambda Calculus 1
+17211 Knuth 1
+17216 Knowledge Query and Manipulation Language 1
+17217 KR 1
+17224 Kent Recursive Calculator 1
+17226 Kremvax 1
+17227 KRL (programming language) 1
+17232 Knowledge Systems Laboratory 1
+17241 Kyoto Common Lisp 1
+17245 Karl Gustav Ahlefeldt 1
+17278 Kremlin 1
+17299 Khunjerab Pass 1
+17302 Toshiki Kaifu 1
+17350 Khuriya Muriya Islands 1
+17354 Kuru 1
+17357 K9 1
+17367 Konrad Emil Bloch 1
+17381 Koalang 1
+17382 Kobellite 1
+17395 Kutia 1
+17407 Kamchatka Oblast 1
+17409 Kuznetsov 1
+17413 Kennedy 1
+17414 Icehenge 1
+17430 Calligra Words 1
+17432 Key 1
+17445 Kittiwake 1
+17449 Kimberly Beck 1
+17466 Karen Kain 1
+17516 Location parameter 1
+17530 Lattice 1
+17532 Lorisidae 1
+17544 Playing by ear (music) 1
+17568 Local color 1
+17573 LMS 1
+17627 Liberal 1
+17634 Letter game 1
+17639 Lowball 1
+17640 Line of scrimmage 1
+17646 Liliales 1
+17647 Laurales 1
+17648 Limerick (disambiguation) 1
+17694 No true Scotsman 1
+17696 Slippery slope 1
+17714 Roxen 1
+17721 Lysator 1
+17728 Line Islands 1
+17731 LiveScript 1
+17743 West Low German 1
+17758 Telecommunications in Laos 1
+17768 Transport in Latvia 1
+17789 Military of Lesotho 1
+17793 Geography of Liberia 1
+17798 Transport in Liberia 1
+17812 Geography of Liechtenstein 1
+17816 Telecommunications in Liechtenstein 1
+17826 Transport in Lithuania 1
+17835 Telecommunications in Luxembourg 1
+17859 Long shot 1
+17872 Lincoln 1
+17874 Ligament 1
+17878 Laser science 1
+17891 Latin (disambiguation) 1
+17931 Lola Graham 1
+17964 List of literary cycles 1
+17996 List of Latin phrases 1
+18003 LDS 1
+18012 Limit 1
+18028 Louis Aleman 1
+18034 Leningrad (disambiguation) 1
+18056 Laws of infernal dynamics 1
+18085 Luke 1
+18109 Lennon Wall 1
+18129 List of political parties named "Labour Party" or similar 1
+18148 Left-arm orthodox spin 1
+18156 Lemuridae 1
+18162 Lists of atheists 1
+18186 List of Hindus 1
+18236 Lithium citrate 1
+18237 Lithium carbonate 1
+18240 Lake Kickapoo 1
+18243 Land (disambiguation) 1
+18246 Lyon & Healy 1
+18274 List of facilities named after Lyndon Johnson 1
+18288 Lyric 1
+18292 Lev Kuleshov 1
+18322 Lamorna Birch 2
+18323 LDP 1
+18325 Labour 1
+18331 Ligase 1
+18345 Outline of literature 1
+18379 Linear timecode 1
+18398 La Espero 1
+18401 Laminar flow 1
+18408 LAME 1
+18423 Labia majora 1
+18424 Labia minora 1
+18439 LTJ Bukem 1
+18444 Loch 1
+18459 Leda 1
+18460 Lysithea (moon) 1
+18467 Legion 1
+18477 Lulach 1
+18486 Law enforcement 1
+18534 Lake Abitibi 1
+18544 Left-arm unorthodox spin 1
+18546 Lists of newspapers 1
+18552 Larousse Gastronomique 1
+18563 Lud 1
+18581 Limburg 1
+18585 Leon 1
+18591 Lincos (artificial language) 1
+18603 Lydia Kavina 1
+18634 Lemma (mathematics) 1
+18641 Jonathan Smeeton 1
+18668 Lotus 1
+18693 List of battles 1
+18694 Live-bearing aquarium fish 1
+18720 Lodovico Ferrari 1
+18728 Law of dilution 1
+18835 Manhattan (disambiguation) 1
+18842 Mode 1
+18851 Mars (disambiguation) 1
+18864 Mullet 1
+18875 Mental event 1
+18884 Matrix 1
+18889 Microphotonics 1
+18905 Armed forces 1
+18916 Meaning 1
+18948 Mole 1
+18956 Marjoram 1
+18969 Myrtales 1
+18973 Moot 1
+18974 Mississippian (geology) 1
+18991 MM 1
+18999 Motala strm 1
+19007 Mercury 1
+19018 Mouthpiece 1
+19020 Morphology 1
+19030 Motala Municipality 1
+19049 Mark 1
+19076 People's Liberation Army Macau Garrison 1
+19085 Transport in the Republic of Macedonia 1
+19103 Telecommunications in Malawi 1
+19113 Telecommunications in Malaysia 1
+19123 Telecommunications in the Maldives 1
+19124 Transport in the Maldives 1
+19143 Telecommunications in Malta 1
+19151 Politics of the Marshall Islands 1
+19153 Communications in the Marshall Islands 1
+19154 Transport in the Marshall Islands 1
+19156 Foreign relations of the Marshall Islands 1
+19160 Spam (Monty Python) 1
+19172 Demographics of Martinique 1
+19173 Politics of Martinique 1
+19174 Economy of Martinique 1
+19175 Telecommunications in Martinique 1
+19186 Telecommunications in Mauritania 1
+19191 M 1
+19214 Demographics of Mayotte 1
+19215 Politics of Mayotte 1
+19264 Demographics of Monaco 1
+19267 Telecommunications in Monaco 1
+19283 Geography of Montserrat 1
+19284 Demographics of Montserrat 1
+19308 Transport in Mozambique 1
+19314 Monroe 1
+19321 Mental process 1
+19327 Master shot 1
+19328 Medium shot 1
+19336 M4 1
+19337 Index of motion picture terminology 1
+19342 Magnoliales 1
+19360 Mayo 1
+19372 Minute 1
+19377 Microelectronics 1
+19442 Mercedes 1
+19458 Mediterranean (disambiguation) 1
+19521 Marathon (disambiguation) 1
+19566 Main-group element 1
+19574 Monitor 1
+19645 Morpheus 1
+19664 Mallow 1
+19683 Module (disambiguation) 1
+19705 Microgyrus 1
+19738 Metrization theorem 1
+19814 Meander (disambiguation) 1
+19822 MV Tampa 1
+19839 Methyl group 1
+19862 Underground 1
+19868 Measure 1
+19890 Male (disambiguation) 1
+19908 Mount 1
+19925 IC 342/Maffei Group 1
+19926 M81 Group 1
+19938 Mega- 1
+19943 Mostaganem Province 1
+19967 Medium 1
+19983 Central moment 1
+20016 Myrinet 1
+20024 Mach 1
+20040 Maule Air 1
+20042 Montezuma 1
+20048 Mooney 1
+20061 MPEG-3 1
+20070 Memory address register 1
+20071 Memory data register 1
+20077 MLK (disambiguation) 1
+20101 Mary 1
+20102 Manasseh 1
+20149 Mike Muuss 1
+20151 Mousse 1
+20165 MIPS 1
+20181 Marienburg 1
+20213 Multiple-image Network Graphics 1
+20229 Macaroni 1
+20284 Micah 1
+20285 Malachi 1
+20299 MOS Technology 6510 1
+20306 Mole fraction 1
+20327 Freescale 68HC11 1
+20344 Megara 1
+20356 Mozambique Channel 1
+20363 ML 1
+20367 Moor 1
+20378 Modulus 1
+20393 Transport in Burma 1
+20398 Muonium 1
+20434 Mathematical game 1
+20436 MIDI timecode 1
+20468 Maggie Out 1
+20474 Mohs scale of mineral hardness 1
+20497 Magnus 1
+20512 MeatballWiki 1
+20521 Monk (disambiguation) 1
+20534 MAD 1
+20547 Moveable feast 1
+20569 Metis 1
+20575 Micron (disambiguation) 1
+20576 Magic lantern (disambiguation) 1
+20591 Fujiwara no Mototsune 1
+20601 Maggieknockater 1
+20606 Millbridge, Plymouth 1
+20608 Messier object 1
+20659 MV Blue Marlin 1
+20697 Metric 1
+20701 Mathilde Roth Schechter 1
+20714 Manu 1
+20725 Mineraloid 1
+20733 MDI 1
+20781 Monoid ring 1
+20806 Madrigal (disambiguation) 1
+20815 Mayerling 1
+20823 Majority function 1
+20824 Modula 1
+20825 Monolithic kernel 1
+20872 Mother Superior 1
+20876 Mimosa 1
+20878 Martini 1
+20882 Mon 1
+20895 MV Buffalo Soldier (T-AK-9301) 1
+20906 Mole Day 1
+20908 MMU 1
+20914 Milton 1
+20932 Martin Helwig 1
+20934 Macro virus 1
+20941 Metabolic pathway 1
+20955 Madness 1
+20990 Maremma 1
+20995 Province of Massa and Carrara 1
+21009 Marsh gas 1
+21040 Mafic 1
+21052 Mario Berlinguer 1
+21053 Michele Columbu 1
+21128 NYC (disambiguation) 1
+21168 2001 in the Netherlands 1
+21220 Negligence per se 1
+21224 Napoleon (disambiguation) 1
+21227 Nu 1
+21230 New England (disambiguation) 1
+21308 Telecommunications in Nauru 1
+21309 Transport in Nauru 1
+21328 Telecommunications in Nepal 1
+21329 Transport in Nepal 1
+21334 Geography of the Netherlands Antilles 1
+21337 Economy of the Netherlands Antilles 1
+21338 Telecommunications in Curaao 1
+21339 Transport in the Netherlands Antilles 1
+21341 Foreign relations of the Netherlands Antilles 1
+21345 Demographics of New Caledonia 1
+21349 Transport in New Caledonia 1
+21369 Transport in Nicaragua 1
+21398 Transport in Niue 1
+21399 Communications in Niue 1
+21404 Geography of the Northern Mariana Islands 1
+21405 Demographics of the Northern Mariana Islands 1
+21406 Politics of the Northern Mariana Islands 1
+21408 Communications on the Northern Mariana Islands 1
+21426 Politics of Norfolk Island 1
+21454 Nicanor Parra 1
+21458 Norma MacMillan 1
+21459 Nevanlinna Prize 1
+21491 Nucleus 1
+21502 Nike 1
+21512 North Atlantic Current 1
+21520 Null set 1
+21561 Nanoengineering 1
+21571 Nial 1
+21572 Nag Hammadi 1
+21586 Nereid 1
+21587 Nemesis 1
+21597 Neutral 1
+21607 Nanay River 1
+21611 New World Order 1
+21672 Nucleariid 1
+21688 Double negative elimination 1
+21691 Nightclub two step 1
+21746 Nolo contendere 1
+21770 National Film Preservation Board 1
+21774 Nominative case 1
+21777 Neapolitan sauce 1
+21793 Ninth Fort 1
+21811 Nemo 1
+21814 Nitrogen Oxide Protocol 1
+21820 Newlyn School 1
+21828 Neapolitan ice cream 1
+21847 Nordic 1
+21850 GNU nano 1
+21880 Nullum crimen, nulla poena sine praevia lege poenali 1
+21886 Ninon de l'Enclos 1
+21892 List of NATO reporting names for surface-to-surface missiles 1
+21894 List of NATO reporting names for air-to-surface missiles 1
+21895 List of NATO reporting names for anti-tank missiles 1
+21896 List of NATO reporting names for surface-to-air missiles 1
+21897 List of NATO reporting names for bomber aircraft 1
+21898 List of NATO reporting names for fighter aircraft 1
+21899 List of NATO reporting names for helicopters 1
+21900 List of NATO reporting names for transport aircraft 1
+21901 List of NATO reporting names for miscellaneous aircraft 1
+21904 List of NATO reporting names for submarines 1
+21918 Normal subgroup 1
+21943 Nervous System 1
+21974 NSAP address 1
+21977 Neo Geo Pocket 1
+21986 Naive Set Theory (book) 1
+22009 Nitronium ion 1
+22042 Nuon (DVD technology) 1
+22045 Nashville (disambiguation) 1
+22059 Norse 1
+22066 NCR 1
+22092 NBA (disambiguation) 1
+22097 North Atlantic Salmon Conservation Organization 1
+22104 Nawal El Moutawakel 1
+22111 Nuvistor 1
+22159 NPT 1
+22172 Ode 1
+22201 Orbital 1
+22205 Oasis 1
+22211 Oelde 1
+22270 Off topic 1
+22296 The Open Source Definition 2
+22313 Out 1
+22322 Telecommunications in Oman 1
+22356 List of Olympic medalists in athletics (women) 1
+22371 Oliver Lieb 1
+22373 Object code 1
+22374 Oberon (disambiguation) 1
+22401 Oil (disambiguation) 1
+22402 Optimization (disambiguation) 1
+22412 Organization of Asia-Pacific News Agencies 1
+22474 Orion 1
+22484 OS 1
+22573 Otorhinolaryngology 1
+22575 Otterlo 1
+22587 Roland Octapad 1
+22622 Orthodox 1
+22627 Oscar 1
+22638 OMG 1
+22651 Oliver Conant 1
+22652 Oftel 1
+22653 OCR 1
+22684 Otto Wilhelm Hermann von Abich 1
+22685 Organization of the Communist Party of the Soviet Union 1
+22716 Online algorithm 1
+22743 Operation Deadlight 1
+22751 Original Sin (2001 film) 1
+22758 List of object-oriented programming languages 1
+22759 OOP 1
+22789 World Organisation for Animal Health 1
+22812 Octavian (disambiguation) 1
+22820 Odobenidae 1
+22827 Ovo-lacto vegetarianism 1
+22830 Ostwald process 1
+22923 PhpWiki 1
+22946 List of painters by name 1
+22981 Phone (phonetics) 1
+22990 Postmaster 1
+22993 Postmaster General 1
+23036 Printer (publishing) 1
+23042 Republic (disambiguation) 1
+23051 Pascal 1
+23093 Bug (poker) 1
+23094 Wild card (card games) 1
+23144 Twist (poker) 1
+23146 Roll-your-own cigarette 1
+23147 Rollout (poker) 1
+23150 Cards speak 1
+23169 Dead money (poker) 1
+23173 Starting hand 1
+23212 Poales 1
+23222 Pennsylvanian (geology) 1
+23233 Problem of the criterion 1
+23262 PCM (disambiguation) 1
+23264 Plain 1
+23270 Pipe 1
+23306 Personal Telco 1
+23343 Page 1
+23374 Geography of Palau 1

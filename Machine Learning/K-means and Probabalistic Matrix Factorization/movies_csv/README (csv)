@@ -1,0 +1,9 @@
+The following files are included:
+
+ratings.txt contains the ratings data in the format: user_id, movie_id, rating
+
+ratings_test.txt contains the test set with ground truth in the same format as ratings.txt.
+
+movies.txt contains the mapping from movie_id to movie name. Row j corresponds to index j of movie_id.
+
+README (original) is the original readme for the MovieLens 100K data set

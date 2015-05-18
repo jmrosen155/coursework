@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body 
+  {
+    background-color: #f0f0f0;
+    font: 10px sans-serif;
+  }.axis path,
+  .axis line 
+  {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }.dot 
+  {
+    stroke: #000;
+  }
+
+  
+</style>
+<head>
+  <!-- Load the needed libararies and the stylesheet-->
+  <script src="script.js"></script>
+  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.tipsy.js" type="text/javascript" charset="utf-8"></script>
+	<!--link rel="stylesheet" href="http://onehackoranother.com/projects/jquery/tipsy/stylesheets/tipsy.css" type="text/css" title="no title" charset="utf-8"/-->
+  <link rel="stylesheet" href="style.css" /> 
+  
+      <div id='head'>
+      <img src="http://www.samgshare.com/edav/header_logo.png">
+      <input type="text" name="fname" id="fname" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()">
+            <input name="updateButton"
+             id="btnSearch" 
+             type="button" 
+             value="Search" 
+             onclick="updateData()" />
+             <div id="descrip" style="color: white">Your restaurant preferences by cuisine type.</div>
+ 
+    </div>
+    <h1>"</h1>
+    <h1>"</h1>
+  
+</head>
+<body>
+  
+    <h1>"</h1>
+    <p>"</p>
+    <p>"</p>
+
+  <script>
+  //Parameters for hte d3 margian and global dot size for scatter plot
+  var diaSelect = 12;
+  var diaunSelect = 3;
+  
+  var margin = {top: 20, right: 130, bottom: 30, left: 40},
+      width = 960 - margin.left - margin.right,
+      height = 500 - margin.top - margin.bottom;
+
+  var x = d3.scale.linear()
+      .range([0, width]);
+    
+  // Define 'div' for tooltips
+  var div = d3.select("body")
+  	.append("div")  // declare the tooltip div 
+  	.attr("class", "tooltip")              // apply the 'tooltip' class
+  	.style("opacity", 0);                  // set the opacity to nil
+
+
+  var y = d3.scale.linear()
+      .range([height, 0]);
+
+  var color = d3.scale.category10();
+  
+  var xAxis = d3.svg.axis()
+      .scale(x)
+      .orient("bottom");
+      
+      xAxis.tickFormat("");
+  
+  var yAxis = d3.svg.axis()
+      .scale(y)
+      .orient("left");
+      
+      yAxis.tickFormat("");
+
+  var svg = d3.select("body").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  d3.tsv("output3.tsv", function(error, data) {
+    data.forEach(function(d) {
+      d.PriceRange = +d.PriceRange;
+      d.stars = +d.stars;
+      d.url = d.url;
+    });
+
+  x.domain(d3.extent(data, function(d) { return d.stars; })).nice();
+  y.domain(d3.extent(data, function(d) { return d.PriceRange; })).nice();
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis)
+      .append("text")
+      .attr("class", "label")
+      .attr("x", width)
+      .attr("y", -6)
+      .style("text-anchor", "end");
+      //.text("Ratings");
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+      .append("text")
+      .attr("class", "label")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      //.text("Price")
+    
+    
+  //Below load stars and dollars rating instead of norlmal axis numbers    
+  svg.append("svg:image")
+  svg.append("svg:image")
+   .attr('x',658)
+   .attr('y',420)
+   .attr('width', 90)
+   .attr('height', 90)
+   .attr("xlink:href","http://www.samgshare.com/edav/yelp5Star.png") 
+      
+  svg.append("svg:image")
+   .attr('x',41)
+   .attr('y',420)
+   .attr('width', 90)
+   .attr('height', 90)
+   .attr("xlink:href","http://www.samgshare.com/edav/yelp1Star.png")
+   
+   svg.append("svg:image")
+   .attr('x',-62)
+   .attr('y',339)
+   .attr('width', 55)
+   .attr('height', 90)
+   .attr("xlink:href","http://www.samgshare.com/edav/yelp1Dollar.png")   
+   
+   svg.append("svg:image")
+   .attr('x',-60)
+   .attr('y',19)
+   .attr('width', 55)
+   .attr('height', 90)
+   .attr("xlink:href","http://www.samgshare.com/edav/yelp4Dollar.png") 
+      
+  //pick some categories and load the user preference boundaries
+	setInitRectanges("Japanese");
+	setInitRectanges("American");
+	setInitRectanges("French");
+	setInitRectanges("Chinese");
+	setInitRectanges("Italian");
+	setInitRectanges("Indian");
+      
+  //user selection rectangle
+  svg.append("rect")
+     .attr("x", 0)
+     .attr("y", 0)
+     .attr("width", 0)
+     .attr("height", 0)
+     .attr("rx", 8)
+     .attr("class", "prefBorder")
+     .style("fill", "#ebc074") //transparent
+     .style("stroke", "black")
+     .style("stroke-width", 2)
+     //#ebc074 border stroke:pink;stroke-width:5
+     .style("opacity", .99);
+     
+  //fill in the circles based on the tsv data provided
+  var circles = svg.selectAll(".dot")
+      .data(data)
+      .enter().append("circle")
+      .attr("class", "dot")
+      .attr("r", 3)
+      .attr("cx", function(d) { return x(d.stars); })
+      .attr("cy", function(d) { return y(d.PriceRange); })
+      .style("fill", function(d) { return color(d.catagory); });
+      
+  var legend = svg.selectAll(".legend")
+      .data(color.domain())
+    .enter().append("g")
+      .attr("class", "legend")
+      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+  legend.append("rect")
+      .attr("x", width + 30)
+      .attr("width", 18)
+      .attr("height", 18)
+      .style("fill", color);
+
+  legend.append("text")
+      .attr("x", width + 100)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .style("text-anchor", "end")
+      .text(function(d) { return d; });
+      
+      
+	// what to do when we mouse over a bubble
+	var mouseOn = function() 
+	{ 
+		var circle = d3.select(this);
+
+
+	// transition to increase size/opacity of bubble
+		circle.transition()
+	  .duration(800).style("opacity", 1)
+		.attr("r", diaSelect).ease("elastic");
+		
+
+		// append lines to bubbles that will be used to show the precise data points.
+		// translate their location based on margins
+		svg.append("g")
+			.attr("class", "guide")
+		.append("line")
+			.attr("x1", circle.attr("cx"))
+			.attr("x2", circle.attr("cx"))
+			.attr("y1", +circle.attr("cy") + 26)
+			.attr("y2", h - margin.t - margin.b)
+			.attr("transform", "translate(40,20)")
+			.style("stroke", circle.style("fill"))
+			.transition().delay(200).duration(400).styleTween("opacity", 
+						function() { return d3.interpolate(0, .5); });
+
+		svg.append("g")
+			.attr("class", "guide")
+		.append("line")
+			.attr("x1", +circle.attr("cx") - 16)
+			.attr("x2", 0)
+			.attr("y1", circle.attr("cy"))
+			.attr("y2", circle.attr("cy"))
+			.attr("transform", "translate(40,30)")
+			.style("stroke", circle.style("fill"))
+			.transition().delay(200).duration(400).styleTween("opacity", 
+						function() { return d3.interpolate(0, .5); });
+						
+
+	// function to move mouseover item to front of SVG stage, in case
+	// another bubble overlaps it
+		d3.selection.prototype.moveToFront = function() { 
+		  return this.each(function() { 
+			this.parentNode.appendChild(this); 
+		  }); 
+		};
+
+	// skip this functionality for IE9, which doesn't like it
+		if (!$.browser.msie) {
+			circle.moveToFront();	
+			}
+	};
+	
+	// what happens when we leave a bubble?
+	var mouseOff = function() 
+	{
+		var circle = d3.select(this);
+
+		// go back to original size and opacity
+		circle.transition()
+		.duration(800).style("opacity", 1)
+		.attr("r", diaunSelect).ease("elastic");
+
+		// fade out guide lines, then remove them
+		d3.selectAll(".guide").transition().duration(100).styleTween("opacity", 
+						function() { return d3.interpolate(.5, 0); })
+			.remove()
+	};
+	
+	// what happens when we click?
+	var clickCirle = function(d) 
+	{
+	  	var loc = d.url;
+      document.getElementById('myFrame').setAttribute('src', loc);
+	};
+      
+      
+	// run the mouseon/out functions
+	circles.on("mouseover", mouseOn);
+	circles.on("mouseout", mouseOff);
+	
+	circles.on("click", clickCirle);
+
+	
+	svg.select(".guide").selectAll("text").remove();
+	
+	// tooltips (using jQuery plugin tipsy)
+	circles.append("title")
+			.text(function(d) { return d.name; })
+
+	$(".dot").tipsy({ gravity: 's', });
+	
+
+});
+
+// ** Update data section (Called from the onclick)
+function updateData() 
+{
+  var selected = document.getElementById("fname").value;
+
+  displayOthers = this.checked ? "inline" : "none";
+  display = this.checked ? "none" : "inline";
+
+  //hide all borders to start
+  svg.select(".prefBorderAmerican").style("opacity", 0);
+  svg.select(".prefBorderJapanese").style("opacity", 0);
+  svg.select(".prefBorderChinese").style("opacity", 0);
+  svg.select(".prefBorderItalian").style("opacity", 0);
+  svg.select(".prefBorderFrench").style("opacity", 0);
+  svg.select(".prefBorderIndian").style("opacity", 0);
+
+  //set the  visible borders based on what was found in search filter
+  //StarsMin, StarsMax, PriceMin, PriceMax
+  switch (selected){
+    case "American":
+      svg.select(".prefBorderAmerican").style("opacity", .5);
+      break;
+    case "Japanese":
+      svg.select(".prefBorderJapanese").style("opacity", .5);
+      break;
+    case "Chinese":
+      svg.select(".prefBorderChinese").style("opacity", .5);
+      break;
+    case "Italian":
+      svg.select(".prefBorderItalian").style("opacity", .5);
+      break;
+    case "French":
+      svg.select(".prefBorderFrench").style("opacity", .5);
+      break;
+    case "Indian":
+      svg.select(".prefBorderIndian").style("opacity", .5);
+      break;
+    default:
+    svg.select(".prefBorderAmerican").style("opacity", .1);
+    svg.select(".prefBorderJapanese").style("opacity", .1);
+    svg.select(".prefBorderChinese").style("opacity", .1);
+    svg.select(".prefBorderItalian").style("opacity", .1);
+    svg.select(".prefBorderFrench").style("opacity", .1);
+    svg.select(".prefBorderIndian").style("opacity", .1);
+      break;
+  }
+      
+  //filter datapoints based on the filtering
+  if (!selected)
+  {
+    svg.selectAll(".dot")
+        .filter(function(d) {return selected != d.catagory;})
+        .attr("display", displayOthers);
+        
+    svg.selectAll(".dot")
+        .attr("display", display);
+  
+  }
+  else
+  {
+    svg.selectAll(".dot") // d.catagory.indexOf(selected) <      selected != d.catagory;
+        .filter(function(d) {return selected != d.catagory;})
+        .attr("display", displayOthers);
+        
+    svg.selectAll(".dot")
+        .filter(function(d) {return selected == d.catagory;}) //d.catagory.indexOf(selected) > -1    selected == d.catagory;
+        .attr("display", display);
+  }
+      
+}
+
+//based on initial preferences set the borders 
+function setInitRectanges(Country)
+{
+  var color = "black";
+  var StarsMin, StarsMax, PriceMin, PriceMax;
+  
+  //StarsMin, StarsMax, PriceMin, PriceMax
+  switch (Country){
+    case "American":
+      color = "Green";
+      StarsMin = 3.5;
+      StarsMax = 5.0;
+      PriceMin = 2.0;
+      PriceMax = 4.0;
+      break;
+    case "Japanese":
+      color = "Brown";
+      StarsMin = 4.5;
+      StarsMax = 5.0;
+      PriceMin = 3.0;
+      PriceMax = 4.0;
+      break;
+    case "Chinese":
+      color = "Purple";
+      StarsMin = 2.0;
+      StarsMax = 5.0;
+      PriceMin = 1.0;
+      PriceMax = 1.0;
+      break;
+    case "Italian":
+      color = "Blue";
+      StarsMin = 4.0;
+      StarsMax = 5.0;
+      PriceMin = 1.0;
+      PriceMax = 4.0;
+      break;
+    case "French":
+      color = "Orange";
+      StarsMin = 1.0;
+      StarsMax = 5.0;
+      PriceMin = 4.0;
+      PriceMax = 4.0;
+      break;
+    case "Indian":
+      color = "Red";
+      StarsMin = 3.5; //3.5
+      StarsMax = 5.0; //5.0
+      PriceMin = 1.0;
+      PriceMax = 2.0;
+      break;
+    default:
+      color = "Black";
+      StarsMin = 3.0;
+      StarsMax = 5.0;
+      PriceMin = 1.0;
+      PriceMax = 3.0;
+      break;
+  }
+  
+  //pixel scale for the chart
+  var yLeft =  110*(4 - PriceMax) + 0;
+  var ySize = 110*(PriceMax - PriceMin + 1);
+  var xTop = 150*(StarsMin - 1) + 105;
+  var xSize = 150*(StarsMax - StarsMin + 1) - 105 ;
+  
+  
+  //user preference rectangle
+  svg.append("rect")
+     .attr("x", xTop)
+     .attr("y", yLeft)
+     .attr("width", xSize)
+     .attr("height", ySize)
+     .attr("rx", 8)
+     .style("fill", color) //
+     .attr("class", "prefBorder" + Country)
+     .style("stroke", color)
+     .style("stroke-width", 2)
+     //#ebc074 border stroke:pink;stroke-width:5
+     .style("opacity", .1);
+  
+  return;
+}
+
+
+
+
+//used to scale the user selection rectangle based on the proce and star pref.
+function setRectangle(StarsMin, StarsMax, PriceMin, PriceMax, Color)
+{
+  var yLeft =  110*(4 - PriceMax) + 0;
+  var ySize = 110*(PriceMax - PriceMin + 1);
+  var xTop = 150*(StarsMin - 1) + 105;
+  var xSize = 150*(StarsMax - StarsMin + 1) - 105 ;
+  
+  //user selection rectangle
+  svg.select(".prefBorder")
+   .attr("x", xTop)
+   .attr("y", yLeft)
+   .attr("width", xSize)
+   .attr("height", ySize)
+   .style("fill", Color) 
+   .style("opacity", .5);
+   return;
+}
+
+</script>
+
+<!--Load the yelp iFram to be updated in js above -->
+<iframe src="http://www.yelp.com/" id="myFrame" width="1000" marginwidth="0" height="1500" marginheight="0" align="middle" scrolling="auto"></iframe>
+  </body>
+</html>

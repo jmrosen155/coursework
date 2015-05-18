@@ -1,0 +1,608 @@
+business_id,full_address,schools,open,categories,photo_url,city,review_count,name,neighborhoods,url,longitude,state,stars,latitude,type
+JY576sTpB3ljay2IAajZ2w,"2892 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Food', 'Grocery', 'Delis', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/PkHsY8-SoLvHISDqU95RDg/ms.jpg,New York,76,Milano Market,['Morningside Heights'],http://www.yelp.com/biz/milano-market-new-york,-73.9652725,NY,4.0,40.805698,business
+EHMx2IhI-_ooHQo0N-AnHA,"2163 Frederick Douglass Blvd
+Harlem
+New York, NY 10026",['Columbia University'],False,"['Bars', 'American (New)', 'Nightlife', 'Lounges', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,4,Svntn Below,['Harlem'],http://www.yelp.com/biz/svntn-below-new-york,-73.9551352,NY,3.0,40.804769,business
+8lLs3dsSN-Am2_EtNfbXqA,"2893 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Breakfast & Brunch', 'American (New)', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/IqKj8kMJEe8nyOeIuGRpoA/ms.jpg,New York,346,Community Food & Juice,['Morningside Heights'],http://www.yelp.com/biz/community-food-and-juice-new-york,-73.965675354,NY,3.5,40.8057975769,business
+60f6JzTRhOyOggsjCfvh5Q,"3141 Broadway
+Harlem
+Manhattan, NY 10027",['Columbia University'],True,"['Sushi Bars', 'Japanese', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,Manhattan,6,Hana Sushi,['Harlem'],http://www.yelp.com/biz/hana-sushi-manhattan,-73.9598342,NY,1.5,40.814025,business
+LJuHxobQsa7lW0c1wttY2A,"258 W 109th St
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Soul Food', 'Southern', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/myt7ACwwn0Y2aUMvkBoBfA/ms.jpg,New York,142,Rack & Soul,['Manhattan Valley'],http://www.yelp.com/biz/rack-and-soul-new-york,-73.966873,NY,3.5,40.80334,business
+IIsJN_ilLI36zGAF3SMCCQ,"964 Amsterdam Ave
+Manhattan Valley
+Manhattan, NY 10025",['Columbia University'],True,"['Italian', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,Manhattan,6,La Piccola Cucina,['Manhattan Valley'],http://www.yelp.com/biz/la-piccola-cucina-manhattan,-73.9652178,NY,3.5,40.8014263,business
+fFsEJQB2HhpfXV48ioxzXw,"2104 Frederick Douglass Blvd
+Harlem
+New York, NY 10026",['Columbia University'],False,"['Food', 'Coffee & Tea', 'Breakfast & Brunch', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/wcb9HSQxOWEex6iV53-Njg/ms.jpg,New York,156,Society Coffee,['Harlem'],http://www.yelp.com/biz/society-coffee-new-york-2,-73.9562943,NY,3.5,40.8029602,business
+YRfDdBgWS4T80oJfKmVThA,"2217-23 Frederick Douglas Blvd
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Bars', 'American (New)', 'Nightlife', 'Lounges', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/1a1DruBNdnacO6iAWBGYVQ/ms.jpg,New York,60,Chocolat Restaurant Lounge,['Harlem'],http://www.yelp.com/biz/chocolat-restaurant-lounge-new-york,-73.9536792,NY,3.0,40.8069523,business
+Ev04GeSgAXwKsO1qJiO9xQ,"1346 Amsterdam Ave
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Mexican', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/mXyajZKJp4SmfwXKP3J2jg/ms.jpg,New York,18,Jesus Taco,['Harlem'],http://www.yelp.com/biz/jesus-taco-new-york,-73.9561224,NY,2.5,40.8139108,business
+3ayb8-X8BvPyFh_E6FLyyw,"2756 Broadway
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Gastropubs', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/WGR7fkqsBfnHV5pUoZvrYQ/ms.jpg,New York,29,Five Lamps Tavern,['Manhattan Valley'],http://www.yelp.com/biz/five-lamps-tavern-new-york,-73.9676149,NY,3.5,40.8009294,business
+aZzq3M2xwbNHNSQe2AbAOA,"964 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Sushi Bars', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/dp-c3FADQCyBwSQL7viT1w/ms.jpg,New York,55,Suma Sushi,['Manhattan Valley'],http://www.yelp.com/biz/suma-sushi-new-york-2,-73.9652178,NY,3.5,40.8014263,business
+6ivIw93SATyp6Syc-_k5Eg,"2090 Frederick Douglass Blvd
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Chicken Wings', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/qxv8rxZYdN-j6vxgp5m1vQ/ms.jpg,New York,38,Atomic Wings,['Harlem'],http://www.yelp.com/biz/atomic-wings-new-york-9,-73.9565577,NY,2.0,40.8025243,business
+LvzfVDlvb9r0fcGXeitVKw,"2115 Frederick Douglas Blvd
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Food', 'Juice Bars & Smoothies', 'African', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,9,Cafe 2115,['Harlem'],http://www.yelp.com/biz/cafe-2115-new-york,-73.956475,NY,2.5,40.803468,business
+I_OPhKQDHUXHXDtFOtJCrg,"357 W 125th St
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Pizza', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/oUyPERNaLD8BL0svidgzKg/ms.jpg,New York,18,Presidential Pizza,['Harlem'],http://www.yelp.com/biz/presidential-pizza-new-york,-73.9528844,NY,2.5,40.8110816,business
+C2E1E0o-ssSrf_dokwxTXg,"1239 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['African', 'Ethiopian', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/5X-L20sxRESxELgpW_eoyQ/ms.jpg,New York,89,Massawa,['Morningside Heights'],http://www.yelp.com/biz/massawa-new-york,-73.9587263,NY,3.5,40.8098702,business
+CWk6yFOoKJH5URub5XsHDg,"248 W 106th St
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Chinese', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/7Oz08tesM3m07ptA1nYq7A/ms.jpg,New York,78,East Dumpling House,['Manhattan Valley'],http://www.yelp.com/biz/east-dumpling-house-new-york,-73.96742,NY,3.5,40.800818,business
+S-xUsS4RKzBrOnAjy6lnyA,"934 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Delis', 'Latin American', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/Zq0hT5fRMhBFTwyqVgxWxg/ms.jpg,New York,6,Acosta Antonio,['Manhattan Valley'],http://www.yelp.com/biz/acosta-antonio-new-york,-73.9658484,NY,4.0,40.8002531,business
+p1izzP-7YomYrP2spmOrBQ,"1213 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Delis', 'Sandwiches', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/3RAzdNkobwnuX6XNhxvocA/ms.jpg,New York,58,SubsConscious,['Morningside Heights'],http://www.yelp.com/biz/subsconscious-new-york,-73.9594243,NY,3.0,40.809068,business
+zzh3XNV25Fngor_E72aGWg,"1187 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['American (Traditional)', 'Chicken Wings', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/bf-mHVJmQX1sPlVLpui9QA/ms.jpg,New York,56,Haakon's Hall,['Morningside Heights'],http://www.yelp.com/biz/haakons-hall-new-york,-73.9597761,NY,4.0,40.8082634,business
+Rt0fJK1BA9dQDWSX1usBMg,"303 W 116th Street
+Harlem
+New York, NY 10026",['Columbia University'],True,['Restaurants'],http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,2,New Dragon Kitchen,['Harlem'],http://www.yelp.com/biz/new-dragon-kitchen-new-york,-73.9557708,NY,3.5,40.8047595,business
+uLWP9FVdklJXP37BsT6YIA,"2857 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Vegetarian', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/Lz7I0owgqU0s4c1GmUAQyg/ms.jpg,New York,58,Maoz Vegetarian,['Morningside Heights'],http://www.yelp.com/biz/maoz-vegetarian-new-york-6,-73.9663367,NY,4.0,40.8048653,business
+eCAOhaI3cKSIQUvDWd6MGQ,"975 Columbus Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Food', 'Coffee & Tea', 'Sandwiches', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/MuCYKq09p8Fv8g5x9lbyuA/ms.jpg,New York,44,Zanny's Cafe,['Manhattan Valley'],http://www.yelp.com/biz/zannys-cafe-new-york,-73.9619896,NY,3.5,40.8004423,business
+ZKKRhDiNECZKtdu9CSFz6w,"3153 Broadway
+Harlem
+Manhattan, NY 10027",['Columbia University'],True,"['Chinese', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/ek8fJ3xQZeqI0SdSTsrQNg/ms.jpg,Manhattan,5,Panda Garden Chinese Restaurant,['Harlem'],http://www.yelp.com/biz/panda-garden-chinese-restaurant-manhattan,-73.9594182,NY,3.0,40.8145922,business
+ezgJKW02TGymRkmLb8zzwQ,"256 W 109th St
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Japanese', 'Restaurants', 'Sushi Bars', 'Event Planning & Services', 'Caterers']",http://s3-media2.ak.yelpcdn.com/bphoto/W-CfW6BhfgAGeLWU-EhpLA/ms.jpg,New York,51,Saji Japan Food Enterprises,['Manhattan Valley'],http://www.yelp.com/biz/saji-japan-food-enterprises-new-york,-73.9664335,NY,3.5,40.8032691,business
+QUNchfxuTOOmjAXkHivYdQ,"2200 8th Ave
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Food', 'Bakeries', 'Breakfast & Brunch', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/PIg_qbQGu_hA9YMzyy6Ezg/ms.jpg,New York,91,Patisserie Des Ambassades,['Harlem'],http://www.yelp.com/biz/patisserie-des-ambassades-new-york,-73.9548788,NY,3.5,40.8050538,business
+4rWJGwb3rjDoZHA0AECa5A,"300 W 114th St
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Soul Food', 'American (Traditional)', 'Southern', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/agweV7YGdirfDwIabvx5YQ/ms.jpg,New York,223,Melba's,['Harlem'],http://www.yelp.com/biz/melbas-new-york,-73.9568279,NY,3.5,40.803313,business
+mqccXvBQsRFgB3YsgIWl5A,"3161 Broadway
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Pizza', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/UCTF1bx9XNRBpRJufwobPg/ms.jpg,New York,21,Tom's Delicious Pizza,['Harlem'],http://www.yelp.com/biz/toms-delicious-pizza-new-york,-73.9590975,NY,3.5,40.8148505,business
+DgHEzcSBotbfxW-IJPAMuQ,"2895 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Korean', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/vSDDTvz9bQVKT66DZbdX4Q/ms.jpg,New York,128,Mill Korean,['Morningside Heights'],http://www.yelp.com/biz/mill-korean-new-york,-73.9656187,NY,3.0,40.805995,business
+bEec28P1CziowM9LrNkNsg,"301 W 110th St
+Harlem
+New York, NY 10025",['Columbia University'],True,"['Cafes', 'American (New)', 'French', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/UYdZirLegslj2XOxrMlfQQ/ms.jpg,New York,65,Cafe Amrita,['Harlem'],http://www.yelp.com/biz/cafe-amrita-new-york,-73.958433,NY,3.5,40.801053,business
+TS1eYydoWdk9HwOUXhAgXg,"116th St & Amsterdam Ave
+Morningside Heights
+Manhattan, NY 10027",['Columbia University'],True,"['Food Stands', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,Manhattan,2,Hoda Halal Cart,['Morningside Heights'],http://www.yelp.com/biz/hoda-halal-cart-manhattan,-73.9610786,NY,4.5,40.8068145,business
+-AQJhfna4qcxfDnCGx_yLA,"2911 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Cuban', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/y8U0lYkpXPySUjJIV3DpLA/ms.jpg,New York,219,Havana Central,['Morningside Heights'],http://www.yelp.com/biz/havana-central-new-york-8,-73.9650678635,NY,3.0,40.8064683572,business
+EtHDmvirGVYBXX3kUmQQrQ,"2072 Frederick Douglass Blvd
+Harlem
+New York, NY 10026",['Columbia University'],True,"['American (New)', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/cyF-_6UzvOVq-jbd6LKSCg/ms.jpg,New York,89,5 & Diamond,['Harlem'],http://www.yelp.com/biz/5-and-diamond-new-york,-73.956847,NY,3.5,40.801889,business
+D3Sw_VHsaQGYdQjsZDv-Nw,"2857 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],False,"['Latin American', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,12,Empanada Joe's,['Morningside Heights'],http://www.yelp.com/biz/empanada-joes-new-york,-73.9663362,NY,1.5,40.8048651,business
+nrceacHfm6Ada7aAiTXtkg,"353 W 125th St
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Delis', 'Sandwiches', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/kAKxUFZPHqh1t0rV7uwSig/ms.jpg,New York,4,Omega Gourmet Deli,['Harlem'],http://www.yelp.com/biz/omega-gourmet-deli-new-york,-73.952578,NY,4.5,40.810931,business
+PXWGgHRDcG6mxuOJTAX4uQ,"2801 Broadway
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Delis', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,5,Famous Deli,['Manhattan Valley'],http://www.yelp.com/biz/famous-deli-new-york-3,-73.9676674,NY,4.0,40.8029695,business
+ugekAf0_3hreoD5VJQjkCg,"1272 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Food', 'Desserts', 'Breakfast & Brunch', 'American (Traditional)', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/NHuefBTrBUbgmYMPVyg_FA/ms.jpg,New York,280,Kitchenette Uptown,['Morningside Heights'],http://www.yelp.com/biz/kitchenette-uptown-new-york,-73.9579978,NY,3.5,40.8112347,business
+nDMnZFjvDqon5qKGMaHfVA,"969 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Thai', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/DbNKTyfK-3eWq39R4Y_THw/ms.jpg,New York,94,Wondee Siam V,['Manhattan Valley'],http://www.yelp.com/biz/wondee-siam-v-new-york,-73.9648251,NY,3.5,40.8014147,business
+yQk97Xh9kBZOrE3vWFB79g,"2857 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],False,['Restaurants'],http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,4,Wrapp Factory,['Morningside Heights'],http://www.yelp.com/biz/wrapp-factory-new-york,-73.9665756,NY,3.0,40.8048128,business
+4n4wMkDnDY7cuWOya8UumA,"409 W 125th Street
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Pizza', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/NzW5Gim185yE17OgZkE0UA/ms.jpg,New York,10,Domino's Pizza,['Harlem'],http://www.yelp.com/biz/dominos-pizza-new-york-5,-73.9543876,NY,2.0,40.8117391,business
+hD55NUiGDK7STQ8oy9QDPA,"2885 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['French', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/-Oep52VPOUuE-v5karp8kg/ms.jpg,New York,170,Le Monde,['Morningside Heights'],http://www.yelp.com/biz/le-monde-new-york-3,-73.9658802,NY,3.0,40.8057564,business
+SvuJs-3p4H3FZaoF3K3y3g,"973 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Latin American', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/uMvnmTYi-HqyeSVhrh2_iA/ms.jpg,New York,10,El Rey De La Caridad,['Manhattan Valley'],http://www.yelp.com/biz/el-rey-de-la-caridad-new-york,-73.9648713,NY,4.0,40.801589,business
+sqkSG2pAisfCfgtfkig2xw,"435 W 125th St
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Bars', 'African', 'Ethiopian', 'Nightlife', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/rguy43FajqTwbunqPMUXkA/ms.jpg,New York,4,Cafe Addis,['Harlem'],http://www.yelp.com/biz/cafe-addis-new-york,-73.9551986,NY,3.0,40.8124011,business
+1Ps3-IJycqFpR0uyii2HRQ,"254 W 108th St
+Manhattan Valley
+Manhattan, NY 10025",['Columbia University'],True,"['Vietnamese', 'Sandwiches', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/5f283BpLkxoUnN19KTpfyA/ms.jpg,Manhattan,36,Quick & Quality Sandwich,['Manhattan Valley'],http://www.yelp.com/biz/quick-and-quality-sandwich-manhattan,-73.9670482,NY,4.0,40.8026871,business
+ahr0chRA-xpmq2xV_gnb3w,"1268 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],False,"['Restaurants', 'Japanese', 'Vietnamese']",http://s3-media3.ak.yelpcdn.com/bphoto/0I1ruthnSKqi2KZW3q5sBw/ms.jpg,New York,57,Saga,['Morningside Heights'],http://www.yelp.com/biz/saga-new-york-4,-73.958314,NY,3.0,40.811107,business
+khYxvvCKRiR-wqMSbFzFmg,"1231 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Italian', 'Sandwiches', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/wb0Cirh1cxYtQLPCPLrg3w/ms.jpg,New York,50,Panino Sportivo Roma,['Morningside Heights'],http://www.yelp.com/biz/panino-sportivo-roma-new-york,-73.9587313,NY,3.5,40.8097058,business
+Rx3m7vtf-eWBSQ4AavQl8g,"1345 Amsterdam Ave
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Food', 'Coffee & Tea', 'Breakfast & Brunch', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/qkeODpjArvi16FbRrx0sUA/ms.jpg,New York,3,Jimbo's Coffee Shop,['Harlem'],http://www.yelp.com/biz/jimbos-coffee-shop-new-york,-73.955775,NY,3.5,40.8136,business
+UWGlfeD5n8GbASXPBztVIQ,"431 W 121st St
+Morningside Heights
+New York, NY 10027",['Columbia University'],False,"['Food', 'Coffee & Tea', 'Sandwiches', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/H4UbhTwtrI_yB67uQHDi6g/ms.jpg,New York,23,Cafe Fresh,['Morningside Heights'],http://www.yelp.com/biz/cafe-fresh-new-york,-73.95844,NY,3.0,40.809916,business
+tz_BWXOSswOpActxGCPBkw,"271 W 119th St
+Harlem
+New York, NY 10026",['Columbia University'],False,"['Moroccan', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/RaCg9ulipeieMS3sO8db-w/ms.jpg,New York,2,Elle & Lui,['Harlem'],http://www.yelp.com/biz/elle-and-lui-new-york,-73.9531754,NY,3.0,40.8061434,business
+GDELvDNJGYooK__jXu6foA,"2217-23 Frederick Douglass Blvd.
+Harlem
+New York, NY 10026",['Columbia University'],True,"['International', 'American (New)', 'Nightlife', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/tD0OfUZLoqOQVwkYLODLbg/ms.jpg,New York,13,Chocolat Lounge,['Harlem'],http://www.yelp.com/biz/chocolat-lounge-new-york,-73.9537425,NY,2.5,40.8066782,business
+b2d8CP6sKQotFjzZX0Thtw,"2076 8th Ave
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Chinese', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/hw-BnltS8FYkvrqeYrTABQ/ms.jpg,New York,2,Szechuan Garden Kitchen,['Harlem'],http://www.yelp.com/biz/szechuan-garden-kitchen-new-york,-73.956872,NY,3.5,40.8021092,business
+DMXkPjaKCMQjNB-_Ll5geQ,"951 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Mexican', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/FpjEl-ReCPZfK3OnXjwDLA/ms.jpg,New York,90,Blockheads,['Manhattan Valley'],http://www.yelp.com/biz/blockheads-new-york-5,-73.965063,NY,3.0,40.800754,business
+xBF3jvTc5knr9RvtV4mOWA,"301 West 110th Street
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Pizza', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/xpfoJ1zhGGr18E-vePvNoQ/ms.jpg,New York,8,Papa John's Pizza,['Harlem'],http://www.yelp.com/biz/papa-johns-pizza-new-york-3,-73.958433,NY,2.5,40.801053,business
+KgfFn5Z51DZoUzhJ186a0A,"2791 Broadway
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Indian', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/YovM8XEnUiVKDnAogyPG1Q/ms.jpg,New York,80,Indian Cafe,['Manhattan Valley'],http://www.yelp.com/biz/indian-cafe-new-york-2,-73.9680355,NY,3.5,40.802762,business
+OrCXDG0nyWd3mjrodikI8Q,"2814 Broadway
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Delis', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/OiLJ744Cz6JMwZbmn0lA9g/ms.jpg,New York,10,Crystal Gourmet,['Manhattan Valley'],http://www.yelp.com/biz/crystal-gourmet-new-york,-73.9665077,NY,3.0,40.8042504,business
+vZ5-JXlJS75k8wmPNS5U5w,"1274 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Italian', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/LF1O7OkUABAUp82cDpbbQg/ms.jpg,New York,190,Max Soha,['Morningside Heights'],http://www.yelp.com/biz/max-soha-new-york,-73.9578375,NY,4.0,40.811199,business
+U7UVERrPVvLJ8HN6TI92DQ,"2896 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Diners', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/XXNdLihiMk828-xabTrQAQ/ms.jpg,New York,169,Deluxe on Broadway,['Morningside Heights'],http://www.yelp.com/biz/deluxe-on-broadway-new-york,-73.9652083,NY,3.0,40.8058098,business
+g8vu1G_fZLrPpGf2UHk6-Q,"990 Columbus Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Breakfast & Brunch', 'Creperies', 'French', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/gRsHPOUEFLQGGAqXkxwANA/ms.jpg,New York,203,Crepes on Columbus,['Manhattan Valley'],http://www.yelp.com/biz/crepes-on-columbus-new-york,-73.961768,NY,4.0,40.8010745,business
+vQTMu1jkFZUIkb_EmYPa9w,"1028 Amsterdam Ave
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Mexican', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/efklFXtk2Ffn06Qc83rV_w/ms.jpg,New York,22,Cinco De Mayo Restaurant,['Morningside Heights'],http://www.yelp.com/biz/cinco-de-mayo-restaurant-new-york,-73.963849,NY,2.5,40.803635,business
+2m5gtNQnTgKchpFK6ZiOOg,"1172 Amsterdam Ave
+300 Avery Hall
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Sandwiches', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/xogze_bp524opwjnP5B_Zg/ms.jpg,New York,17,Brownie's Cafe,['Morningside Heights'],http://www.yelp.com/biz/brownies-cafe-new-york,-73.9606979,NY,4.0,40.8073617,business
+xGos8tSzLwO3J8mEk3z_2A,"973 Columbus Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Cafes', 'French', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/21PQfOfpkXH1ukrjNQIGWQ/ms.jpg,New York,129,A Cafe New York,['Manhattan Valley'],http://www.yelp.com/biz/a-cafe-new-york-new-york-2,-73.9624449,NY,4.0,40.7995742,business
+AeFCye5vFfyJzlKngrzrNA,"2955 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],False,"['Korean', 'Vietnamese', 'Thai', 'Japanese', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/aMABoyy_y0UQrdbB_Ib9Ng/ms.jpg,New York,46,Caffe Swish,['Morningside Heights'],http://www.yelp.com/biz/caffe-swish-new-york,-73.9640863,NY,2.5,40.8076042,business
+JCeKdD3GcqEiIpS1hGTqlQ,"601 W 114th St
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Mexican', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/LY06bTWDgWapVPtoRcdYgQ/ms.jpg,New York,5,Local Flavor Burrito Shop,['Morningside Heights'],http://www.yelp.com/biz/local-flavor-burrito-shop-new-york,-73.9649422,NY,3.0,40.8067625,business
+BQcgpQxUM39PMO_YDl_CqA,"993 Columbus Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Soul Food', 'Caribbean', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/uJSUQFyiJj6Q6ekg0YvWpg/ms.jpg,New York,100,Freda's Caribbean & Soul Cuisine,['Manhattan Valley'],http://www.yelp.com/biz/fredas-caribbean-and-soul-cuisine-new-york,-73.961259,NY,4.0,40.800871,business
+bWasMbk9JZLQLQf_EUr2Sg,"1207 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Bars', 'American (New)', 'Nightlife', 'Lounges', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/LuxuXOMAist2P31OTL5O2Q/ms.jpg,New York,95,Amsterdam Restaurant & Tapas Lounge,['Morningside Heights'],http://www.yelp.com/biz/amsterdam-restaurant-and-tapas-lounge-new-york-3,-73.9593312,NY,3.0,40.8088802,business
+Zgf2Thpp7LeYE_Bg0QDzDg,"2888 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],False,['Restaurants'],http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,10,Pertutti Cafe,['Morningside Heights'],http://www.yelp.com/biz/pertutti-cafe-new-york,-73.9652799,NY,1.5,40.805601,business
+Ftu5JVoK5JEZAc-YABU0oQ,"1237 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Pakistani', 'Indian', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/04dGU-Wr8quCHhkqTJvbrA/ms.jpg,New York,45,Ajanta,['Morningside Heights'],http://www.yelp.com/biz/ajanta-new-york,-73.9588511,NY,2.5,40.8098709,business
+VAkdznBlCPQ7KFvm-Kma0g,"3157 Broadway
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Bars', 'American (New)', 'Nightlife', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/1Au25qi9uBeNSTas4Moqhg/ms.jpg,New York,136,Toast,['Harlem'],http://www.yelp.com/biz/toast-new-york-6,-73.9592936,NY,3.5,40.8147719,business
+Ki2-LougDEv34G5EY1sz4g,"953 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Latin American', 'Caribbean', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/IVJ5_2SgliqfDVsCfC9QFA/ms.jpg,New York,26,Tropical Sensation Restaurant,['Manhattan Valley'],http://www.yelp.com/biz/tropical-sensation-restaurant-new-york,-73.965025,NY,3.5,40.800818,business
+VrlIP1YgXwvCQlQ1PTExkg,"2224 Frederick Douglass Blvd.
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Italian', 'Pizza', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/x_ZZjxe8FRZPioy17Uyzjg/ms.jpg,New York,66,Bad Horse Pizza,['Harlem'],http://www.yelp.com/biz/bad-horse-pizza-new-york,-73.9535485,NY,3.5,40.8068839,business
+yw2yc4OlDDf-5g9DcUtpuw,"525 W 120th St
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Food Stands', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/dLQTd40jXm0ZcU-1IFc5VQ/ms.jpg,New York,12,Grace Dodge Cafe,['Morningside Heights'],http://www.yelp.com/biz/grace-dodge-cafe-new-york,-73.9592589,NY,3.0,40.8095665,business
+yo_WAOnE2pPHCQduq_V_ZA,"544 W 113th St
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Greek', 'Mediterranean', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/O1D7ZHNw4Yu4LBTIE-xP2w/ms.jpg,New York,72,Symposium Greek Restaurant,['Morningside Heights'],http://www.yelp.com/biz/symposium-greek-restaurant-new-york,-73.9643813,NY,3.5,40.8056285,business
+K-wyXXi5lPM2cwaV9_vXcQ,"1090 Amsterdam Ave
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Greek', 'Delis', 'Pizza', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/_zy6XcN3ILmBLl7D7tQytA/ms.jpg,New York,32,Strokos Gourmet Deli,['Morningside Heights'],http://www.yelp.com/biz/strokos-gourmet-deli-new-york,-73.9621317,NY,3.0,40.8053548,business
+PQrCluMVsWTGvloynpKBog,"936 Amsterdam Ave
+Manhattan Valley
+Manhattan, NY 10025",['Columbia University'],False,"['American (New)', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/jsRHZ4tqmip18oWlFvkCJQ/ms.jpg,Manhattan,32,The Neighborhood,['Manhattan Valley'],http://www.yelp.com/biz/the-neighborhood-manhattan-2,-73.965906,NY,3.5,40.800714,business
+nGgdoc8XIYYb055OIu4SgQ,"2800 Broadway
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Diners', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/cWu5HDLuUusrV458EJaoYg/ms.jpg,New York,22,Westway Cafe,['Manhattan Valley'],http://www.yelp.com/biz/westway-cafe-new-york,-73.9672942,NY,3.0,40.8028863,business
+LdHt0nc2RJ6BBvR0itYNpg,"2893 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],False,"['Bars', 'Mexican', 'Nightlife', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,5,Nacho's Kitchen,['Morningside Heights'],http://www.yelp.com/biz/nachos-kitchen-new-york,-73.9657394,NY,2.0,40.8059046,business
+L7J7eDgJTIctG8JzvMooMw,"2168 Frederick Douglass Blvd
+Harlem
+New York, NY 10026",['Columbia University'],False,"['Italian', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/pzagq79hezbGL396AG5W3Q/ms.jpg,New York,23,Frizzante,['Harlem'],http://www.yelp.com/biz/frizzante-new-york,-73.9548817,NY,2.5,40.8050551,business
+Y2I946V78wOdwaUD9chmqg,"994 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Indian', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/qyJRbsFfI0Xqm3oQLbMPKQ/ms.jpg,New York,159,Roti Roll - Bombay Frankie,['Manhattan Valley'],http://www.yelp.com/biz/roti-roll-bombay-frankie-new-york,-73.9641953,NY,4.0,40.8025174,business
+5dzFMuClH9CDvfaUuIKWeg,"1003 Columbus Ave
+Ste A
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Chinese', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,3,Hunan's Kitchen,['Manhattan Valley'],http://www.yelp.com/biz/hunans-kitchen-new-york,-73.9611369,NY,3.5,40.8013646,business
+IRQmUno4GQMvEDifCXO-cw,"3141 Broadway
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Japanese', 'Chinese', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/kjlcbZGv76IK87KFLYNYvA/ms.jpg,New York,27,China Place,['Harlem'],http://www.yelp.com/biz/china-place-new-york,-73.9597073,NY,2.0,40.8139944,business
+hlkCbViTRlQ5-lx8gopeoA,"1225 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Food', 'Grocery', 'Delis', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/T4jMJ-6Xq-HOQWtRquqWBA/ms.jpg,New York,84,Apple Tree Supermarket,['Morningside Heights'],http://www.yelp.com/biz/apple-tree-supermarket-new-york-2,-73.9589077,NY,3.0,40.809492,business
+n1C1A6jmHKRjqO0yNRidgA,"2847 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],False,"['Food', 'Convenience Stores', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,7,Jas Mart,['Morningside Heights'],http://www.yelp.com/biz/jas-mart-new-york-2,-73.9665175,NY,3.5,40.8045774,business
+fEzgfxIbWXJYo9ttAYfjPQ,"West 120th Street
+b/w B'way and Amsterdam, nearest to 530 W. 120th
+b/w B'way and Amsterdam, nearest to 530 W. 120th
+Harlem
+New York, NY",['Columbia University'],True,"['Halal', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,4,120th Street Halal Cart,['Harlem'],http://www.yelp.com/biz/120th-street-halal-cart-new-york,-73.953503,NY,3.0,40.806979,business
+J9Yufym0BqTYVNTqW-n3ag,"553 Manhattan Ave
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Wine Bars', 'Bars', 'American (New)', 'Nightlife', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,7,Perk's,['Harlem'],http://www.yelp.com/biz/perks-new-york,-73.953895,NY,3.0,40.809463,business
+WcjveH0MyzqQC8lgKviSFQ,"973 Columbus Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],False,"['French', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/dN-NR6Qg7rmE8Sl53_5yBg/ms.jpg,New York,27,La Belle,['Manhattan Valley'],http://www.yelp.com/biz/la-belle-new-york,-73.9618507,NY,4.5,40.8003582,business
+KjFr-ZMtvlgf4l6NbPtCBQ,"1302 Amsterdam Ave.
+Harlem
+Manhattan, NY 10027",['Columbia University'],False,"['Pizza', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/9AUSDpXt52z3-5wl6KT_bw/ms.jpg,Manhattan,4,Family Affair,['Harlem'],http://www.yelp.com/biz/family-affair-manhattan,-73.9573194,NY,4.0,40.8119407,business
+OZtXG5DUsJZrtMFWodCNnA,"2100 Frederick Douglass Blvd
+Harlem
+New York, NY 10026",['Columbia University'],True,"['American (New)', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/tc-v31p2NukNnpR0d1dgZQ/ms.jpg,New York,18,Harlem Food Bar,['Harlem'],http://www.yelp.com/biz/harlem-food-bar-new-york,-73.9562594891,NY,2.5,40.8035122894,business
+by-1gi7evrPKSUmeaN1sXw,"964 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Food', 'Coffee & Tea', 'Pizza', 'Diners', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,7,Jumbo Pizza Coffee Shop,['Manhattan Valley'],http://www.yelp.com/biz/jumbo-pizza-coffee-shop-new-york,-73.9652171,NY,4.0,40.8014275,business
+75Q-TMhx81R1yfXSGaMcTQ,"417 Manhattan Ave
+Ste 2
+Harlem
+Manhattan, NY 10026",['Columbia University'],True,"['Food Delivery Services', 'Food', 'Gluten-Free', 'Vegan', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/uvL6XVziGjrU0OhI4JMtrg/ms.jpg,Manhattan,5,PerryBrook Foods,['Harlem'],http://www.yelp.com/biz/perrybrook-foods-manhattan,-73.9563392,NY,5.0,40.806058,business
+yue8UWXtQ38ddVn0fqAn0A,"185 St Nicholas Ave
+Harlem
+Manhattan, NY 10026",['Columbia University'],True,"['French', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/c2QaieYCkbrbnrEdj--Hsw/ms.jpg,Manhattan,63,Cedric French Bistro and Bar,['Harlem'],http://www.yelp.com/biz/cedric-french-bistro-and-bar-manhattan,-73.9530551,NY,4.0,40.8061617,business
+XCzjwOmvy_QROtczP8YlCA,"965 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Pizza', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/EunYRWiFJ2IsBE2sx0aEfQ/ms.jpg,New York,6,Domino's Pizza,['Manhattan Valley'],http://www.yelp.com/biz/dominos-pizza-new-york-21,-73.9648744,NY,3.0,40.8013336,business
+7ZjXpKwP78R-02w12kLT4w,"2888 Broadway
+Morningside Heights
+Manhattan, NY 10025",['Columbia University'],True,"['Italian', 'Pizza', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,Manhattan,18,Il Cibreo,['Morningside Heights'],http://www.yelp.com/biz/il-cibreo-manhattan-2,-73.9652799,NY,3.0,40.805601,business
+geTFpY84Tp-nVTXflnxtDA,"1024 Amsterdam Ave
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Italian', 'Pizza', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/h8wB8vNXh84Wi8HNhvTl9Q/ms.jpg,New York,100,V & T Pizzeria & Restaurant,['Morningside Heights'],http://www.yelp.com/biz/v-and-t-pizzeria-and-restaurant-new-york,-73.9638447,NY,3.5,40.8033208,business
+_Dc5E16rCL16j2xsUHw18Q,"998 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],False,"['Coffee & Tea', 'Food', 'Bars', 'Nightlife', 'Lounges', 'American (New)', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/lKynGGaM3gbzFQyKLET-PA/ms.jpg,New York,112,Sip,['Manhattan Valley'],http://www.yelp.com/biz/sip-new-york,-73.9643289,NY,3.0,40.8026442,business
+DGPkpfu9hm-ETpU6jL-ujQ,"3496 Broadway
+Harlem
+New York, NY 10027",['Columbia University'],False,"['Latin American', 'Mexican', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/hyO0elUhtOLKHj3sbzf3AA/ms.jpg,New York,13,La Posada,['Harlem'],http://www.yelp.com/biz/la-posada-new-york-2,-73.953343,NY,3.5,40.811452,business
+gmZGeYqlPR6dBwdBZ0K4Bg,"1344 Amsterdam Ave
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Caribbean', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/4P7FDemmK3aSxy7L1PFurQ/ms.jpg,New York,4,Golden Krust,['Harlem'],http://www.yelp.com/biz/golden-krust-new-york-2,-73.9561679,NY,3.5,40.8138102,business
+n_KosOPSHS81Yq0D6X3peQ,"3151 Broadway
+Harlem
+Manhattan, NY 10027",['Columbia University'],True,"['Fast Food', 'Middle Eastern', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/MWkPKBO4om748mhPzWHRXQ/ms.jpg,Manhattan,32,Falafel On Broadway,['Harlem'],http://www.yelp.com/biz/falafel-on-broadway-manhattan,-73.9595044,NY,4.0,40.8144715,business
+dz1qvyImYe6lG-UEU0VkTQ,"1018 Amsterdam Ave
+Manhattan Valley
+New York City, NY 10025",['Columbia University'],True,"['American (New)', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/PtUwiqWgUp9aYqLTYRPU0A/ms.jpg,New York City,90,Bistro Ten 18,['Manhattan Valley'],http://www.yelp.com/biz/bistro-ten-18-new-york-city,-73.9641726,NY,3.5,40.8029635,business
+XSZDmxCJIJ5BVXHwjDR5ag,"383 W 125th St
+Harlem
+New York, NY 10027",['Columbia University'],False,['Restaurants'],http://s3-media2.ak.yelpcdn.com/bphoto/oPYFBdY5kp3kM2BbsTo1mg/ms.jpg,New York,8,M & G Diner,['Harlem'],http://www.yelp.com/biz/m-and-g-diner-new-york,-73.9537373,NY,4.5,40.8114719,business
+wZkZmjZEJDraLJgAalnHvA,"125 La Salle St
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Italian', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/Fa3m5JeXXa7COAqcDv2e2g/ms.jpg,New York,248,Pisticci,['Harlem'],http://www.yelp.com/biz/pisticci-new-york,-73.9603025,NY,4.0,40.8141216,business
+h37hllqEt6v9HGqzdiupow,"953 Columbus Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Food', 'Bakeries', 'Gluten-Free', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/-i0XeNQWb9j5ZOuaCL_Inw/ms.jpg,New York,16,One Cup Two Cupcakes,['Manhattan Valley'],http://www.yelp.com/biz/one-cup-two-cupcakes-new-york,-73.9623379,NY,3.5,40.7997184,business
+nfHJNQyVw4M6VTx5bqvnxw,"2937 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],False,"['Italian', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/ZY3TfRV7Bq87BVSD6owQFg/ms.jpg,New York,39,Pinnacle,['Morningside Heights'],http://www.yelp.com/biz/pinnacle-new-york-2,-73.9645456,NY,3.0,40.8073171,business
+Hc-uW3uYqAOyB2as00J9og,"2935 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Specialty Food', 'Ethnic Food', 'Japanese', 'Food', 'Convenience Stores', 'Sandwiches', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/3GTTcV4ymeCTc4-0_8cxFQ/ms.jpg,New York,114,M2M,['Morningside Heights'],http://www.yelp.com/biz/m2m-new-york-2,-73.9647724,NY,4.0,40.8072295,business
+vHzWvZYbkoHY_071J-lPRw,"2867 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Burgers', 'Bars', 'American (Traditional)', 'Nightlife', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/8L2mVPCRJYW5EhoX2ZR7pw/ms.jpg,New York,141,The Heights Bar & Grill,['Morningside Heights'],http://www.yelp.com/biz/the-heights-bar-and-grill-new-york-3,-73.966209,NY,3.5,40.805159,business
+9aEtX7MDFjEtm5ySOViRUw,"2118 Frederick Douglass Blvd
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Sushi Bars', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/fotYxYz4hzMIW2FMje3yoA/ms.jpg,New York,34,Jado Sushi,['Harlem'],http://www.yelp.com/biz/jado-sushi-new-york,-73.955824,NY,4.0,40.80328,business
+wxrlMnjni_UanASIp4dq2g,"1262 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Italian', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/ktEYZZCn2Gl36ghQKAct-A/ms.jpg,New York,92,Max Café,['Morningside Heights'],http://www.yelp.com/biz/max-caf%C3%A9-new-york-2,-73.9581284,NY,3.5,40.8108422,business
+tbg4gR3jUUllR28cySo2kg,"947 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Ethiopian', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/YHbeHnQxyen9NeYlowDmZA/ms.jpg,New York,172,Awash,['Manhattan Valley'],http://www.yelp.com/biz/awash-new-york-2,-73.9653604,NY,4.0,40.8007227,business
+nAHhu6ZdaSN_qEmW2U1k_A,"1187 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],False,"['American (New)', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,6,Radio Perfecto,['Morningside Heights'],http://www.yelp.com/biz/radio-perfecto-new-york,-73.9599444,NY,2.5,40.8083067,business
+Ksadbzi6BFnyDH9QM9rWkw,"280 St. Nicholas Ave
+2nd Fl
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Arts & Entertainment', 'Pizza', 'Arcades', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/ueZ2lD6pB0xywm7S5kcT5w/ms.jpg,New York,10,Chuck E. Cheese's,['Harlem'],http://www.yelp.com/biz/chuck-e-cheeses-new-york,-73.952139,NY,3.0,40.810105,business
+kg8_LyP0TvxkcTxP8d0riw,"2288 Fredrick Douglass Blvd
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Pizza', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/AKapzTwUJtpTW833ta8qnw/ms.jpg,New York,16,Pizzeria 123,['Harlem'],http://www.yelp.com/biz/pizzeria-123-new-york,-73.9521521,NY,3.0,40.8088229,business
+X2KeJ4OdlkzTEpCETaaoCw,"501 W 125th St
+Harlem
+New York, NY 10027",['Columbia University'],False,"['Soup', 'Delis', 'Caribbean', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,7,Pino's Cafe,['Harlem'],http://www.yelp.com/biz/pinos-cafe-new-york,-73.9562399,NY,4.0,40.8137789,business
+eVZGBIWAmQxiTwVYA0pjWA,"946 Columbus Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Specialty Food', 'Ethnic Food', 'Halal', 'Food', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,4,Little Gujrat Deli,['Manhattan Valley'],http://www.yelp.com/biz/little-gujrat-deli-new-york,-73.962932,NY,3.0,40.799722,business
+8oHCb-XvLpqCQD7En17Fzw,"2843 Broadway
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Mexican', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/wLBz0C_Mudhb-0pAk7QTvQ/ms.jpg,New York,32,Chipotle,['Manhattan Valley'],http://www.yelp.com/biz/chipotle-new-york-4,-73.9667378,NY,3.5,40.8044664,business
+pDEvJfSbXV6RaxDTwNTmWQ,"390 Manhattan Ave
+Harlem
+Manhattan, NY 10026",['Columbia University'],True,"['Breakfast & Brunch', 'Sandwiches', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/5T8lOWvLxtfpmb2ij6Foyg/ms.jpg,Manhattan,14,The Orange Peel,['Harlem'],http://www.yelp.com/biz/the-orange-peel-manhattan,-73.956388,NY,4.5,40.8054246,business
+osuamA7_d3iHOuniXiGu3g,"1030 Amsterdam Ave
+Morningside Heights
+New York, NY 10025",['Columbia University'],False,"['Delis', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/jT5cpZ4Nm4fBejKWvdzqzw/ms.jpg,New York,34,P & W Sandwich Shop,['Morningside Heights'],http://www.yelp.com/biz/p-and-w-sandwich-shop-new-york,-73.9636867,NY,4.0,40.8035488,business
+ZiLCt6uZlGY61roYdfeqWA,"949 Columbus Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],False,"['Italian', 'French', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/lp49O0ddA-aAcsykIOTGhw/ms.jpg,New York,52,Voza,['Manhattan Valley'],http://www.yelp.com/biz/voza-new-york-2,-73.962398,NY,4.0,40.7996075,business
+aVBHU_OAEau7sdk73EpNwA,"355 W 116th St
+Harlem
+New York, NY 10026",['Columbia University'],False,"['African', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/HCLhVnUMSF-e3pQOeOgMmA/ms.jpg,New York,16,Kuti's,['Harlem'],http://www.yelp.com/biz/kutis-new-york,-73.957029,NY,4.0,40.8051343,business
+-6ncX3fnQ9OLCjfiUe-kFg,"2957 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Chinese', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/8YMq9XpZieHg2rkXy-hslQ/ms.jpg,New York,171,Ollie's,['Morningside Heights'],http://www.yelp.com/biz/ollies-new-york,-73.9643707275,NY,2.0,40.807975769,business
+Lr_x2ey_DQs_8ACS-1t7rA,"271 West 119th St
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Soul Food', 'Bars', 'Nightlife', 'Lounges', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/Z0fT42gx9Z89AaMNwOeg6w/ms.jpg,New York,37,Billie's Black,['Harlem'],http://www.yelp.com/biz/billies-black-new-york,-73.9532045,NY,3.5,40.806222,business
+A46G2OAvLxFswiONB50Rrg,"2848 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Pizza', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/OOI3c4GFqcecgbhKimHKRA/ms.jpg,New York,330,Koronet Pizza,['Morningside Heights'],http://www.yelp.com/biz/koronet-pizza-new-york,-73.966055,NY,3.5,40.804419,business
+ffp58kYSK7dJGs5ER-5txw,"1260 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Italian', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/xH8LtjHzKL6PzHgX_OPMkQ/ms.jpg,New York,72,Sezz Medi,['Morningside Heights'],http://www.yelp.com/biz/sezz-medi-new-york,-73.9581542,NY,3.0,40.8107792,business
+K-vL-ShpGsgbwf5chcE6vg,"2893 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],False,"['Mexican', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,4,Nacho Mama's Burritos,['Morningside Heights'],http://www.yelp.com/biz/nacho-mamas-burritos-new-york,-73.9657394,NY,2.0,40.8059046,business
+uCsyRxfIfiRqQQuK_JlfZA,"301 W 116th St
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Pubs', 'Bars', 'American (New)', 'Nightlife', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/GuN2UdZBIh6dh8jWPJqw7g/ms.jpg,New York,228,Harlem Tavern,['Harlem'],http://www.yelp.com/biz/harlem-tavern-new-york,-73.955388,NY,3.5,40.8044447,business
+EagYyiLaNjIVJ_HFDwlGBQ,"2756 Broadway
+Manhattan Valley
+New York, NY 10025",['Columbia University'],False,"['Italian', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,14,Meridiana Restaurant,['Manhattan Valley'],http://www.yelp.com/biz/meridiana-restaurant-new-york,-73.9676149,NY,3.0,40.8009294,business
+qT9P64pYtAEjipB4SXGolA,"2850 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],False,['Restaurants'],http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,27,Tomo Sushi & Sake Bar,['Morningside Heights'],http://www.yelp.com/biz/tomo-sushi-and-sake-bar-new-york,-73.9661507,NY,3.0,40.8045203,business
+7pMyF2qq9pqMfzLZEvrohA,"1131 Amsterdam Ave
+at 116th St
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Delis', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/sN4vcLt9pDPh_0w8PARg3Q/ms.jpg,New York,53,Hamilton Deli,['Morningside Heights'],http://www.yelp.com/biz/hamilton-deli-new-york,-73.961271,NY,3.5,40.8065347,business
+x6ZI-_J7X9WK17l77x53-w,"945 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Delis', 'Sandwiches', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,3,Columbia Deli,['Manhattan Valley'],http://www.yelp.com/biz/columbia-deli-new-york,-73.9654038,NY,4.0,40.8006527,business
+51DwJDP5TOlsCQYc0GQdVQ,"1288 Amsterdam Ave
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Chinese', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/hNhXEqWUWZX4zCbA19Tv7g/ms.jpg,New York,21,West Place,['Harlem'],http://www.yelp.com/biz/west-place-new-york,-73.9578624,NY,3.0,40.8116543,business
+IDSpUSv-Td6-y8rC4JuCsw,"185 St Nicholas Ave
+Harlem
+New York, NY 10026",['Columbia University'],False,"['American (New)', 'Mediterranean', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/SStQ0n8loOVZjya1PuNKsg/ms.jpg,New York,20,Mojo,['Harlem'],http://www.yelp.com/biz/mojo-new-york,-73.9530551,NY,3.5,40.8061617,business
+IfLTw-yFMpuiqAdYRxLv8Q,"2210 Frederick Douglass Blvd
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Bars', 'Nightlife', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/CcIqdGiUb-nLIneJEtvh8A/ms.jpg,New York,68,Moca Bar & Lounge,['Harlem'],http://www.yelp.com/biz/moca-bar-and-lounge-new-york,-73.9537152,NY,3.5,40.8063834,business
+_5BoZ_C5zEl5M_MxT1W39w,"2799 Broadway 108th St
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Bars', 'Mexican', 'Nightlife', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/5AVpncQuQdvoo18_x91omw/ms.jpg,New York,81,Cascabel Taqueria,['Manhattan Valley'],http://www.yelp.com/biz/cascabel-taqueria-new-york-2,-73.9675784111,NY,3.0,40.8026839172,business
+CJNj7-nfZZX7V1UnHm3atQ,"Broadway between 115th & 116th
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Indian', 'Food Stands', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,4,Dosa Cart,['Morningside Heights'],http://www.yelp.com/biz/dosa-cart-new-york,-73.9641344547,NY,4.0,40.8075727883,business
+HmXS5HN-E-DVMEY0mwjelg,"941 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Pizza', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/QUvesQfOW31q8ISeeHrdMg/ms.jpg,New York,26,Mama's Pizzeria,['Manhattan Valley'],http://www.yelp.com/biz/mamas-pizzeria-new-york,-73.9656023,NY,4.0,40.8005863,business
+YgGbeBYxOSmRi6CFn04MoQ,"1215 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Italian', 'Pizza', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/RiKFjuW5D7bHvC3ciDK-tg/ms.jpg,New York,62,Che' Bella Pizza,['Morningside Heights'],http://www.yelp.com/biz/che-bella-pizza-new-york,-73.9592385,NY,3.5,40.809037,business
+SoiQJEuE9biX5cwBvlMVLA,"2134 8th Ave
+Harlem
+New York, NY 10026",['Columbia University'],True,"['African', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/HHWJDDB_qTGuYOWUo8gndg/ms.jpg,New York,3,Salimata Restaurant,['Harlem'],http://www.yelp.com/biz/salimata-restaurant-new-york,-73.955551,NY,4.5,40.8039075,business
+02goPV7NW1StFyas5PVSeg,"975 Amsterdam Ave
+Manhattan Valley
+New York, NY 10027",['Columbia University'],True,"['Seafood', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,5,New Young Fish,['Manhattan Valley'],http://www.yelp.com/biz/new-young-fish-new-york,-73.964551,NY,3.5,40.801515,business
+ySzkBv-_DTNT30eONPnAkg,"2084 Frederick Douglass Blvd
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Ethiopian', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/XT0NdgfdksP1Sm0E2G8dpA/ms.jpg,New York,170,Zoma,['Harlem'],http://www.yelp.com/biz/zoma-new-york,-73.956551,NY,4.0,40.802249,business
+PUATlg41Z_bnmOPWcPBt-A,"400 W 119th St
+Morningside Heights
+New York, NY 10027",['Columbia University'],False,"['French', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/59CuTwQtElygLnDy8ZXAvw/ms.jpg,New York,74,Terrace In the Sky,['Morningside Heights'],http://www.yelp.com/biz/terrace-in-the-sky-new-york,-73.958395,NY,3.0,40.808153,business
+5Vn6sxKkzvZLcEM2yZcjfQ,"935 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Chinese', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/aTVzhF-V9XqdjaIUnNiLlA/ms.jpg,New York,16,Empire Corner Restaurant,['Manhattan Valley'],http://www.yelp.com/biz/empire-corner-restaurant-new-york,-73.9658146,NY,2.5,40.8002956,business
+TWpiHjsd0c9Q9OG9l38SBg,"949 Columbus Ave
+Manhattan Valley
+Manhattan, NY 10025",['Columbia University'],True,"['Bars', 'Mediterranean', 'Nightlife', 'Lounges', 'American (New)', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/ELUXl2KqxNOnJQPWidI9-Q/ms.jpg,Manhattan,31,Lura,['Manhattan Valley'],http://www.yelp.com/biz/lura-manhattan,-73.9625528,NY,3.5,40.7996722,business
+_DPEAIvsH92phbwh2W-ADA,"2937 Broadway
+Morningside Heights
+Manhattan, NY 10025",['Columbia University'],True,"['Italian', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,Manhattan,13,UniCafé,['Morningside Heights'],http://www.yelp.com/biz/unicaf%C3%A9-manhattan-2,-73.9644045,NY,2.5,40.8071249,business
+rLGVYIM4DHSMW1yi4-zhwQ,"1241 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],False,"['American (New)', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/0Gt8i97q_S6QUL1_WJThAg/ms.jpg,New York,39,Cafe Bagutta,['Morningside Heights'],http://www.yelp.com/biz/cafe-bagutta-new-york,-73.958675,NY,3.0,40.8100338,business
+hHg8ADXX-0z0-oHGySXNFg,"606 W 115th St
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Kosher', 'Mediterranean', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,4,Cafe Nana,['Morningside Heights'],http://www.yelp.com/biz/cafe-nana-new-york,-73.965164,NY,3.5,40.807573,business
+rGEeBgbztKbFDh4kum8x1w,"1034 Amsterdam Ave
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Chinese', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/8YdVFvDJ_tXTfIW2_ortmw/ms.jpg,New York,77,Columbia Cottage,['Morningside Heights'],http://www.yelp.com/biz/columbia-cottage-new-york,-73.9634146,NY,3.0,40.8035873,business
+0Kcuy_vyfWlAetDgdmIy3g,"Columbia University
+515 W 114th St
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['American (Traditional)', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/PeWdCLbIPB2YrBHKEV39vw/ms.jpg,New York,5,John Jay Dining Hall,['Morningside Heights'],http://www.yelp.com/biz/john-jay-dining-hall-new-york,-73.9623835,NY,2.0,40.8056877,business
+yA-D2JsM279hh07O47Xf7g,"500 Riverside Dr
+Harlem
+Manhattan, NY 10027",['Columbia University'],True,"['Buffets', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/17dD5y8X9YfCgrZSBr6L7A/ms.jpg,Manhattan,2,International House Dining Hall,['Harlem'],http://www.yelp.com/biz/international-house-dining-hall-manhattan,-73.961526,NY,2.5,40.813783,business
+H8TAPuQZa_pFaitbRnpY8Q,"2911 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Middle Eastern', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/rZ52_BRlc33rOW7qZ9I-hQ/ms.jpg,New York,67,Amir's Falafel,['Morningside Heights'],http://www.yelp.com/biz/amirs-falafel-new-york,-73.9651106,NY,2.5,40.8064994,business
+GDATF7Wkz9XhaucMdRxUpg,"110th St and Broadway
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Middle Eastern', 'Food Stands', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/mC0xnSdNvXRiNobEPG9_IQ/ms.jpg,New York,6,Shangri-La Express,['Manhattan Valley'],http://www.yelp.com/biz/shangri-la-express-new-york,-73.9666174,NY,3.5,40.8041347,business
+-8H1cK_UrrwnL2oh_ts2Vw,"2841 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],False,"['Moroccan', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/BYdzqpszFWjcFl4A3z0s6g/ms.jpg,New York,9,Casbah Rouge,['Morningside Heights'],http://www.yelp.com/biz/casbah-rouge-new-york,-73.967042,NY,4.0,40.804613,business
+JCPykGY64Ok0MXo1T_35Cw,"2158 8th Ave
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Fast Food', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/DCr-LYVZ9psJElPLZ-d6FA/ms.jpg,New York,9,Mama's Fried Chicken,['Harlem'],http://www.yelp.com/biz/mamas-fried-chicken-new-york-2,-73.9551326,NY,3.0,40.8047065,business
+Fk495HaokZDrGkAG8s_dlg,"2099 Frederick Douglass Blvd
+Harlem
+New York, NY 10026",['Columbia University'],True,"['German', 'Bars', 'Nightlife', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/laNwydgFVvrAaIg-3z2Mbg/ms.jpg,New York,161,Bier International,['Harlem'],http://www.yelp.com/biz/bier-international-new-york,-73.9567101002,NY,3.5,40.8026189463,business
+kTSejIjmKGsK1Erwdser4g,"3070 Broadway
+Morningside Heights
+Manhattan, NY 10027",['Columbia University'],True,"['Delis', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/Q0pzduhhAF4zX_GO945cJg/ms.jpg,Manhattan,11,Broadway Au Lait,['Morningside Heights'],http://www.yelp.com/biz/broadway-au-lait-manhattan,-73.9612017,NY,4.0,40.8115136,business
+YKAwpTnKO-n5vB9-pqaCLQ,"968 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Mexican', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/JL81HrDPuipKlwV1bF9zKg/ms.jpg,New York,228,Taqueria Y La Fonda,['Manhattan Valley'],http://www.yelp.com/biz/taqueria-y-la-fonda-new-york,-73.9651708,NY,3.5,40.8014968,business
+7hgygLzjMf3YQE6oL1E3Aw,"71 W 109th St
+Manhattan Valley
+Manhattan, NY 10025",['Columbia University'],True,"['Pakistani', 'Indian', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/cvz10FZEzZCMVCeAR3aRxA/ms.jpg,Manhattan,11,Shahi Biryani & Grill,['Manhattan Valley'],http://www.yelp.com/biz/shahi-biryani-and-grill-manhattan,-73.961057,NY,3.5,40.801176,business
+J9xVQScnr0lYWl61_mLXMA,"2168 Frederick Douglass Blvd
+117th St
+Harlem
+Manhattan, NY 10026",['Columbia University'],True,"['Italian', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/M9sGMbg8bEIPIdcrHhiFGA/ms.jpg,Manhattan,131,Lido,['Harlem'],http://www.yelp.com/biz/lido-manhattan,-73.9548817,NY,4.0,40.8050551,business
+ZcTI78WOKE-iLAzAGccOvA,"256 W 116th St
+Harlem
+New York, NY 10026",['Columbia University'],True,"['American (Traditional)', 'African', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/MW4yO4oWyN8dwWUGaIfaKg/ms.jpg,New York,35,Africa Kine Restaurant,['Harlem'],http://www.yelp.com/biz/africa-kine-restaurant-new-york,-73.9551575,NY,3.0,40.8041866,business
+cRyZA1k3nvqj_0s_kr7HGA,"2787 Broadway
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['American (Traditional)', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/nkrzPDG443dDuk_xedKnjw/ms.jpg,New York,36,107 West Restaurant,['Manhattan Valley'],http://www.yelp.com/biz/107-west-restaurant-new-york-2,-73.968078,NY,3.5,40.8027013,business
+PE2Ny-4ajVpNnKH-hV5BPQ,"W 117th St
+Frederick Douglass Blvd
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Food Stands', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/4TNgDGR2MLB8vkgxwpa0Sg/ms.jpg,New York,3,Chef White's Five Star Grill,['Harlem'],http://www.yelp.com/biz/chef-whites-five-star-grill-new-york,-73.955861,NY,3.5,40.803744,business
+O2jCWIOWb-IhyZGZLTNNoA,"2162 8th Ave
+Harlem
+New York, NY 10026",['Columbia University'],True,"['Chinese', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,2,Peking Kitchen II,['Harlem'],http://www.yelp.com/biz/peking-kitchen-ii-new-york,-73.9549485,NY,4.0,40.8048124,business
+2VQDEQuK3xLFNktPBIpmuQ,"465 W 125th St
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Chinese', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,6,New Aroma Chinese Restaurant,['Harlem'],http://www.yelp.com/biz/new-aroma-chinese-restaurant-new-york,-73.9558411,NY,3.5,40.8131856,business
+v13Ur9Yf2EhvGlvPAaFNeQ,"2869 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Seafood', 'Mediterranean', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/40e8koGLhk9SN2uYGq5dRQ/ms.jpg,New York,177,Vareli,['Morningside Heights'],http://www.yelp.com/biz/vareli-new-york,-73.9663939,NY,4.0,40.80522,business
+Say8vUn6wmlb-HMHFsK2Wg,"950 Columbus Avenue
+Manhattan Valley
+New York, NY 10025",['Columbia University'],False,"['Cajun/Creole', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,3,Gumbo Cafe,['Manhattan Valley'],http://www.yelp.com/biz/gumbo-cafe-new-york,-73.9624822,NY,2.5,40.799843,business
+V-rY0hlPjAghV14jOlVUiQ,"1280 Amsterdam Ave
+Harlem
+Manhattan, NY 10027",['Columbia University'],True,"['Asian Fusion', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/x3SNdNSzIoKqTt1esyVeiw/ms.jpg,Manhattan,44,Nikko,['Harlem'],http://www.yelp.com/biz/nikko-manhattan,-73.9577535,NY,3.5,40.8113468,business
+8uz_6_ogNrpb_MxQnhjZGQ,"1011 Columbus Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Pizza', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,35,Giovanni's Pizzeria,['Manhattan Valley'],http://www.yelp.com/biz/giovannis-pizzeria-new-york,-73.9609528,NY,3.0,40.8015122,business
+F6ReGpF94EKWzh6dSRVIrQ,"2859 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Italian', 'Pizza', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/tHdSN9toKVASN04a3RDEUQ/ms.jpg,New York,34,Famous Famiglia,['Morningside Heights'],http://www.yelp.com/biz/famous-famiglia-new-york-2,-73.9663174,NY,3.0,40.8048918,business
+rFscSQwEcsYmQexb1Jqjcw,"115th Street and Broadway
+Northwest Corner
+Morningside Heights
+Manhattan, NY 10027",['Columbia University'],True,"['Food Stands', 'Halal', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/eK90EwI1FuD6bV-sxl1z1Q/ms.jpg,Manhattan,15,Hooda's Halal Cart,['Morningside Heights'],http://www.yelp.com/biz/hoodas-halal-cart-manhattan,-73.9642983,NY,3.5,40.8073056,business
+tx-RvyrgducHwWkz_b6Dqg,"1302 Amsterdam Ave
+Harlem
+Manhattan, NY 10027",['Columbia University'],True,"['Burgers', 'Pizza', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/Q8ATH8dZG2sKD22pbs2Nqg/ms.jpg,Manhattan,3,Slicebun,['Harlem'],http://www.yelp.com/biz/slicebun-manhattan,-73.9573194,NY,2.0,40.8119407,business
+cf4ygT87Krgbo9cXvSikVA,"3060 Broadway
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Delis', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/ka_k8e4AUXYedT32175wnQ/ms.jpg,New York,17,Olive Tree Deli,['Morningside Heights'],http://www.yelp.com/biz/olive-tree-deli-new-york-2,-73.9613237,NY,4.0,40.8112159,business
+cu5oiIleLVa5eXH6X27KMw,"940 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Chinese', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/rDDFQeoNmi_M9I2gpTFSQQ/ms.jpg,New York,38,Wai Lee Chinese Restaurant,['Manhattan Valley'],http://www.yelp.com/biz/wai-lee-chinese-restaurant-new-york,-73.9657004,NY,3.5,40.8007695,business
+IsqGaD5u47Qx1Ms-VKJ-bQ,"1270 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],False,"['Breakfast & Brunch', 'American (Traditional)', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/XHLLFhQlg6W1CyChQ9-1DA/ms.jpg,New York,20,Lyla's Cafe,['Morningside Heights'],http://www.yelp.com/biz/lylas-cafe-new-york,-73.958267,NY,3.5,40.811172,business
+vQaei8xkH8u2W5gHToRcXw,"1270 Amsterdam Ave
+Morningside Heights
+New York, NY 10027",['Columbia University'],False,"['Food', 'American (Traditional)', 'Ethiopian', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/txaTml5x-0d1m9KHki4IeA/ms.jpg,New York,13,Elsabet Cafe,['Morningside Heights'],http://www.yelp.com/biz/elsabet-cafe-new-york,-73.958267,NY,3.0,40.811172,business
+pIrSHmLYW6Bdjiz-HHWd1Q,"3143 Broadway
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Italian', 'Pizza', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/wV79EfltIuKPP2LcOpMvzQ/ms.jpg,New York,87,Bettolona,['Harlem'],http://www.yelp.com/biz/bettolona-new-york,-73.9597774,NY,4.0,40.8141019,business
+UWSVbdWub1ZLzRb9--4-mA,"2190 Frederick Douglass Blvd
+Harlem
+Manhattan, NY 10026",['Columbia University'],True,"['Seafood', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,Manhattan,7,Harlem Savour of Seafood,['Harlem'],http://www.yelp.com/biz/harlem-savour-of-seafood-manhattan,-73.9542017,NY,2.5,40.8057723,business
+-JuT_VuVL0OfoY3ccYGy4w,"2809 Broadway
+Manhattan Valley
+New York, NY 10025",['Columbia University'],False,"['Caribbean', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,3,La Rosita,['Manhattan Valley'],http://www.yelp.com/biz/la-rosita-new-york-3,-73.9674479,NY,3.5,40.8032847,business
+fqFre6p7U0VOnrjl8Y1BuQ,"1028 Amsterdam Ave
+Morningside Heights
+Manhattan, NY 10025",['Columbia University'],False,"['Mexican', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,Manhattan,2,El Ranchero Mexicano,['Morningside Heights'],http://www.yelp.com/biz/el-ranchero-mexicano-manhattan-2,-73.9637637,NY,3.0,40.8034312,business
+Vf0-szX1DxTVYhpnJCwr9w,"2800 Broadway
+Manhattan Valley
+Manhattan, NY 10025",['Columbia University'],True,"['Diners', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/lrXidSs8WG1a7x195F2ksA/ms.jpg,Manhattan,25,The Manchester Diner,['Manhattan Valley'],http://www.yelp.com/biz/the-manchester-diner-manhattan,-73.967306,NY,3.0,40.8028915,business
+wKfyiP-eNWLSXF6CjWbI_A,"354 W 125th St
+Harlem
+Manhattan, NY 10027",['Columbia University'],True,"['Fast Food', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,Manhattan,6,McDonald's,['Harlem'],http://www.yelp.com/biz/mcdonalds-manhattan-4,-73.9530618,NY,1.5,40.8109355,business
+NRQbIOVnEnsJ8t2xg7W_zg,"2850 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Burgers', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/JobVJgdvQ1lrZHO-K9bA1g/ms.jpg,New York,177,Mel's Burger Bar,['Morningside Heights'],http://www.yelp.com/biz/mels-burger-bar-new-york,-73.9662755,NY,3.0,40.8045743,business
+NRO1_u7mOE-ffhXE6ShUHw,"998 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Pubs', 'Bars', 'American (New)', 'Nightlife', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/fCWHTqtuzUdJB_hiB3FLvQ/ms.jpg,New York,17,the 'dam,['Manhattan Valley'],http://www.yelp.com/biz/the-dam-new-york,-73.9643289,NY,4.5,40.8026442,business
+4GYc1Ld8r4rGQJKz_Qp07A,"366 W 110th St
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Southern', 'Barbeque', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/p18qYkurcl2cGsUXWKgPLQ/ms.jpg,New York,172,Miss Mamie's Spoonbread Too,['Manhattan Valley'],http://www.yelp.com/biz/miss-mamies-spoonbread-too-new-york,-73.960859,NY,3.5,40.801462,business
+TwwaezIakfJLmMvw9ChM_A,"3143 Broadway
+Harlem
+New York, NY 10027",['Columbia University'],False,"['American (New)', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/aqlwnlbBUjOJKbjg2O9yBg/ms.jpg,New York,6,Stop 125,['Harlem'],http://www.yelp.com/biz/stop-125-new-york,-73.959849,NY,3.0,40.814232,business
+wvl4-g3MGtDICRzA0UHPLA,"3143 Broadway
+Harlem
+New York City, NY 10027",['Columbia University'],False,"['Thai', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York City,4,Blue Angel,['Harlem'],http://www.yelp.com/biz/blue-angel-new-york-city,-73.9597774,NY,4.5,40.8141019,business
+PBYypuk9DN-ccqrfYEJ9JA,"2955 Broadway
+Morningside Heights
+New York, NY 10027",['Columbia University'],True,"['Japanese', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/on7X_pqZYeUDwoxCFhmA6w/ms.jpg,New York,114,Vine: Sushi & Sake,['Morningside Heights'],http://www.yelp.com/biz/vine-sushi-and-sake-new-york,-73.9641588,NY,2.5,40.8078378,business
+l9OMQ7JKxM5ues3nKEGwcg,"2950 Broadway
+Columbia University, School of Journalism
+Morningside Heights
+Manhattan, NY 10027",['Columbia University'],True,"['Sandwiches', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/V5Odo_KTaw2pjBJFCgIu7w/ms.jpg,Manhattan,20,Brad's,['Morningside Heights'],http://www.yelp.com/biz/brads-manhattan,-73.963544,NY,3.0,40.807443,business
+3uJAt1EHG0x9pz_c91AHuQ,"3163 Broadway
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Chinese', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,10,Peking Garden,['Harlem'],http://www.yelp.com/biz/peking-garden-new-york-2,-73.9591489,NY,3.0,40.8149508,business
+6nOxwnuN0ZwLX3h3JYSJnA,"2880 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Diners', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/JGBvThj4xQNqn092T8-DWg/ms.jpg,New York,257,Tom's Restaurant,['Morningside Heights'],http://www.yelp.com/biz/toms-restaurant-new-york,-73.9654359,NY,2.5,40.8054224,business
+P2g9XTX11wuEqtlLLqWfig,"W 115th St and Broadway
+Morningside Heights
+Manhattan, NY 10027",['Columbia University'],True,"['Food', 'Street Vendors', 'Indian', 'Pakistani', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/5Bs3VmZ1TxC7dDo5B1XvLA/ms.jpg,Manhattan,2,Vegenation,['Morningside Heights'],http://www.yelp.com/biz/vegenation-manhattan,-73.9644725,NY,3.0,40.8073818,business
+HC9E8-yBfMKkJTTvelRLyw,"990 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Chinese', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/03sfGXXcfRdPoO7JExSyvg/ms.jpg,New York,13,Concord Garden Restaurant,['Manhattan Valley'],http://www.yelp.com/biz/concord-garden-restaurant-new-york,-73.9645826,NY,2.5,40.8023002,business
+FM2VxaMmkRv9emBQRAEKsA,"1302 Amsterdam Ave
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Pizza', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,9,Firehouse Pizza,['Harlem'],http://www.yelp.com/biz/firehouse-pizza-new-york,-73.9573194,NY,3.0,40.8119407,business
+froxnvO6lVnzrTBS4p_W_g,"2847 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Burgers', 'Restaurants']",http://s3-media4.ak.yelpcdn.com/bphoto/h97k9B6yOp5BE2miwTvV1w/ms.jpg,New York,40,Five Guys Burgers and Fries,['Morningside Heights'],http://www.yelp.com/biz/five-guys-burgers-and-fries-new-york-7,-73.9665367,NY,3.0,40.8045853,business
+8fDhtPpDAnFN44LVUIe3qQ,"2113 Frederick Douglass Blvd
+Harlem
+Harlem, NY 10026",['Columbia University'],False,"['Seafood', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/62jUjpCicoHy94H0_lY94w/ms.jpg,Harlem,22,Questan's,['Harlem'],http://www.yelp.com/biz/questans-harlem,-73.9562216,NY,3.0,40.8032834,business
+qBKcTxYgQzIdIlEYqv3qJg,"1343 Amsterdam Ave
+Harlem
+New York, NY 10027",['Columbia University'],False,"['Delis', 'Pizza', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,4,Amsterdam Pizza & Restaurant,['Harlem'],http://www.yelp.com/biz/amsterdam-pizza-and-restaurant-new-york,-73.9560713,NY,4.5,40.8133753,business
+sqPb2P93GGE1IHEdASLXvw,"1028 Amsterdam Ave
+Morningside Heights
+New York, NY 10025",['Columbia University'],False,['Restaurants'],http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,14,Bengal Cafe,['Morningside Heights'],http://www.yelp.com/biz/bengal-cafe-new-york,-73.9637388,NY,3.0,40.8034374,business
+ER0c0-cVKhW2O3sjUQawXg,"1090 Amsterdam Ave
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Food', 'Coffee & Tea', 'Creperies', 'Mediterranean', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/sJ070J83jUKPS4-jPOZOtg/ms.jpg,New York,110,Artopolis,['Morningside Heights'],http://www.yelp.com/biz/artopolis-new-york,-73.9623564,NY,3.5,40.8052722,business
+BcVx7vnk1CivTpB45SYDUg,"2888 Broadway
+Morningside Heights
+New York, NY 10025",['Columbia University'],True,"['Italian', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/0qGKEFzgSBWWYHMEQHqX4g/ms.jpg,New York,95,Campo,['Morningside Heights'],http://www.yelp.com/biz/campo-new-york,-73.9652799,NY,3.0,40.805601,business
+XZFuFuvKgbsY93ZHX7qsWQ,"3153 Broadway
+# 1
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Delis', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif,New York,3,Uni One Gourmet Deli,['Harlem'],http://www.yelp.com/biz/uni-one-gourmet-deli-new-york,-73.9594182,NY,2.5,40.8145922,business
+p2zm0HnXZkI2yCAuYLb45g,"960 Amsterdam Ave
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Thai', 'Restaurants']",http://s3-media3.ak.yelpcdn.com/bphoto/BIyttVVt7qgiL00UxU-hdw/ms.jpg,New York,285,Thai Market,['Manhattan Valley'],http://www.yelp.com/biz/thai-market-new-york,-73.965433,NY,4.0,40.801375,business
+Qn10NNqKN3f85VdK15VOLw,"300 West 110th St
+Manhattan Valley
+New York, NY 10025",['Columbia University'],True,"['Grocery', 'Food', 'Delis', 'Specialty Food', 'Convenience Stores', 'Fruits & Veggies', 'Restaurants']",http://s3-media2.ak.yelpcdn.com/bphoto/mTSf0GaE3yWTTExFJTtWXw/ms.jpg,New York,20,Central Markets,['Manhattan Valley'],http://www.yelp.com/biz/central-markets-new-york,-73.959654,NY,2.5,40.800866,business
+yKPRuBvD3ScCc18QrZ4Y6w,"3151 Broadway
+Harlem
+New York, NY 10027",['Columbia University'],True,"['Mexican', 'Restaurants']",http://s3-media1.ak.yelpcdn.com/bphoto/LsuNFUtpaUCAsB7qbMB5qA/ms.jpg,New York,41,El Porton Bar and Restaurant,['Harlem'],http://www.yelp.com/biz/el-porton-bar-and-restaurant-new-york,-73.95963,NY,3.0,40.814534,business
