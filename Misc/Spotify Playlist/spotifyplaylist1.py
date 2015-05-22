@@ -14,7 +14,6 @@ sys.setdefaultencoding('utf-8')
 
 #Setting up Spotify API and getting token
 scope = 'playlist-modify-public'
-#username = '12174691773'
 username = raw_input("\nPlease enter your Spotify username: ") 
 #Make sure username is valid and matches current user
 try:
