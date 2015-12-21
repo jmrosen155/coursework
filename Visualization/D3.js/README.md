@@ -18,6 +18,6 @@
 
 *[D3.js Sample 9](https://cdn.rawgit.com/jmrosen155/coursework/master/Visualization/D3.js/ZillowHousing/hw16.html)*
 
-*[D3.js Zillow Housing](https://cdn.rawgit.com/jmrosen155/coursework/master/Visualization/D3.js/Sample1/ZillowHousing-iframe.html)*
+*[D3.js Zillow Housing](https://cdn.rawgit.com/jmrosen155/coursework/master/Visualization/D3.js/ZillowHousing/ZillowHousing-iframe.html)*
 
 Flask App available for download in a zip file within the repo.
