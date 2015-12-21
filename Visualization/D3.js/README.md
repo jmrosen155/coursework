@@ -20,4 +20,4 @@
 
 *[D3.js Zillow Housing](https://cdn.rawgit.com/jmrosen155/coursework/master/Visualization/D3.js/ZillowHousing/ZillowHousing-iframe.html)*
 
-Flask App available for download in a zip file within the repo.
+Flask App available for download in a *[zip file](https://github.com/jmrosen155/coursework/blob/master/Visualization/D3.js/FlaskApp/flask_app.zip)* within the repo.
