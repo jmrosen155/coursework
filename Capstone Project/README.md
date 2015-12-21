@@ -4,4 +4,6 @@ The goal of this project was to characterize and map, using network science and 
 
 *Casey Huang, Yang Liu, Jordan Rosenblum, and Steven Royce*
 
-*[Write-Up](https://cdn.rawgit.com/jmrosen155/coursework/master/Modeling%20Social%20Data/Music%20Analysis%20Project/MSDgroupwriteup.pdf)*
+*[Write-Up](https://cdn.rawgit.com/jmrosen155/coursework/master/Capstone%20Project/TwitterGraph_FinalReport.pdf)*
+
+*[Slides](https://cdn.rawgit.com/jmrosen155/coursework/master/Capstone%20Project/Twitter%20-%20Presentation%2020151214.pdf)*
