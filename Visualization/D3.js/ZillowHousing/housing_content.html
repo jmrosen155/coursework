@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>US Housing Trends</title>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+<style>
+  .axis path,
+  .axis line {
+      fill: none;
+      stroke: black;
+      shape-rendering: crispEdges;
+  }
+
+  .axis text {
+      font-family: sans-serif;
+      font-size: 11px;
+  }
+  h3 {
+    text-align:center; 
+  }
+  h4 {
+    text-align:center; 
+    font-size: 22px; 
+  }
+  h5 {
+    text-align:right; 
+    font-size: 13px; 
+  }
+  div.tooltip {   
+  position: absolute;           
+  text-align: center;                         
+  padding: 10px;             
+  font: 12px sans-serif;        
+  background: lightsteelblue;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;  
+  visibility: hidden;  
+}
+div.drop {
+    width: 30%;
+    margin: 0 auto;
+}
+p.text {
+      margin: 10px 200px;
+      font-family: georgia;
+      text-align: center
+}
+p.source {
+    text-align:right; 
+    font-size: 13px; 
+    margin: 0px 50px
+}
+svg {
+    display: block;
+    margin: auto;
+}
+</style>
+</head>
+<body>
+
+  <div class="tooltip"></div>
+  <div id="map"></div>
+  <div class="drop"></div>
+  <div id="chart"></div>
+  
+
+  <script>
+  queue()
+    .defer(d3.json, "states.json")
+    .defer(d3.csv, "Metro_MedianRentalPrice_1Bedroom_Location.csv")
+    .await(function(error, states_json, housing_data) {
+      // Pull the neighborhoods out of the geojson
+      var states = states_json['features'];
+      
+      var height = 400, width = 600;
+
+      console.log(housing_data);
+
+
+      // Function to move circles or lines to the front when selected
+      d3.selection.prototype.moveToFront = function() {
+        return this.each(function(){
+          this.parentNode.appendChild(this);
+        });
+      };
+
+      /* 
+      
+        DRAWING THE MAP
+      
+      */
+      
+      var map_svg = d3.select("#map")
+                    .append("svg")
+                    .attr("viewBox", "0 0 " + width + " " + height)
+                    .style("max-width", width + "px")
+                    .attr("preserveAspectRatio", "xMidYMid meet")
+
+      /* Create g layers for each aspect of the map */
+      var map = map_svg.append("g");
+      var states_g = map.append("g");
+      var cities_g = map.append("g");
+      
+      /* 
+        Since it's a map, create a projection and a path helper
+      */
+      var projection = d3.geo.albersUsa()
+                              .scale(800)
+                              .translate([width / 2, height / 2]);
+
+      var path = d3.geo.path().projection(projection);
+
+
+      /* 
+        Draw the neighborhoods first so they're in the background
+      */
+      states_g.selectAll("path")
+              .data(states)
+              .enter()
+              .append("path")
+              .attr('d', path)
+              .style('fill', '#80B2FF')
+              .style('stroke', '#FFFFFF');
+
+      format = d3.format("0,000");
+      
+      /* 
+        Draw a circle for every collision which resulted in a death
+      */
+      cities_g.selectAll("circle")
+              .data(housing_data)
+              .enter()
+              .append("circle")
+              .style("fill", "#333333")
+              .attr("r", function(d) {
+                if (d['RegionName'] !== 'United States') {
+                  return 3;
+                }
+              })
+              .attr("class", function(d) {
+                // Can give multiple classes by separating with a space
+                // console.log(data)
+                return "map rank-" + d['SizeRank'];
+              })
+              .attr("cx", function(d) {
+                if (d['RegionName'] !== 'United States') {
+                  var coords = [ +d['longitude'], +d['latitude'] ];
+                  var projected_coords = projection(coords);
+                  return projected_coords[0];
+                }
+              })
+              .attr("cy", function(d) {
+                if (d['RegionName'] !== 'United States') {
+                  var coords = [ +d['longitude'], +d['latitude'] ];
+                  var projected_coords = projection(coords);
+                  return projected_coords[1];
+                }
+              })
+              .on("mouseover", function(d) {
+                    d3.select(this).style('fill', '#ff0000');
+                    d3.select('.tooltip')
+                      .style('visibility', 'visible')
+                      .style("left", (250) + "px")
+                      .style("top", (0) + "px")
+                      .html('City: ' + d['RegionName'] + '<br>' + 'Average rent for 1br in Sept. 2015: $' + format(d['2015-09']))
+                  })
+                  .on("mouseout", function(d) {
+                    d3.select(this).style('fill', '#333333');
+                    d3.select('.tooltip').style('visibility', 'hidden');
+                  });;
+
+
+      var long_data = [];
+      housing_data.forEach( function(row) {
+        // Loop through all of the columns, and for each column
+        // make a new row
+        Object.keys(row).forEach( function(colname) {
+          // Ignore 'State' and 'Value' columns
+          if(colname == "RegionName" || colname == "SizeRank" || colname == "latitude" || colname == "longitude") {
+            return
+          }
+          long_data.push({"City Name": row["RegionName"], "Size Rank": row["SizeRank"], "Rental Rate": row[colname], "Month": colname});
+        });
+      });
+
+      console.log(long_data);
+
+
+
+      // Convert everything to numbers
+      long_data.forEach( function(d){
+        d['Size Rank'] = +d['Size Rank'];
+        d['Rental Rate'] = +d['Rental Rate']; 
+      });
+
+      console.log(long_data);
+
+      long_data = long_data.filter( function(d) {
+        // if fdi outflows is not '..', we'll keep it
+        if(typeof d['Rental Rate'] !== 'undefined') {
+          return d['Rental Rate'];
+        }
+      });
+
+      
+      var height2 = 500, width2 = 700, margin = 60;
+
+      var chart_height = height2 - margin * 2;
+      var chart_width = width2 - margin * 2;
+
+      housing_data.sort(function(a, b){
+        if(a.RegionName === 'United States') return -1;
+        if(a.RegionName < b.RegionName) return -1;
+        if(a.RegionName > b.RegionName) return 1;
+        return 0;
+      })
+
+
+      // Build the dropdown menu
+      d3.select(".drop")
+        .append("select")
+        .selectAll("option")
+        .data(housing_data)
+        .enter()
+        .append("option")
+        // Provide available text for the dropdown options
+        .text(function(d) {return d['RegionName'];})
+        .attr("value", function (d) { 
+          return d['SizeRank'];
+        });
+
+      d3.select('select').on("change", function() {
+        var selectedValue = this['value'];  
+
+        console.log(selectedValue);
+
+        d3.selectAll(".line")
+          .transition()
+          .style('stroke-width', 2)
+          .style('opacity', 0.4)
+          .style("stroke", "#80B2FF");
+        
+
+        d3.selectAll(".rank-" + selectedValue).filter(".line")
+          .transition()
+          .style('stroke-width', 3)
+          .style("stroke", "red")
+          .style('opacity', 1)
+          .each(function(e) {
+            d3.select(this).moveToFront()
+          });
+
+        d3.selectAll(".map").filter("circle")
+        .transition()
+        .style('fill', '#333333');
+        
+
+        d3.selectAll(".rank-" + selectedValue).filter(".map")
+          .transition()
+          .style('fill', '#ff0000');
+
+
+
+      });
+
+
+      /* 
+      
+        DRAWING THE CHART
+      
+      */
+      
+      
+      var chart_svg = d3.select("#chart")
+                    .append("svg")
+                    .attr("viewBox", "0 0 " + width2 + " " + height2)
+                    .style("max-width", width2 + "px")
+                    .attr("preserveAspectRatio", "xMidYMid meet")
+
+      /* Create g layers for each aspect of the map */
+      var chart = chart_svg.append("g").attr('transform', 'translate(' + margin + ',' + margin + ')');
+
+
+
+
+      // var xscale = d3.scale.linear().domain([1960,2013]).range([0,chart_width]);
+
+      //var months = long_data.map(function (d) { return d['Month']; });
+
+      var months = ['2010-02','2010-03','2010-04','2010-05','2010-06','2010-07','2010-08','2010-09','2010-10','2010-11','2010-12','2011-01','2011-02','2011-03','2011-04','2011-05','2011-06','2011-07','2011-08','2011-09','2011-10','2011-11','2011-12','2012-01','2012-02','2012-03','2012-04','2012-05','2012-06','2012-07','2012-08','2012-09','2012-10','2012-11','2012-12','2013-01','2013-02','2013-03','2013-04','2013-05','2013-06','2013-07','2013-08','2013-09','2013-10','2013-11','2013-12','2014-01','2014-02','2014-03','2014-04','2014-05','2014-06','2014-07','2014-08','2014-09','2014-10','2014-11','2014-12','2015-01','2015-02','2015-03','2015-04','2015-05','2015-06','2015-07','2015-08','2015-09']
+
+
+
+      var xscale = d3.scale.ordinal().domain(months).rangeBands([0,chart_width]);
+  
+
+      var max_value_rent = d3.max(long_data, function(d){ 
+        return d['Rental Rate']; 
+      });
+
+      var yscale = d3.scale.linear().domain([0,max_value_rent]).range([chart_height, 0]);
+
+
+      chart.append("text")
+              .attr("class", "y label")
+              .attr("text-anchor", "end")
+              .attr("y", -60)
+              .attr("x", -150)
+              .attr("dy", ".75em")
+              .attr("transform", "rotate(-90)")
+              .text("Rental Rate")
+              .style("font-weight", "bold");
+
+
+      chart.append("text")
+            .attr("class", "x label")
+            .attr("text-anchor", "end")
+            .attr("y", 425)
+            .attr("x", 285)
+            .attr("dy", ".75em")
+            .text("Month")
+            .style("font-weight", "bold");
+
+
+      var yAxis = d3.svg.axis().scale(yscale).orient("left");
+      // use .tickFormat(d3.format('d')) to not have commas in years
+      var xAxis = d3.svg.axis()
+                    .scale(xscale)
+                    .tickValues(xscale.domain().filter(function(d, i) { return !(i % 4); }))
+                    .orient("bottom");
+
+      chart.append("g")
+          .attr("class", "y-axis axis")
+          .call(yAxis);
+
+      chart.append("g")
+          .attr("class", "x-axis axis")
+          .attr("transform", "translate(0," + chart_height + ")")
+          .call(xAxis)
+          .selectAll("text")
+          .attr("transform", "rotate(-40)")
+          .style('text-anchor', 'end');
+
+
+      console.log("Look at the original data");
+      console.log(long_data);
+
+
+      // var commas = d3.format("0,000");
+
+      var circles = chart.selectAll('circle')
+                          .data(long_data)
+                          .enter()
+                          .append('circle')
+                          .attr('r', 3)
+                          .style('opacity', 0.4)
+                          .attr('cx', function(d) {
+                            return xscale(d['Month']);
+                          })
+                          .attr('cy', function(d) {
+                            return yscale(d['Rental Rate'])
+                          })
+                          .style("fill", "#80B2FF")
+                          .attr("class", function(d) {
+                              // Can give multiple classes by separating with a space
+                              // console.log(data)
+                              return "rank-" + d['Size Rank'];
+                          })
+                          .on('mouseover', function(d){
+                            d3.select(this).style('fill', '#668ECC')
+                                            .style('r', 4)
+                                            .style('opacity', 1)
+                                            .moveToFront();
+                            d3.select('.tooltip')
+                              .style('visibility', 'visible')
+                              .style("left", (80) + "px")
+                              .style("top", (460) + "px")
+                              .html('Location: ' + d['City Name'] + '<br>' + 'Month: ' + d['Month'] + '<br>' + 'Rental Rate: $' + format(d['Rental Rate']));
+                          })
+                          .on('mouseout', function(d){
+                            d3.select(this).style('fill', '#80B2FF')
+                                            .style('r', 3)
+                                            .style('opacity', 0.4);
+                            d3.select(".tooltip").style('visibility', 'hidden');
+                          });
+
+
+      var line = d3.svg.line()
+                        .x(function(d) {
+                          return xscale(d['Month']);
+                        })
+                        .y(function(d) {
+                          return yscale(d['Rental Rate']);
+                        });
+
+      console.log(line);
+
+      // d3.nest will group everything together
+      var grouped = d3.nest()
+                      .key(function(d) {
+                        return d['Size Rank']
+                      })
+                      .entries(long_data);
+
+      console.log(long_data);
+      console.log(grouped);
+
+      var lines_area = chart.append("g");
+
+      
+
+      lines_area.selectAll('path')
+            .data(grouped)
+            .enter()
+            .append('path')
+            .attr("d", function(d) {
+              console.log(d);
+              return line(d['values']);
+            })
+            .attr("class", function(d) {
+                // Can give multiple classes by separating with a space
+                // console.log(data)
+                return "line rank-" + d['key'];
+            })
+            .style("fill", "none")
+            .style("stroke", "#80B2FF")
+            .style('stroke-width', 2)
+            .style('opacity', 0.4)
+            .on('mouseover', function(d){
+                  d3.select(this).style('stroke', '#668ECC')
+                                  .style('stroke-width', 3)
+                                  .style('opacity', 1)
+                                  .moveToFront();
+                  d3.select('.tooltip')
+                      .style('visibility', 'visible')
+                      .style("left", (80) + "px")
+                      .style("top", (460) + "px")
+                      .html('Location: ' + d['values'][0]['City Name']);
+                })
+                .on('mouseout', function(d){
+                  d3.select(this).style('stroke', '#80B2FF')
+                                  .style('stroke-width', 2)
+                                  .style('opacity', 0.4);
+                  d3.select(".tooltip").style('visibility', 'hidden');
+                });
+
+      d3.selectAll(".rank-0").filter(".line")
+          .transition()
+          .style('stroke-width', 3)
+          .style("stroke", "red")
+          .style('opacity', 1)
+          .each(function(e) {
+            d3.select(this).moveToFront()
+          });
+
+
+      
+
+    });
+  </script>
+</body>
+</html>

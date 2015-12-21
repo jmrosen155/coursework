@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jordan Rosenblum HW12</title>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+<style>
+  .axis path,
+  .axis line {
+      fill: none;
+      stroke: black;
+      shape-rendering: crispEdges;
+  }
+
+  .axis text {
+      font-family: sans-serif;
+      font-size: 11px;
+  }
+
+  h3 {
+    text-align:center; 
+  }
+  h4 {
+    text-align:center; 
+    font-size: 22px; 
+  }
+  h5 {
+    text-align:right; 
+    font-size: 13px; 
+  }
+  div.tooltip {   
+  position: absolute;           
+  text-align: center;                         
+  padding: 10px;             
+  font: 12px sans-serif;        
+  background: lightsteelblue;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;  
+  visibility: hidden;     
+}
+</style>
+</head>
+<body>
+  <h3>Jordan Rosenblum HW12</h3>
+
+  <h4>NYC traffic deaths in 2014</h4>
+
+  <p style="text-align: center; font-family: georgia">
+    A map of 2014 NYC collisions resulting in at least one death is depicted on the left. The overall statistics are shown in the chart on the right. <a href="#" class="show-July">July</a> has the most vehicle collisions resulting in deaths, possibly because of increased summer driving and road trips.
+  </p>
+
+  <div class="tooltip"></div>
+  <div id="map"></div>
+  <div id="graph"></div>
+  <p style="text-align: center; font-family: georgia">
+    Mouse over the datapoints in the map or line chart for more information.
+  </p>
+  <h5>Source: <a href='http://data.nycprepared.org/dataset/neighborhood-tabulation-areas'>GeoJSON</a>, <a href='https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95'>Data</a></h5>
+  <script>
+  queue()
+    .defer(d3.json, "nta.json")
+    .defer(d3.csv, "collisions.csv")
+    .await(function(error, nyc_json, collisions_data) {
+      // Pull the neighborhoods out of the geojson
+      var neighborhoods = nyc_json['features'];
+      
+      var height = 500, width = 700;
+
+      /* 
+      
+        DRAWING THE MAP
+      
+      */
+      
+      var map_svg = d3.select("#map")
+                    .append("svg")
+                    .attr('height', height)
+                    .attr('width', width);
+
+      /* Create g layers for each aspect of the map */
+      var map = map_svg.append("g");
+      var neighborhoods_g = map.append("g");
+      var collisions_g = map.append("g");
+      
+      /* 
+        Since it's a map, create a projection and a path helper
+      */
+      var projection = d3.geo.mercator()
+                              .center([-73.97, 40.71])
+                              .scale(50000)
+                              .translate([width / 2, height / 2]);
+
+      var path = d3.geo.path().projection(projection);
+
+
+      /* 
+        Draw the neighborhoods first so they're in the background
+      */
+      neighborhoods_g.selectAll("path")
+              .data(neighborhoods)
+              .enter()
+              .append("path")
+              .attr('d', path)
+              .style('fill', '#80B2FF')
+              .style('stroke', '#FFFFFF');
+
+      
+      /* 
+        Draw a circle for every collision which resulted in a death
+      */
+      collisions_g.selectAll("circle")
+              .data(collisions_data)
+              .enter()
+              .append("circle")
+              .style("fill", "#333333")
+              .style('opacity', 0.7)
+              .attr("r", 3)
+              .attr("class", function(d) {
+                // Can give multiple classes by separating with a space
+                // console.log(data)
+                return "collision month-" + d['Month'];
+              })
+              .attr("cx", function(d) {
+                var coords = [ +d['Longitude'], +d['Latitude'] ];
+                var projected_coords = projection(coords);
+                return projected_coords[0];
+              })
+              .attr("cy", function(d) {
+                var coords = [ +d['Longitude'], +d['Latitude'] ];
+                var projected_coords = projection(coords);
+                return projected_coords[1];
+              })
+              .on("mouseover", function(d) {
+                    console.log(d);
+                    d3.select(this).style('fill', '#ff0000');
+                    d3.selectAll(".month-" + d['Month']).filter(".line")
+                        .transition()
+                        .style('fill', '#ff0000')
+                    d3.select('.tooltip')
+                      .style('visibility', 'visible')
+                      .style("left", (d3.event.pageX + 20) + "px")
+                      .style("top", (d3.event.pageY -20) + "px")
+                      .html('Month of accident: ' + d['Month'] + '<br>' + 'Number of people killed: ' + d['PersonsKilled'])
+                  })
+                  .on("mouseout", function(d) {
+                    console.log(d);
+                    d3.select(this).style('fill', '#333333');
+                    d3.selectAll(".month-" + d['Month']).filter(".line")
+                        .transition()
+                        .style('fill', '#000000')
+                        .attr('r', 5);
+                    d3.select('.tooltip').style('visibility', 'hidden');
+                  });;
+
+
+      /* 
+
+        DRAWING THE GRAPH
+
+      */
+      
+      var graph_margin = 50,
+          graph_width = 400,
+          graph_height = 400;
+      var graph_svg = d3.select("#map")
+                        .append("svg")
+                        .attr('height', graph_height + graph_margin * 2)
+                        .attr('width', graph_width + graph_margin * 2);
+
+      var graph = graph_svg.append('g').attr("transform", "translate(" + graph_margin + "," + graph_margin + ")");
+      
+
+      var monthly_data = d3.nest()
+                          .key(function(d) { 
+                            return d['Month'];
+                          })
+                          .rollup(function(values) { 
+                            return d3.sum(values, function(d) { return d['PersonsKilled']; });
+                          })
+                          .entries(collisions_data);
+
+      // Create the scales
+
+      var months = collisions_data.map(function (d) { return d['Month']; });
+
+      var xscale = d3.scale.ordinal().domain(months).rangeBands([0,graph_width]);
+      var yscale = d3.scale.linear().domain([0,30]).range([graph_height, 0]);
+
+      // Draw the axes
+      var yAxis = d3.svg.axis().scale(yscale).orient("left");
+      var xAxis = d3.svg.axis()
+                        .scale(xscale)
+                        .orient("bottom");
+
+
+      graph.append("text")
+          .attr("class", "y label")
+          .attr("text-anchor", "end")
+          .attr("y", -50)
+          .attr("x", -50)
+          .attr("dy", ".75em")
+          .attr("transform", "rotate(-90)")
+          .text("Number of deaths from car accidents")
+          .style("font-weight", "bold");
+      
+      
+      graph.append("g")
+          .attr("class", "y-axis axis")
+          .call(yAxis);
+
+      graph.append("g")
+          .attr("class", "x-axis axis")
+          .attr("transform", "translate(0," + graph_height + ")")
+          .call(xAxis)
+          .selectAll("text")
+          .attr("transform", "rotate(-40)")
+          .style('text-anchor', 'end');
+      
+      /*
+         Building lines
+      */
+
+      // x will be the key (the month)
+      // y will be the value (# of collisions)
+      // Remember! lines = nested data = d['key'] and d['values']
+      var line = d3.svg.line()
+                  .x(function(d) {
+                    return xscale(d['key']) + 20;
+                  })
+                  .y(function(d) {
+                    return yscale(d['values']);
+                  });
+
+      // Putting it inside of its own g
+      var lines_area = graph.append('g');
+
+      // Remember! Only one line = use .append and .datum
+      lines_area.append('path')
+            .datum(monthly_data)
+            .attr("d", line)
+            .style("fill", "none")
+            .style("stroke", '#80B2FF')
+            .style("stroke-width", 4);
+
+
+      // Now we draw circles -
+      // One circle per data point = use .selectAll
+      // Each circle is a month of collisions
+      var circles_area = graph.append('g');
+      circles_area.selectAll('circle')
+                  .data(monthly_data)
+                  .enter()
+                  .append('circle')
+                  .attr('r', 5)
+                  .attr('cx', function(d) {
+                    return xscale(d['key']) + 20;
+                  })
+                  .attr('cy', function(d) {
+                    return yscale(d['values']);
+                  })
+                  .attr("class", function(d) {
+                    // Can give multiple classes by separating with a space
+                    // console.log(data)
+                    return "line month-" + d['key'];
+                  })
+                  .on("mouseover", function(d) {
+                    console.log(d);
+                    d3.select(this).style('fill', '#ff0000');
+                    console.log("month-" + d['key']);
+                    d3.selectAll(".month-" + d['key']).filter(".collision")
+                        .transition()
+                        .style('fill', '#ff0000')
+                        .attr('r', function(d) {
+                          return Math.sqrt(d['PersonsKilled'] * 20);
+                        })
+                  })
+                  .on("mouseout", function(d) {
+                    console.log(d);
+                    d3.select(this).style('fill', '#000000');
+                    d3.selectAll(".month-" + d['key']).filter(".collision")
+                        .transition()
+                        .style('fill', '#333333')
+                        .attr('r', 3);
+                  });
+
+      // Grab all the links on the page that point to 'show-shootings-2015'
+      d3.selectAll(".show-July")
+        .on('mouseover', function(d) {
+          // Turn 2015's shooting circles red
+          d3.selectAll(".month-July").style('fill', 'red');
+      })
+      .on('mouseout', function(d) {
+        // Turn 2015's shooting circles red
+        d3.selectAll(".month-July").filter(".collision")
+                                    .style('fill', '#333333');
+        d3.selectAll(".month-July").filter(".line")
+                                    .style('fill', '#000000');
+      })
+
+    });
+  </script>
+</body>
+</html>

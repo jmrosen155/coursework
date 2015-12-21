@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jordan Rosenblum HW8</title>
+</head>
+<body>
+
+<h3>Jordan Rosenblum HW8</h3>
+<h3>FDI Outflows of selected countries</h3>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js'></script>  
+<style>
+  
+  h3 {
+    text-align:center; 
+  }
+  svg {
+    background: #e1e1e1;
+    display: block;
+    margin: auto;
+  }
+  .axis path,
+  .axis line {
+      fill: none;
+      stroke: black;
+      shape-rendering: crispEdges;
+  }
+
+  .axis text {
+      font-family: sans-serif;
+      font-size: 11px;
+  }
+
+  .infobox {
+        position:relative; 
+        left:500px; 
+        top: 30px; 
+        height:0px; 
+        width:500px; 
+        text-align:center; 
+        vertical-align: middle; 
+        line-height: 5px;
+        font-family: georgia;
+        font-size: 13px;
+    }
+</style>
+
+<p style="text-align: center; font-family: georgia">
+  Foreign direct investment outflows have increased significantly since the 1990's, especially in the UK, US, and France. In recent years, they have fallen again, though.
+</p>
+
+<div class="infobox" style="visibility: hidden;">
+      <h3>Country: <strong class="country-name">1800</strong></h3>
+      <h3>Year: <strong class="year">1800</strong></h3>
+      <h3>FDI Outflows (Current $mlns): <strong class="fdi">1800</strong></h3>
+  </div>
+
+<div id="chart"></div>
+
+
+<script>
+var svg_width = 900;
+var svg_height = 600;
+var margin = 80;
+var height = svg_height - margin * 2;
+var width = svg_width - margin * 2;
+
+
+
+d3.csv("melted.csv", function(error, datapoints) {
+  // Filter out bad data
+  datapoints = datapoints.filter( function(d) {
+    // if fdi outflows is not '..', we'll keep it
+    return d['FDI Outflows'] != '..'
+  });
+
+  // Convert everything to numbers
+  datapoints.forEach( function(d){
+    d['year'] = +d['year'];
+    d['FDI Outflows'] = +d['FDI Outflows']; 
+  });
+
+  var svg = d3.select("#chart").append("svg").attr("height", svg_height).attr("width", svg_width);
+
+
+  var xscale = d3.scale.linear().domain([1970,2003]).range([0,width]);
+  
+
+  var max_value_fdi = d3.max(datapoints, function(d){ 
+    return d['FDI Outflows']; 
+  });
+
+  var yscale = d3.scale.linear().domain([0,max_value_fdi]).range([height, 0]);
+
+  var chart = svg.append('g').attr('transform', 'translate(' + margin + ',' + margin + ')');
+
+  chart.append("text")
+          .attr("class", "y label")
+          .attr("text-anchor", "end")
+          .attr("y", -75)
+          .attr("x", -100)
+          .attr("dy", ".75em")
+          .attr("transform", "rotate(-90)")
+          .text("FDI Outflows (Current $mlns)")
+          .style("font-weight", "bold");
+
+
+  chart.append("text")
+        .attr("class", "x label")
+        .attr("text-anchor", "end")
+        .attr("y", 470)
+        .attr("x", 380)
+        .attr("dy", ".75em")
+        .text("Year")
+        .style("font-weight", "bold");
+
+
+  var yAxis = d3.svg.axis().scale(yscale).orient("left");
+  // use .tickFormat(d3.format('d')) to not have commas in years
+  var xAxis = d3.svg.axis()
+                .scale(xscale)
+                .orient("bottom")
+                .tickFormat(d3.format('d'));
+
+  chart.append("g")
+      .attr("class", "y-axis axis")
+      .call(yAxis);
+
+  chart.append("g")
+      .attr("class", "x-axis axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+
+  console.log("Look at the original data");
+  console.log(datapoints);
+
+
+  var line = d3.svg.line()
+                    .x(function(d) {
+                      return xscale(d['year']);
+                    })
+                    .y(function(d) {
+                      return yscale(d['FDI Outflows']);
+                    });
+
+  console.log(line);
+
+  // d3.nest will group everything together
+  var grouped = d3.nest()
+                  .key(function(d) {
+                    return d['Country']
+                  })
+                  .entries(datapoints);
+
+  console.log(datapoints);
+  console.log(grouped);
+
+  var lines_area = chart.append("g");
+
+  // Function to move circles or lines to the front when selected
+  d3.selection.prototype.moveToFront = function() {
+    return this.each(function(){
+      this.parentNode.appendChild(this);
+    });
+  };
+
+  lines_area.selectAll('path')
+        .data(grouped)
+        .enter()
+        .append('path')
+        .attr("d", function(d) {
+          console.log(d);
+          return line(d['values']);
+        })
+        .style("fill", "none")
+        .style("stroke", "#80B2FF")
+        .style('stroke-width', 2)
+        .on('mouseover', function(d){
+              d3.select(this).style('stroke', '#668ECC')
+                              .style('stroke-width', 6)
+                              .moveToFront();
+              d3.select(".country-name").text(d['key']);
+              d3.select(".year").text('N/A (hover on a datapoint)');
+              d3.select(".fdi").text('N/A (hover on a datapoint)');
+              d3.select(".infobox").style('visibility', 'visible');
+            })
+            .on('mouseout', function(d){
+              d3.select(this).style('stroke', '#80B2FF')
+                              .style('stroke-width', 2);
+              d3.select(".infobox").style('visibility', 'hidden');
+            });
+
+  var commas = d3.format("0,000");
+
+  var circles = chart.selectAll('circle')
+                      .data(datapoints)
+                      .enter()
+                      .append('circle')
+                      .attr('r', 3)
+                      .attr('cx', function(d) {
+                        return xscale(d['year']);
+                      })
+                      .attr('cy', function(d) {
+                        return yscale(d['FDI Outflows'])
+                      })
+                      .style("fill", "#80B2FF")
+                      .on('mouseover', function(d){
+                        d3.select(this).style('fill', '#668ECC')
+                                        .style('r', 6)
+                                        .moveToFront();
+                        d3.select(".country-name").text(d['Country']);
+                        d3.select(".year").text(d['year']);
+                        d3.select(".fdi").text(commas(d['FDI Outflows']));
+                        d3.select(".infobox").style('visibility', 'visible');
+                      })
+                      .on('mouseout', function(d){
+                        d3.select(this).style('fill', '#80B2FF')
+                                        .style('r', 3);
+                        d3.select(".year").text('N/A (hover on a datapoint)');
+                        d3.select(".fdi").text('N/A (hover on a datapoint)');
+                        d3.select(".infobox").style('visibility', 'hidden');
+                      });
+
+
+
+})
+
+
+
+</script>
+</body>
+</html>

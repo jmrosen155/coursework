@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rental Price Trends</title>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js'></script>  
+<style>
+h1 {
+    font-size: 30px; 
+    font-family: georgia;
+}
+h2 {
+	font-size: 15px; 
+	font-family: georgia;
+}
+body {
+	background: #e1e1e1;
+}
+#col {
+	max-width: 650px;
+	margin: auto;
+	padding: 20px;
+	font-family: georgia;
+}
+p.source {
+    text-align:right; 
+    font-size: 13px; 
+    margin-bottom: 20px
+}
+</style>
+</head>
+<body>
+	<div id="col">
+		<h1>US Rental Rates on the Move</h1>
+		<h2>Casey Huang, Tony Paek, and Jordan Rosenblum</h2>
+		<p>The rebound in the housing market since the financial crisis has been quite substantial, especially since 2011. This has consequently caused rental rates to rise across the country. In the major cities, such as New York and San Francisco, this is extremely noticeable. In second tier cities, such as Cleveland or even Chicago, rents have not been on the rise to the same extent.</p>
+
+		<p>One of the most interesting trends is looking at the New York City housing market as compared to San Jose and San Francisco, CA. According to Zillow 1-bedroom rental data, New York City rental prices were the highest in the country just last year. Since then, San Jose and San Francisco, CA have surpassed NYC. Could the tech boom in Silicon Valley be leading to a housing bubble there? Maybe not in the near term, but if the 'bubble' were to pop, it would like be caused by "a lot of these [tech] companies failing and not needing real estate," according to Hessam Nadji, managing director at real estate investment services firm Marcus & Millichap. And if the tech companies don't need real estate, it is likely they won't need as many employees either. Who knows whether this will actually occur in the coming years but the excessive rental price escalation in the San Francisco Bay area has not been seen in any other city across the country since the recovery.</p>
+
+		<p>Have a look at the data and see for yourself! Utilizing Zillow Research data, we have displayed 1-bedroom rental rate trends across the US in the visualizations below.</p>
+
+		<div style="position: relative; height: 0; overflow: hidden; padding-bottom: 138%;">
+		<iframe frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="housing_content.html"></iframe>
+		</div>
+
+		<p class="source">Source: <a href='http://www.zillow.com/research/data/'>Zillow Research</a></p>
+
+		<p>Text about 3rd viz here</p>
+
+		<div style="position: relative; height: 0; overflow: hidden; padding-bottom: 80%;">
+		<iframe frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="viz3.html"></iframe>
+		</div>
+
+		<p class="source">Source: <a href='http://www.zillow.com/research/data/'>Zillow Research</a></p>
+
+		<p><strong>Methods and Experiences</strong></p>	
+
+		<p>Even before building the visualizations, we realized our historical rental price data from Zillow did not have latitude and longitude coordinates for the major US cities. Of course, we needed this data to plot the cities as points on the map. We solved this by using the ggmaps library within R to query the Google API with each city name for the coordinates.</p>
+
+		<p>We have already constructed maps, line charts, and scatter plots in class. Improving the functionality and adding features to the charts is what took most of our time. For example, adding the dropdown menu within the first two visualizations, allowing the user to choose exactly which city to investigate further, was a struggle. It first needed to be populated with the various city names. We also created a unique identifier for each city (different from the city name). Attaching a class to the points and lines in the charts equal to this identifier allowed us to highlight those points and lines when the dropdown selection was changed. A smaller struggle was setting the number of ticks on the x-axis in the line chart. Since the labels are considered categorical, we can't simply set the number of ticks.  Instead we had to use a workaround using a filter statement.</p>
+
+		<p>Another struggle was getting the tooltip to work properly in an iframe. If the tooltip was displayed outside of the svg (e.g. for a city on the right side of the map), normally it would just run over the side of the svg. Since the iframe is like a separate page within the current page, we could not have the tooltip display outside the iframe. Our temporary solution was to simply to give the tooltip the same position (at the top of the visualization) no matter what was selected.</p>	
+
+	</div>
+</body>
+</html>

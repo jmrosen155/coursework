@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jordan Rosenblum HW5</title>
+    <style>
+    circle:hover {
+      fill: orange;
+    }
+    circle.selected {
+      fill: red;
+    }
+    circle {
+      fill: #0FB9F2;
+    }
+    rect:hover {
+      fill: orange;
+    }
+    rect.selected {
+      fill: red;
+    }
+    rect {
+      fill: #0FB9F2;
+    }
+    h4 {
+      font-family: georgia;
+      font-size: 14px;
+    }
+    </style>
+  </head>
+  <body>
+
+    <h3>Jordan Rosenblum HW5</h3>
+    <p>Top 10 largest companies by revenue (<a href='https://en.wikipedia.org/wiki/List_of_largest_companies_by_revenue'>source</a>).</p>
+
+
+    <svg class="chart1">
+    </svg>
+    <svg class="chart2">
+    </svg>
+
+    <div class="infobox" style="visibility: hidden;">
+      <h2 class="company-name">Company Name</h2>
+      <h4>Industry: <strong class="industry">1800</strong></h4>
+      <h4>Revenue ($bns): <strong class="revenue">1800</strong></h4>
+      <h4>Capitalization ($bns): <strong class="capitalization">1800</strong></h4>
+      <h4>Employees (thousands): <strong class="employees">1800</strong></h4>
+    </div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    
+    <script>
+      var data = [ 
+        { 'name': 'Walmart', 'industry': 'Retail', 'revenue': 486, 'capitalization': 203, 'employees': 2200 },
+        { 'name': 'Sinopec', 'industry': 'Oil & Gas', 'revenue': 461, 'capitalization': 'NA', 'employees': 358.571 },
+        { 'name': 'CNPC', 'industry': 'Oil & Gas', 'revenue': 432, 'capitalization': 'NA', 'employees': 1668.072 },
+        { 'name': 'Shell', 'industry': 'Oil & Gas', 'revenue': 421, 'capitalization': 243, 'employees': 94.000 },
+        { 'name': 'Exxon', 'industry': 'Oil & Gas', 'revenue': 394, 'capitalization': 438, 'employees': 75.300 },
+        { 'name': 'Aramco', 'industry': 'Oil & Gas', 'revenue': 378, 'capitalization': 'NA', 'employees': 60.000 },
+        { 'name': 'BP', 'industry': 'Oil & Gas', 'revenue': 359, 'capitalization': 59, 'employees': 83.900 },
+        { 'name': 'SGCC', 'industry': 'Electric Utility', 'revenue': 333, 'capitalization': 'NA', 'employees': 1564.000 },
+        { 'name': 'Samsung', 'industry': 'Conglomerate', 'revenue': 305, 'capitalization': 181, 'employees': 222.000 },
+        { 'name': 'Vitol', 'industry': 'Commodities', 'revenue': 270, 'capitalization': 'NA', 'employees': 5.441 },
+      ];
+
+      // Chart 1
+
+      var width = 700;
+      var height = 400;
+      
+      var svg1 = d3.select('.chart1').attr('width', width).attr('height', height);
+
+      var max_value_rev = d3.max(data, function(d){ return d['revenue']; });
+      var max_value_emp = d3.max(data, function(d){ return d['employees']; });
+
+
+      var xscale = d3.scale.linear().domain([0, max_value_emp])
+                                  .range([40, width - 60]);
+      var yscale = d3.scale.linear().domain([0, max_value_rev])
+                                    .range([height - 20, 20]);
+
+      var circles = svg1.selectAll('circle')
+                        .data(data)
+                        .enter()
+                        .append('circle')
+                        .attr('cx', function(d) {
+                          return xscale(d['employees']);
+                        })
+                        .attr('cy', function(d) {
+                          return yscale(d['revenue']);
+                        })
+                        .attr('r', 6)
+                        .on('click', function(d) {
+                          d3.select(".company-name").text(d['name']);
+                          d3.select(".industry").text(d['industry']);
+                          d3.select(".revenue").text(d['revenue']);
+                          d3.select(".capitalization").text(d['capitalization']);
+                          d3.select(".employees").text(d['employees']);
+                          d3.select(".infobox").style('visibility', 'visible');
+
+                          svg1.selectAll("circle").transition().attr('class', '').attr('r', 6);
+                          d3.select(this).transition().attr('class', 'selected').attr('r', 9);
+                          console.log(this);
+                          svg2.selectAll("rect").transition().attr('class', '');
+                        })
+
+
+      var label_names = svg1.selectAll("text")
+                        .data(data)
+                        .enter()
+                        .append('text')
+                        .text(function(d) {
+                          return d['name'];
+                        })
+                        .attr('x', function(d) {
+                          return (10 + xscale(d['employees']))
+                        })
+                        .attr('y', function(d) {
+                          return (yscale(d['revenue']))
+                        })
+                        .attr('class', 'label')
+                        .attr('text-anchor', 'right');
+      
+      var xaxis = d3.svg.axis()
+                        .orient('bottom')
+                        .ticks(8)
+                        // .tickValues([0,250,500,1000])
+                        .scale(xscale);
+
+      svg1.append('g')
+          .attr('transform', 'translate(0, 380)')
+          .attr('class', 'axis')
+          .call(xaxis);
+
+
+      var yaxis = d3.svg.axis()
+                        .orient('left')
+                        .ticks(6)
+                        // .tickValues([0,250,500,1000])
+                        .scale(yscale);
+
+      svg1.append('g')
+          .attr('transform', 'translate(30, 0)')
+          .attr('class', 'axis')
+          .call(yaxis);
+
+      svg1.append("text")
+          .attr("class", "y label")
+          .attr("text-anchor", "end")
+          .attr("y", 6)
+          .attr("dy", ".75em")
+          .attr("transform", "translate(100, 0)")
+          .text("Revenue ($ bns)")
+          .style("font-weight", "bold");
+
+      svg1.append("text")
+          .attr("class", "x label")
+          .attr("text-anchor", "end")
+          .attr("x", width)
+          .attr("y", height - 25)
+          .text("Employees (thousands)")
+          .style("font-weight", "bold");
+
+
+
+
+
+
+
+
+      // Chart 2
+
+      var width = 700;
+      var height = 400;
+      
+      var svg2 = d3.select('.chart2').attr('width', width).attr('height', height);
+
+
+      var scale = d3.scale.linear().domain([0, max_value_rev])
+                                    .range([height - 20, 20]);
+
+      var circles = svg2.selectAll('rect')
+                        .data(data)
+                        .enter()
+                        .append('rect')
+                        .attr('y', function(d) {
+                          return (scale(d['revenue']));})
+                        .attr('x', function(d, i) {
+                          return i * 65 + 70;
+                        })
+                        .attr('width', 10)
+                        .attr('height', function(d) {
+                          return (height - 20 - scale(d['revenue']));
+                        })
+                        .on('click', function(d) {
+                          d3.select(".company-name").text(d['name']);
+                          d3.select(".industry").text(d['industry']);
+                          d3.select(".revenue").text(d['revenue']);
+                          d3.select(".capitalization").text(d['capitalization']);
+                          d3.select(".employees").text(d['employees']);
+                          d3.select(".infobox").style('visibility', 'visible');
+
+                          svg2.selectAll("rect").transition().attr('class', '');
+                          d3.select(this).transition().attr('class', 'selected');
+                          console.log(this);
+                          svg1.selectAll("circle").transition().attr('class', '').attr('r', 6);
+
+                        });
+
+      var labels = svg2.selectAll("text")
+                        .data(data)
+                        .enter()
+                        .append('text')
+                        .text(function(d) {
+                          return d['name'];
+                        })
+                        .attr('y', 395)
+                        .attr('x', function(d, i) {
+                          return i * 65 + 72;
+                        })
+                        .attr('class', 'label')
+                        .attr('text-anchor', 'middle')
+                        .style("font-weight", "bold");
+
+
+      var barlabels = svg2.selectAll("text.values")
+                        .data(data)
+                        .enter()
+                        .append('text')
+                        .text(function(d) {
+                          return "$" + d['revenue'] + "bn";
+                        })
+                        .attr('y', function(d) {
+                          return (10 + yscale(d['revenue']));})
+                        .attr('x', function(d, i) {
+                          return i * 65 + 73; // space them out
+                        })
+                        .style('fill', '#4A3128')
+                        .attr('class', 'label')
+                        .attr('text-anchor', 'middle');
+      
+
+      var yaxis = d3.svg.axis()
+                        .orient('left')
+                        .ticks(6)
+                        // .tickValues([0,250,500,1000])
+                        .scale(scale);
+
+      svg2.append('g')
+          .attr('transform', 'translate(40, 0)')
+          .attr('class', 'axis')
+          .call(yaxis);
+
+      svg2.append("text")
+          .attr("class", "y label")
+          .attr("text-anchor", "end")
+          .attr("y", 6)
+          .attr("dy", ".75em")
+          .attr("transform", "translate(100, 0)")
+          .text("Revenue ($ bns)")
+          .style("font-weight", "bold");
+
+
+    </script>
+
+    <style>
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: black;
+        shape-rendering: crispEdges;
+    }
+
+    .label {
+        font-family: sans-serif;
+        font-size: 13px;
+    }
+
+    .axis text {
+        font-family: sans-serif;
+        font-size: 11px;
+    }
+    </style>
+
+  </body>
+</html>

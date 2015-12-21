@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js'></script>  
+<head>
+  <title>Jordan Rosenblum HW8</title>
+</head>
+<style>
+  h3 {
+    text-align:center; 
+    font-family: georgia;
+    font-size: 20px;
+  }
+</style>
+<body>
+
+<h3>Jordan Rosenblum HW8</h3>
+
+<p style="text-align: center; font-family: georgia">
+  The world map below illustrates the most populated cities, focusing in on Africa, Europe, and Asia. Tokyo looks like the most populated city (see the large purple dot in Japan). Cities throughout India and much of Europe also look densely populated. Africa and Australia, however, look much more sparse.
+</p>
+
+  <div id="map"></div>
+
+  <script>
+  d3.csv("population.csv", function(error, data) {
+
+    data.forEach( function(d){
+        d['Population'] = +d['Population'];
+    });
+
+    var height = 600, width = 1100;
+
+    var svg = d3.select("#map").append("svg").attr("height", height).attr("width", width);
+
+
+   	var projection = d3.geo.mercator()
+                        .scale(240)
+                        .center([100, 30])
+    					.translate([width / 2, height / 2]);
+
+
+    var chart = svg.append("g");
+
+    // Categorical scale
+    var country_scale = d3.scale.category20();
+
+
+    var max_value_pop = d3.max(data, function(d){ 
+        return d['Population']; 
+    });
+
+
+    // Sequential scale
+    var pop_scale = d3.scale.linear().domain([0, max_value_pop]).range([1, 12]);
+
+    chart.selectAll('cirlce')
+    		.data(data)
+    		.enter()
+    		.append('circle')
+    		.attr('r', function(d) {
+                return pop_scale(d['Population']);
+            })
+    		.attr('cx', function(d) {
+    			var coords = [ d['Longitude'], d['Latitude'] ];
+    			var projected_coords = projection(coords);
+    			return projected_coords[0];
+    			//return xscale(d['lng']);
+    		})
+    		.attr('cy', function(d) {
+    			var coords = [ d['Longitude'], d['Latitude'] ];
+    			var projected_coords = projection(coords);
+    			return projected_coords[1];
+    			//return yscale(d['lat']);
+    		})
+    		.style("fill", function(d) {
+    			//return state_scale(d['state']);
+    			return country_scale(d['Country']);
+    		})
+            .attr('fill-opacity', 0.5);
+
+  });
+
+
+  </script>
+</body>
+</html>

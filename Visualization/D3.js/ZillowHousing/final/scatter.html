@@ -1,0 +1,244 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+<style>
+  .axis path,
+  .axis line {
+      fill: none;
+      stroke: black;
+      shape-rendering: crispEdges;
+  }
+
+  .axis text {
+      font-family: sans-serif;
+      font-size: 11px;
+  }
+  h3 {
+    text-align:center; 
+  }
+  h4 {
+    text-align:center; 
+    font-size: 22px; 
+  }
+  h5 {
+    text-align:right; 
+    font-size: 13px; 
+  }
+  div.tooltip {   
+  position: absolute;           
+  text-align: center;                         
+  padding: 10px;             
+  font: 12px sans-serif;        
+  background: lightsteelblue;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;  
+  visibility: hidden;  
+}
+div.drop {
+    width: 30%;
+    margin: 0 auto;
+}
+p.text {
+      margin: 10px 200px;
+      font-family: georgia;
+      text-align: center
+}
+p.source {
+    text-align:right; 
+    font-size: 13px; 
+    margin: 0px 50px
+}
+svg {
+    display: block;
+    margin: auto;
+}
+</style>
+</head>
+
+<body>
+  <div class="tooltip"></div>
+  <div class="drop"></div>
+  <div id='scatter'></div>
+  <script>
+  d3.csv("merge.csv", function(error,data) {
+    data.forEach( function(d) {
+      d['Rent']=+d['Rent'];
+      d['Sales']=+d['Sales'];
+    });
+
+    console.log(data.length);
+
+
+// Draw a graph
+      var graph_margin = 90,
+          graph_width = 400,
+          graph_height = 400;
+      var graph_svg = d3.select("#scatter")
+                        .append("svg")
+                        .attr('height', graph_height + graph_margin * 2)
+                        .attr('width', graph_width + graph_margin * 2);
+      var graph = graph_svg.append('g').attr("transform", "translate(" + graph_margin + "," + graph_margin + ")");
+
+      // Get Max
+      var x_max=d3.max(data,function (d) {return d['Rent']});
+      var y_max=d3.max(data,function (d) {return d['Sales']});
+      console.log(x_max);
+      console.log(y_max);
+
+      var xscale1=d3.scale.linear().domain([0,x_max]).range([0,graph_width]);
+      var yscale1=d3.scale.linear().domain([0,y_max]).range([graph_height,0]);
+
+      // Draw the axes
+      var yAxis1 = d3.svg.axis().scale(yscale1).orient("left");
+      // use .tickFormat(d3.format('d')) to not have commas in years
+      var xAxis1 = d3.svg.axis()
+                        .scale(xscale1)
+                        .orient("bottom")
+                        .ticks(7);
+
+      graph.append("g")
+          .attr("class", "y-axis axis")
+          .call(yAxis1);
+
+      graph.append("g")
+          .attr("class", "x-axis axis")
+          .attr("transform", "translate(0," + graph_height + ")")
+          .call(xAxis1);
+
+      graph.select('.x-axis').transition().call(xAxis1)
+                      .selectAll("text")  
+                      .style("text-anchor", "end")
+                      .attr("dx", "-.9em")
+                      .attr("dy", ".1em")
+                      .attr("transform", "rotate(-60)");
+
+      var y_text = graph.append('text')
+            .attr('x', -150)
+            .attr('y', -60)
+            .attr('text-anchor', 'end')
+            .attr('transform', 'rotate(-90)')
+            .text('Median Sales Price');  
+
+      var x_text = graph.append('text')
+            .attr('x', 250)
+            .attr('y', 450)
+            .attr('text-anchor', 'end')
+//            .attr('transform', 'rotate(-90)')
+            .text('Median Rent Price');  
+
+      var rent_text = graph.append('text')
+            .attr('x', 210)
+            .attr('y', 150)
+            .attr('text-anchor', 'end')
+            .attr('opacity',0.2)
+            .style('font-size',70)
+            .style('fill','salmon')
+            .text('Rent');
+
+      var rent_text = graph.append('text')
+            .attr('x', 360)
+            .attr('y', 350)
+            .attr('text-anchor', 'end')
+            .attr('opacity',0.2)
+            .style('font-size',70)
+            .style('fill','salmon')
+            .text('Buy');
+      graph.append('line')
+           .attr('x1',50)
+           .attr('y1',400)
+           .attr('x2',400)
+           .attr('y2',100)
+           .attr('stroke-width',10)
+           .attr('stroke','salmon')
+           .attr('opacity',0.2);
+
+
+//            .attr('transform', 'rotate(-90)')
+          // .attr('transform',"rotate(-60)")
+
+          // .transition()
+          // .selectAll('text')
+
+      // Get unique Time
+      function onlyUnique(value, index, self) { 
+          return self.indexOf(value) === index;
+      };
+      var time=data.map( function(d) {return d['Time'];}).filter(onlyUnique);
+      time.sort();
+      console.log(time);
+
+         d3.select(".drop")
+        .append("select")
+        .selectAll("option")
+        .data(time)
+        .enter()
+        .append("option")
+        .property("selected",function(d) { return d=="2015-09"})
+        // Provide available text for the dropdown options
+        .text(function(d) {return d;})
+        .attr("value", function (d) {
+          return d;
+        });
+
+        var circles_area = graph.append('g');
+        circles_area.selectAll('circle')
+                .data(data)
+                .enter()
+                .append('circle')
+                .attr('class', function(d) {
+                  return "t-" + d['Time'];
+                })
+                .attr('r', 3)
+                .attr('cx', function(d) {
+                  return xscale1(d['Rent']);
+                })
+                .attr('cy', function(d) {
+                  return yscale1(d['Sales']);
+                })
+                .style('opacity',0.4)
+                .attr('fill',"#80B2FF")
+//                  .attr('fill','salmon')
+                .on("mouseover", function(d) {
+                  console.log(d);
+                  d3.select(this)
+                    .transition()
+                    .attr('r',7)
+//                      .style('fill', 'red')
+                    .style('opacity',0.95);
+                  d3.select('.tooltip')
+                        .style('visibility','visible')
+                        .style('top', d3.event.pageY+10 + 'px')
+                        .style('left', d3.event.pageX+10 + 'px')
+                        .html('<strong>'+d['RegionName']+'</strong><br />Rent: $'+d['Rent']+'<br />Sales Price: $' + d["Sales"])
+                        .transition().style('opacity', .8);
+                })
+                .on("mouseout", function(d) {
+                  d3.select(this)
+                    .transition()
+                    .attr('r',3)
+                    .attr('fill',"#80B2FF")
+                    .style('opacity',0.4);
+                  d3.select('.tooltip')
+                  .style('visibility','hidden')
+                  .transition().style('opacity', 0);
+                });
+        circles_area.selectAll('circle').style('visibility','hidden');
+        circles_area.selectAll('.t-2015-09').style('visibility','visible');
+
+              
+        d3.select('select').on("change",function () {
+          var selectedValue = this['value'];
+          console.log(selectedValue);
+          circles_area.selectAll('circle').style('visibility','hidden');
+          circles_area.selectAll('.t-' + selectedValue).style('visibility','visible');
+        });
+});          
+  </script>
+</body>
+</html>

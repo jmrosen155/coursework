@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jordan Rosenblum HW14</title>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+<style>
+  .axis path,
+  .axis line {
+      fill: none;
+      stroke: black;
+      shape-rendering: crispEdges;
+  }
+
+  .axis text {
+      font-family: sans-serif;
+      font-size: 11px;
+  }
+  h3 {
+    text-align:center; 
+  }
+  h4 {
+    text-align:center; 
+    font-size: 22px; 
+  }
+  h5 {
+    text-align:right; 
+    font-size: 13px; 
+  }
+  div.tooltip {   
+  position: absolute;           
+  text-align: center;                         
+  padding: 10px;             
+  font: 12px sans-serif;        
+  background: lightsteelblue;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;  
+  visibility: hidden;     
+}
+</style>
+</head>
+<body>
+  <h4>Jordan Rosenblum HW14 <br> 
+  Life expectancy around the world</h4>
+
+  <h3>The year is currently <span id="year"></span></h3>
+  <p style="text-align: center; font-family: georgia">
+    Mouse over the countries in the map or the line chart for more information.
+  </p>
+  <div class="tooltip"></div>
+  <div id="map"></div>
+  <h5>Source: <a href='http://data.worldbank.org/indicator/SP.DYN.LE00.IN'>Word Bank</a></h5>
+
+  <script>
+
+  var life_map = d3.map();
+
+
+  // match  Country Code from high-tech-exports
+  // with ISO3 from WorldMap.json
+  queue()
+    .defer(d3.json, "WorldMap.json")
+    .defer(d3.csv, "life_expectancy_wide.csv", function (d) {
+      // d is everything we know about a given country that is inside the csv
+      var country_code = d['Country Code'];
+      life_map.set(country_code, d);
+      return d;
+
+      // it's like a dictionary - an example below
+      // tech_map.set('Austria', {'1970': 4, '1971': 5})
+     })
+    .await(function(error, world_json, life_data) {
+      console.log(world_json);
+      console.log(life_data);
+
+
+      
+      // Pull the countries out of the geojson
+      var countries = world_json['features'];
+      
+      var height = 500, width = 700;
+
+
+      // Function to move circles or lines to the front when selected
+      d3.selection.prototype.moveToFront = function() {
+        return this.each(function(){
+          this.parentNode.appendChild(this);
+        });
+      };
+
+
+      /* 
+      
+        DRAWING THE MAP
+      
+      */
+      
+      
+      
+      
+      
+      var map_svg = d3.select("#map")
+                    .append("svg")
+                    .attr('height', height)
+                    .attr('width', width);
+
+      /* Create g layers for each aspect of the map */
+      var map = map_svg.append("g");
+      
+      /* 
+        Since it's a map, create a projection and a path helper
+      */
+      var projection = d3.geo.equirectangular()
+                              .scale(120)
+                              .translate([width / 2, height / 2]);
+
+      var path = d3.geo.path().projection(projection);
+
+      var color_scale = d3.scale.linear().domain([18, 85]).range(['#CCF5FF', '#005266']);
+
+      /* 
+        Examine the data in the console just so we know
+      */
+      console.log("Country data looks like");
+      console.log(countries[0]);
+
+      /* 
+
+      */
+      map.selectAll("path")
+          .data(countries)
+          .enter()
+          .append("path")
+          .attr('class', 'country')
+          .attr('d', path)
+          .style('stroke', '#ffffff');
+          
+          
+
+      // change the year
+      function update(year) {
+          map.selectAll('.country')
+              .style('fill', function(d) {
+                // d sucks and is just geographic data
+                // we want our real cool tech export data
+                // if only there were a variable that existed
+                // that we could just simply get the data from
+                // by using the country's code
+
+                // oh wait
+
+                // spoiler alert
+
+                // we got that, yo
+
+                // console.log("Want to look at the geographic stuff?");
+                // console.log("Country code is in properties/ISO3");
+                // now that we have  the country code, we can go
+                // to the national bank of tech_map and make a withdrawal
+                // based on the country code which is how we stored it
+                // in the first place
+
+                var country_data = life_map.get(d['properties']['ISO3']);
+
+
+                // country_data is now a row from our csv
+                // about high-tech exports
+                // console.log("Let's look at our country data for", d['properties']['ISO3'])
+                // console.log(country_data);
+
+                // First we have to check if the country
+                // even exists in our tech exports dataset
+                if(typeof country_data === 'undefined') {
+                  return '#e1e1e1';
+                } else {
+                  // then we have to check to make sure
+                  // we have some sort of exports data
+                  // for that year
+                  // (Values without data are empty strings)
+                  var life_exp = country_data[year];
+                  if(life_exp === "") {
+                    // instead of sending .style two values, an attribute and
+                    // an amount to set it to, i just gave it the attribute
+                    // so it returns the current value of that attribute
+                    var current_color = d3.select(this).style('fill');
+                    return current_color;
+                  } else {
+                    return color_scale(life_exp);
+                  }
+                }
+              })
+              .on("mouseover", function(d) {
+                    console.log(d);
+                    //d3.select(this).style('fill', '#ff0000');
+                    // d3.selectAll(".month-" + d['Month']).filter(".line")
+                    //     .transition()
+                    //     .style('fill', '#ff0000')
+                    d3.select('.tooltip')
+                      .style('visibility', 'visible')
+                      .style("left", (d3.event.pageX + 20) + "px")
+                      .style("top", (d3.event.pageY -20) + "px")
+                      .html(function(e) {
+                        if(typeof life_map.get(d['properties']['ISO3']) === 'undefined') {
+                          var temp = 'Country: ' + d['properties']['NAME'] + '<br>' + 'Year: ' + year + '<br>' + 'Life Expectancy: ';
+                          return temp;
+                        } else {
+                          var temp = 'Country: ' + d['properties']['NAME'] + '<br>' + 'Year: ' + year + '<br>' + 'Life Expectancy: ' + life_map.get(d['properties']['ISO3'])[year];
+                          return temp;
+                        }
+                      })
+                    d3.selectAll(".country-" + d['properties']['ISO3'])
+                      .transition()
+                      .style('stroke-width', 3)
+                      .style("stroke", "red")
+                      .each(function(e) {
+                        d3.select(this).moveToFront()
+                      });
+                        
+                    
+                  })
+                  .on("mouseout", function(d) {
+                    console.log(d);
+                    //d3.select(this).style('fill', '#333333');
+                    // d3.selectAll(".month-" + d['Month']).filter(".line")
+                    //     .transition()
+                    //     .style('fill', '#000000')
+                    //     .attr('r', 5);
+                    d3.select('.tooltip').style('visibility', 'hidden');
+                    d3.selectAll(".country-" + d['properties']['ISO3'])
+                      .transition()
+                      .style('stroke-width', 1)
+                      .style("stroke", "#80B2FF");
+                  });
+      }
+
+      // ALWAYS REMEMBER TO CALL IT
+      // or you'll be so sad
+      // update('2013');
+
+      // setTimeout takes two parameters
+      // first: a function to run
+      // second: an amount of time to wait
+      // before it gets run
+      // setTimeout(function() {
+      //   update('1988');
+      // }, 2000);
+
+      // // same as above, but it does it again
+      // // and again and again and again
+      // setInterval(function() {
+      //   update('1988');
+      // }, 2000);
+
+      // every time it increases the current_year
+      // by one and draws the map for us
+      var start_year = 1959;
+      var current_year = start_year;
+      map.selectAll(".country").style("fill", '#e1e1e1');
+      setInterval(function() {
+        current_year++;
+        if(current_year > 2013) {
+          // reset the year
+          current_year = start_year;
+          // reset the map colors
+          map.selectAll(".country").style("fill", '#e1e1e1');
+        }
+        d3.select("#year").text(current_year);
+        update(current_year);
+      }, 500);
+
+
+
+
+
+      var long_data = [];
+      life_data.forEach( function(row) {
+        // Loop through all of the columns, and for each column
+        // make a new row
+        Object.keys(row).forEach( function(colname) {
+          // Ignore 'State' and 'Value' columns
+          if(colname == "Country Name" || colname == "Value") {
+            return
+          }
+          long_data.push({"Country Name": row["Country Name"], "Country Code": row["Country Code"], "Life Expectancy": row[colname], "Year": colname});
+        });
+      });
+
+
+
+      // Convert everything to numbers
+      long_data.forEach( function(d){
+        d['Year'] = +d['Year'];
+        d['Life Expectancy'] = +d['Life Expectancy']; 
+      });
+
+      long_data = long_data.filter( function(d) {
+        // if fdi outflows is not '..', we'll keep it
+        if(typeof d['Life Expectancy'] !== 'undefined') {
+          return d['Life Expectancy'];
+        }
+      });
+
+      
+      var height2 = 500, width2 = 700, margin = 80;
+
+      var chart_height = height2 - margin * 2;
+      var chart_width = width2 - margin * 2;
+
+      /* 
+      
+        DRAWING THE CHART
+      
+      */
+      
+      
+      var chart_svg = d3.select("#map")
+                    .append("svg")
+                    .attr('height', height2)
+                    .attr('width', width2);
+
+      /* Create g layers for each aspect of the map */
+      var chart = chart_svg.append("g").attr('transform', 'translate(' + margin + ',' + margin + ')');
+
+
+
+
+      var xscale = d3.scale.linear().domain([1960,2013]).range([0,chart_width]);
+  
+
+      var max_value_life = d3.max(long_data, function(d){ 
+        return d['Life Expectancy']; 
+      });
+
+      var yscale = d3.scale.linear().domain([0,max_value_life]).range([chart_height, 0]);
+
+
+      chart.append("text")
+              .attr("class", "y label")
+              .attr("text-anchor", "end")
+              .attr("y", -40)
+              .attr("x", -100)
+              .attr("dy", ".75em")
+              .attr("transform", "rotate(-90)")
+              .text("Life Expectancy")
+              .style("font-weight", "bold");
+
+
+      chart.append("text")
+            .attr("class", "x label")
+            .attr("text-anchor", "end")
+            .attr("y", 365)
+            .attr("x", 275)
+            .attr("dy", ".75em")
+            .text("Year")
+            .style("font-weight", "bold");
+
+
+      var yAxis = d3.svg.axis().scale(yscale).orient("left");
+      // use .tickFormat(d3.format('d')) to not have commas in years
+      var xAxis = d3.svg.axis()
+                    .scale(xscale)
+                    .orient("bottom")
+                    .tickFormat(d3.format('d'));
+
+      chart.append("g")
+          .attr("class", "y-axis axis")
+          .call(yAxis);
+
+      chart.append("g")
+          .attr("class", "x-axis axis")
+          .attr("transform", "translate(0," + chart_height + ")")
+          .call(xAxis);
+
+
+      console.log("Look at the original data");
+      console.log(long_data);
+
+
+      var commas = d3.format("0,000");
+
+      var circles = chart.selectAll('circle')
+                          .data(long_data)
+                          .enter()
+                          .append('circle')
+                          .attr('r', 2)
+                          .attr('cx', function(d) {
+                            return xscale(d['Year']);
+                          })
+                          .attr('cy', function(d) {
+                            return yscale(d['Life Expectancy'])
+                          })
+                          .style("fill", "#80B2FF")
+                          .on('mouseover', function(d){
+                            d3.select(this).style('fill', '#668ECC')
+                                            .style('r', 4)
+                                            .moveToFront();
+                            d3.select('.tooltip')
+                              .style('visibility', 'visible')
+                              .style("left", (d3.event.pageX + 20) + "px")
+                              .style("top", (d3.event.pageY -20) + "px")
+                              .html('Country: ' + d['Country Name'] + '<br>' + 'Year: ' + d['Year'] + '<br>' + 'Life Expectancy: ' + d['Life Expectancy']);
+                          })
+                          .on('mouseout', function(d){
+                            d3.select(this).style('fill', '#80B2FF')
+                                            .style('r', 2);
+                            d3.select(".tooltip").style('visibility', 'hidden');
+                          });
+
+
+      var line = d3.svg.line()
+                        .x(function(d) {
+                          return xscale(d['Year']);
+                        })
+                        .y(function(d) {
+                          return yscale(d['Life Expectancy']);
+                        });
+
+      console.log(line);
+
+      // d3.nest will group everything together
+      var grouped = d3.nest()
+                      .key(function(d) {
+                        return d['Country Code']
+                      })
+                      .entries(long_data);
+
+      console.log(long_data);
+      console.log(grouped);
+
+      var lines_area = chart.append("g");
+
+      
+
+      lines_area.selectAll('path')
+            .data(grouped)
+            .enter()
+            .append('path')
+            .attr("d", function(d) {
+              console.log(d);
+              return line(d['values']);
+            })
+            .attr("class", function(d) {
+                // Can give multiple classes by separating with a space
+                // console.log(data)
+                return "line country-" + d['key'];
+              })
+            .style("fill", "none")
+            .style("stroke", "#80B2FF")
+            .style('stroke-width', 1)
+            .on('mouseover', function(d){
+                  d3.select(this).style('stroke', '#668ECC')
+                                  .style('stroke-width', 3)
+                                  .moveToFront();
+                  d3.select('.tooltip')
+                      .style('visibility', 'visible')
+                      .style("left", (d3.event.pageX + 20) + "px")
+                      .style("top", (d3.event.pageY -20) + "px")
+                      .html('Country: ' + d['values'][0]['Country Name']);
+                })
+                .on('mouseout', function(d){
+                  d3.select(this).style('stroke', '#80B2FF')
+                                  .style('stroke-width', 1);
+                  d3.select(".tooltip").style('visibility', 'hidden');
+                });
+
+
+
+    });
+  </script>
+</body>
+</html>

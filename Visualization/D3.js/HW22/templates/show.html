@@ -1,0 +1,256 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1>{{ city.city_name }}</h1>
+
+<div id="map" style="height: 250px;"></div>
+
+
+<script>
+var map = L.map('map').setView([38.8833, -77.0167], 3);
+var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+});
+
+map.addLayer(layer);
+
+L.marker([{{ city.latitude }}, {{ city.longitude }}]).addTo(map)
+  .bindPopup("<strong>{{ city.city_name }}</strong>").openPopup();
+
+
+</script>
+<p><br></p>
+<p><strong>January Temp: </strong>{{ city.january }}</p>
+<p><strong>April Temp: </strong>{{ city.april }}</p>
+<p><strong>July Temp: </strong>{{ city.july }}</p>
+<p><strong>October Temp: </strong>{{ city.october }}</p>
+
+
+
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Click to Hide/Show Line Chart
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div id="chart" style="height: 400px;"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+
+
+	  var city_name = '{{ city.city_name }}';
+
+	  var jan_temp = {{ city.january }};
+	  var april_temp = {{ city.april }};
+	  var july_temp = {{ city.july }};
+	  var oct_temp = {{ city.october }};
+
+	  var avg_jan = {{ avg_jan }};;
+	  var avg_apr = {{ avg_apr }};;
+	  var avg_jul = {{ avg_jul }};;
+	  var avg_oct = {{ avg_oct }};;
+
+	  var data = [ 
+          { 'Location': city_name, 'Month': 'January', 'Temp': jan_temp },
+          { 'Location': city_name, 'Month': 'April', 'Temp': april_temp},
+          { 'Location': city_name, 'Month': 'July', 'Temp': july_temp },
+          { 'Location': city_name, 'Month': 'October', 'Temp': oct_temp },
+          { 'Location': 'US Average', 'Month': 'January', 'Temp': avg_jan },
+          { 'Location': 'US Average', 'Month': 'April', 'Temp': avg_apr },
+          { 'Location': 'US Average', 'Month': 'July', 'Temp': avg_jul },
+          { 'Location': 'US Average', 'Month': 'October', 'Temp': avg_oct }
+        ];
+
+
+      var svg_width = 600;
+	  var svg_height = 400;
+	  var margin = 60;
+	  var height = svg_height - margin * 2;
+	  var width = svg_width - margin * 2;
+
+	  data.forEach( function(d){
+    	  d['Temp'] = +d['Temp'];
+  	  });
+
+  	  var svg = d3.select("#chart").append("svg").attr("height", svg_height).attr("width", svg_width);
+
+  	  var months = ['January', 'April', 'July', 'October'];
+
+  	  var xscale = d3.scale.ordinal().domain(months).rangeBands([0,width]);
+	  
+
+	  var max_value_temp = d3.max(data, function(d){ 
+	    return d['Temp']; 
+	  });
+
+	  var yscale = d3.scale.linear().domain([0,max_value_temp]).range([height, 0]);
+
+	  var chart = svg.append('g').attr('transform', 'translate(' + margin + ',' + margin + ')');
+
+	  chart.append("text")
+	          .attr("class", "y label")
+	          .attr("text-anchor", "end")
+	          .attr("y", -40)
+	          .attr("x", -60)
+	          .attr("dy", ".75em")
+	          .attr("transform", "rotate(-90)")
+	          .text("Average Temperature (F)")
+	          .style("font-weight", "bold")
+	          .style("font-size","13px");
+
+
+	  chart.append("text")
+	        .attr("class", "x label")
+	        .attr("text-anchor", "end")
+	        .attr("y", 310)
+	        .attr("x", 250)
+	        .attr("dy", ".75em")
+	        .text("Month")
+	        .style("font-weight", "bold")
+	        .style("font-size","13px");
+
+
+	  var yAxis = d3.svg.axis().scale(yscale).orient("left");
+	  // use .tickFormat(d3.format('d')) to not have commas in years
+	  var xAxis = d3.svg.axis()
+	                .scale(xscale)
+	                .orient("bottom");
+
+	  chart.append("g")
+	      .attr("class", "y-axis axis")
+	      .call(yAxis);
+
+	  chart.append("g")
+	      .attr("class", "x-axis axis")
+	      .attr("transform", "translate(0," + height + ")")
+	      .call(xAxis);
+
+
+
+
+
+	  var line = d3.svg.line()
+	                    .x(function(d) {
+	                      return xscale(d['Month']) + 60;
+	                    })
+	                    .y(function(d) {
+	                      return yscale(d['Temp']);
+	                    });
+
+	  console.log(line);
+
+
+
+
+
+	  var grouped = d3.nest()
+                .key(function(d) {
+                  return d['Location']
+                })
+                .entries(data);
+
+
+	  var lines_area = chart.append("g");
+
+	  lines_area.selectAll('path')
+	        .data(grouped)
+	        .enter()
+	        .append('path')
+	        .attr("d", function(d) {
+	          console.log(d);
+	          return line(d['values']);
+	        })
+	        .style("fill", "none")
+	        .style("stroke", function(d) {
+	        	if (d['key'] === 'US Average') {
+	        		return '#8787ab';
+	        	}
+	        	else {
+	        		return '#ff0000';
+	        	}
+	        })
+	        .style("stroke-width", 4);
+
+
+
+
+
+	  var circles = chart.selectAll('circle')
+	                      .data(data)
+	                      .enter()
+	                      .append('circle')
+	                      .attr('r', 6)
+	                      .attr('cx', function(d) {
+	                        return xscale(d['Month']) + 60;
+	                      })
+	                      .attr('cy', function(d) {
+	                        return yscale(d['Temp'])
+	                      })
+	                      .style("fill", function(d) {
+					        	if (d['Location'] === 'US Average') {
+					        		return '#8787ab';
+					        	}
+					        	else {
+					        		return '#ff0000';
+					        	}
+					        })
+
+	  var legend = chart.append("g").attr("class","legend");
+	  legend.attr('transform', 'translate(100,' + (height - 20) + ')')
+
+	  legend_items = legend.selectAll("g")
+	                      .data(grouped)
+	                      .enter()
+	                      .append("g")
+
+	  legend_items.attr('transform', function(d, i) {
+	    return 'translate(' + (i * 200) + ',0)';
+	  })
+
+	  legend_items.append("text").text( function(d) {
+	    return d['key']
+	  })
+	  .attr('x', 15)
+	  .attr('y', 10);
+
+	  legend_items.append("rect")
+	            .attr('x', 0)
+	            .attr('y', 0)
+	            .attr('height', 12)
+	            .attr('width', 12)
+	            .style('fill', function(d) {
+	              if (d['key'] === 'US Average') {
+	        		return '#8787ab';
+	        	  }
+	        	  else {
+	        		return '#ff0000';
+	        	  }
+	            })
+	  
+
+
+</script>
+
+<p><strong>Annual Precipitation (inches): </strong>{{ city.ann_precip_in }} (US average: {{ avg_precip }}, Percentile: {{ city_count_percentile }}%)</p>
+{% if city.ann_precip_in < avg_precip %}
+	<p>This city has a below-average amount of precipitation.</p>
+{% elif  city.ann_precip_in > avg_precip %}
+	<p>This city has an above-average amount of precipitation.</p>
+{% else %}
+	<p>This city has an average amount of precipitation.</p>
+{% endif %}
+
+<p><strong>Annual Snow (inches): </strong>{{ city.ann_snow_in }}</p>
+
+
+
+{% endblock %}

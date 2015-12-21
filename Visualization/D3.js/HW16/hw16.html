@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jordan Rosenblum HW16</title>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+<style>
+  .axis path,
+  .axis line {
+      fill: none;
+      stroke: black;
+      shape-rendering: crispEdges;
+  }
+
+  .axis text {
+      font-family: sans-serif;
+      font-size: 11px;
+  }
+
+  h3 {
+    text-align:center; 
+  }
+  h4 {
+    text-align:center; 
+    font-size: 22px; 
+  }
+  h5 {
+    text-align:right; 
+    font-size: 13px; 
+  }
+  div.tooltip {   
+  position: absolute;           
+  text-align: center;                         
+  padding: 10px;             
+  font: 12px sans-serif;        
+  background: lightsteelblue;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;  
+  visibility: hidden;     
+}
+p.text {
+      margin: 10px 200px;
+      font-family: georgia;
+      text-align: center
+}
+p.source {
+    text-align:right; 
+    font-size: 13px; 
+    margin: 0px 50px
+}
+.png {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.imgContainer{
+    float:left;
+}
+.Map2 {
+    margin: 0 auto;
+    width: 900px;
+    height: 300px;
+}
+svg {
+    display: block;
+    margin: auto;
+}
+</style>
+</head>
+<body>
+  <h3>Jordan Rosenblum HW16</h3>
+
+  <p class="text">
+    <strong>Map 1:</strong> A map of 2014 NYC traffic collisions where the location is available. Each point is a traffic accident in which at least 1 cyclist was injured. The point map illustrates that many accidents happened on the major North-South Avenues in Manhattan, an observation that would not be easily seen in a chorpleth map. Surprisingly, there are relatively few accidents on the West Side Highway despite the Hudson River Bike Path access. It was created using QGIS.
+  </p>
+
+  <img class="png" alt="NYC Point Map" src="NYC_Point_Map.png" />
+
+  <p class="source">Source: <a href='https://data.cityofnewyork.us/City-Government/Neighborhood-Tabulation-Areas/cpf4-rkhq'>Shapefile</a>, <a href='https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95'>Data</a></p>
+
+  <p class="text">
+    <strong>Maps 2(a) and 2(b):</strong> Two maps of 2014 NYC traffic collisions where the location is available. The first map colors Neighborhood Tabulation Areas (NTAs) by the raw number of cyclists injured in that borough. It shows that the most cyclists are injured in Lower and Midtown Manhattan. However, there are still a decent number of injuries in Brooklyn, Queens, and Upper Manhattan as well. Given that some boroughs have larger land areas, the second map colors the NTAs the same way but normalized for the area of the region. The story changes slightly - cyclist injuries are more concentrated in lower Manhattan given the high raw numbers but smaller sizes of the NTAs. It was created using QGIS.
+  </p>
+
+  <div class="Map2">
+    <div class="imgContainer">
+      <img alt="NYC Choropleth Map 1" src="Choropleth1.png" />
+    </div>
+    <div class="imgContainer">
+      <img alt="NYC Choropleth Map 1" src="Choropleth2.png" />
+    </div>
+  </div>
+
+  <p class="source">Source: <a href='https://data.cityofnewyork.us/City-Government/Neighborhood-Tabulation-Areas/cpf4-rkhq'>Shapefile</a>, <a href='https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95'>Data</a></p>
+
+  <p class="text">
+    <strong>Map 3:</strong> The map below depicts US airports which have scheduled service by state. Each state is colored according to the number of airports within the state, adjusted for area. I originally tried making the map without this area normalization and not surprising, the larger states generally had the larger number of airports. Of course, this original map was not very interesting. The shapefile and csv data were combined using QGIS but the map was built in d3. I <a href="http://www.northrivergeographic.com/qgis-calculating-area">calculated</a> the area of the shapes using the QGIS field calculator (function = '$area').
+  </p>
+
+  <div class="tooltip"></div>
+
+  <div id="map3"></div>
+
+  <p class="source">Source: <a href='https://www.arcgis.com/home/item.html?id=f7f805eb65eb4ab787a0a3e1116ca7e5'>Shapefile</a>, <a href='http://ourairports.com/data/airports.csv'>Data</a></p>
+
+
+  <script>
+
+  d3.json("airports.geojson", function(error, data) {
+    var states = data['features'];
+    console.log(states);
+      
+    var height = 500, width = 700;
+
+    /* 
+    
+      DRAWING THE MAP
+    
+    */
+    
+    var map_svg = d3.select("#map3")
+                  .append("svg")
+                  .attr('height', height)
+                  .attr('width', width);
+
+    var map = map_svg.append("g");
+
+    var projection = d3.geo.albersUsa()
+                            .scale(800)
+                            .translate([width / 2, height / 2]);
+
+    var path = d3.geo.path().projection(projection);
+
+    var max_airports = d3.max(states, function(d) {
+        return d['properties']['NORMCNT'];
+    });
+
+    var mean_airports = d3.mean(states, function(d) {
+        return d['properties']['NORMCNT'];
+    });
+
+    var color_scale1 = d3.scale.linear()
+                        .domain([0, mean_airports, max_airports])
+                        .range(['#E0F5FF', '#478FB2', '#142933']);
+
+
+    
+    map.selectAll('path')
+        .data(states)
+        .enter()
+        .append('path')
+        .attr('d', path)
+        .style('fill', function(d) {
+            return color_scale1(d['properties']['NORMCNT']);
+        })
+        .style('stroke', '#333333')
+        .style('stroke-width', 0.5)
+        .on('mouseover', function(d) {
+          d3.select(this).style('fill', '#668ECC')
+          d3.select('.tooltip')
+            .style('visibility', 'visible')
+            .style("left", (d3.event.pageX + 20) + "px")
+            .style("top", (d3.event.pageY -20) + "px")
+            .html('<strong>'+d['properties']['STATE_NAME']+'</strong><br/>Number of Airports: ' + d['properties']['PNTCNT'])
+        })
+        .on('mouseout', function(d) {
+          d3.select(this).style('fill', function (d) {
+              return color_scale1(d['properties']['NORMCNT']);
+          })
+          d3.select('.tooltip').style('visibility', 'hidden');
+        });
+
+
+  });
+
+  
+
+
+
+  </script>
+</body>
+</html>

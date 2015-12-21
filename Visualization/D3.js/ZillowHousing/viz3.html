@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>US Housing Trends</title>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.7/d3-tip.min.js'></script>
+</head>
+<body>
+
+  <p>The year is currently <strong id="month"></strong></p>
+  <div id="map"></div>
+
+<script>
+
+var inc_map = d3.map();
+var dec_map = d3.map();
+
+queue()
+  .defer(d3.json, "states.json")
+  .defer(d3.csv, "Metro_lat_lon.csv")
+  .defer(d3.csv, "Metro_PctOfHomesDecreasingInValues_AllHomes.csv", function(d) {
+    var region_name = d['RegionName'];
+    dec_map.set(region_name, d); 
+  })
+  .defer(d3.csv, "Metro_PctOfHomesIncreasingInValues_AllHomes.csv", function(d) {
+    var region_name = d['RegionName'];
+    inc_map.set(region_name, d); 
+  })
+  .await(function(error, states_json, cities_latlon, pct_dec_data, pct_inc_data) {
+    console.log(states_json);
+    console.log(cities_latlon);
+    
+    var states = states_json['features'];
+    
+    var height = 400, width = 600;
+
+    console.log(pct_inc_data);
+
+    /* 
+    
+      DRAWING THE MAP
+    
+    */
+    
+    var map_svg = d3.select("#map")
+                  .append("svg")
+                  .attr("viewBox", "0 0 " + width + " " + height)
+                  .style("max-width", width + "px")
+                  .attr("preserveAspectRatio", "xMidYMid meet")
+
+    /* Create g layers for each aspect of the map */
+    var map = map_svg.append("g");
+    var states_g = map.append("g");
+    var cities_g = map.append("g");
+    
+    /* 
+      Since it's a map, create a projection and a path helper
+    */
+    var projection = d3.geo.albersUsa()
+                            .scale(800)
+                            .translate([width / 2, height / 2]);
+
+    var path = d3.geo.path().projection(projection);
+
+
+    /* 
+      Draw the states first so they're in the background
+    */
+    states_g.selectAll("path")
+            .data(states)
+            .enter()
+            .append("path")
+            .attr('d', path)
+            .style('fill', '#e2e9d4')
+            .style('stroke', '#FFFFFF');
+
+    format = d3.format("0,000");
+
+    var color_scale = d3.scale.linear().domain([-100, 0, 100]).range(['#cd5b45', 'beige', '#5e8d00']);
+
+    /* 
+      Draw the circles and update them in the update function
+    */
+    var tip = d3.tip()
+                .attr('class', 'tip')
+                .html(function(d) { return 'City: ' + d['RegionName']; });
+    cities_g.call(tip);
+
+    cities_g.selectAll("circle")
+              .data(cities_latlon)
+              .enter()
+              .append("circle")
+              .style("fill", '#5a636e')
+              .attr("r", function(d) {
+                if (d['RegionName'] !== 'United States') {
+                  return 4;
+                }
+              })
+              .attr("cx", function(d) {
+                if (d['RegionName'] !== 'United States') {
+                  var coords = [ +d['longitude'], +d['latitude'] ];
+                  var projected_coords = projection(coords);
+                  return projected_coords[0];
+                }
+              })
+              .attr("cy", function(d) {
+                if (d['RegionName'] !== 'United States') {
+                  var coords = [ +d['longitude'], +d['latitude'] ];
+                  var projected_coords = projection(coords);
+                  return projected_coords[1];
+                }
+              })
+              .on('mouseover', function(d){
+                d3.select(this).transition().duration(100).attr('r', 9);
+                tip.show(d);
+              })
+              .on('mouseout', function(d){
+                d3.select(this).transition().duration(100).attr('r', 4);
+                tip.hide(d);
+              });
+
+    function update(month) {
+      map.selectAll('circle')
+      .style('fill', function(d) {
+
+          var percentage_inc = inc_map.get(d['RegionName']);
+          var percentage_dec = dec_map.get(d['RegionName']);
+
+          // console.log("Let's look at our increasing percentage for", d['RegionName'])
+
+          // all data can find a match
+          var difference = (+percentage_inc[month]) - (+percentage_dec[month]);
+          // console.log(difference)
+          // if some year in the middle is missing
+          if(difference === "") {
+            return current_color;
+          } 
+          else {
+            return color_scale(difference);
+          }
+          
+
+        });
+
+    };
+
+    var months = ['2010-02', 
+                   '2010-03',
+                   '2010-04',
+                   '2010-05',
+                   '2010-06',
+                   '2010-07',
+                   '2010-08',
+                   '2010-09',
+                   '2010-10',
+                   '2010-11',
+                   '2010-12',
+                   '2011-01',
+                   '2011-02',
+                   '2011-03',
+                   '2011-04',
+                   '2011-05',
+                   '2011-06',
+                   '2011-07',
+                   '2011-08',
+                   '2011-09',
+                   '2011-10',
+                   '2011-11',
+                   '2011-12',
+                   '2012-01',
+                   '2012-02',
+                   '2012-03',
+                   '2012-04',
+                   '2012-05',
+                   '2012-06',
+                   '2012-07',
+                   '2012-08',
+                   '2012-09',
+                   '2012-10',
+                   '2012-11',
+                   '2012-12',
+                   '2013-01',
+                   '2013-02',
+                   '2013-03',
+                   '2013-04',
+                   '2013-05',
+                   '2013-06',
+                   '2013-07',
+                   '2013-08',
+                   '2013-09',
+                   '2013-10',
+                   '2013-11',
+                   '2013-12',
+                   '2014-01',
+                   '2014-02',
+                   '2014-03',
+                   '2014-04',
+                   '2014-05',
+                   '2014-06',
+                   '2014-07',
+                   '2014-08',
+                   '2014-09',
+                   '2014-10',
+                   '2014-11',
+                   '2014-12',
+                   '2015-01',
+                   '2015-02',
+                   '2015-03',
+                   '2015-04',
+                   '2015-05',
+                   '2015-06',
+                   '2015-07',
+                   '2015-08',
+                   '2015-09' ];
+    var arrayLength = months.length;
+    var start_idx = 0;
+    var current = start_idx;
+
+    setInterval(function() {
+      
+      if(current === arrayLength) {
+        // reset the year
+        current = start_idx;
+        // reset the map colors
+        map.selectAll(".country").style("fill", '#5a636e');
+      }
+
+      current_month = months[current]
+      update(current_month);
+      d3.select("#month").text(current_month);
+      current++;
+
+    }, 500);
+
+});
+
+</script>
+
+</body>
+
+<style>
+
+  .tip {
+      line-height: 1;
+      font-family: garamond;
+      font-weight: lighter;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      border-radius: 2px;
+      pointer-events: none;
+  }
+
+  p {
+      font-family: garamond;
+      font-weight: lighter;
+      font-size: 20px;
+      text-align: center;
+  }
+
+  div {
+      text-align: center;
+  }
+  
+</style>
+
+</html>

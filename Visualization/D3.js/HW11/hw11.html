@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jordan Rosenblum HW11</title>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js'></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+</head>
+<style>
+  
+  h3 {
+    text-align:center; 
+  }
+  h4 {
+    text-align:center; 
+  }
+  /* http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html */
+  div.tooltip {   
+  position: absolute;           
+  text-align: center;                         
+  padding: 10px;             
+  font: 12px sans-serif;        
+  background: lightsteelblue;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;  
+  visibility: hidden;     
+}
+svg {
+    display: block;
+    margin: auto;
+}
+</style>
+<body>
+
+  <h3>Jordan Rosenblum HW11</h3>
+
+  <h4>NYC Neighborhood Tabulation Area Census Statistics from 2010 (<a href='http://data.nycprepared.org/dataset/neighborhood-tabulation-areas'>GeoJSON</a>, <a href='http://www.nyc.gov/html/dcp/html/census/demo_tables_2010.shtml'>Data</a>).</h4>
+
+  <p style="text-align: center; font-family: georgia">
+    A map of New York City Tabulation Areas, highlighting the areas with the highest population as of the 2010 census. Mouse-over the neighborhoods to see relevant information. Parks and airports have been shaded in grey.
+  </p>
+
+  <div id="map1"></div>
+  <div class="tooltip"></div>
+
+  <p style="text-align: center; font-family: georgia">
+    A map of New York City Tabulation Areas, highlighting the areas with the largest percentage of vacant units as of the 2010 census. Mouse-over the neighborhoods to see relevant information. Parks and airports have been shaded in grey.
+  </p>
+
+  <div id="map2"></div>
+
+  <script>
+
+
+    // NYC Tabulation area GeoJSON from:
+    // http://data.nycprepared.org/dataset/neighborhood-tabulation-areas
+
+    // NYC Tabulation area data from:
+    // http://www.nyc.gov/html/dcp/html/census/demo_tables_2010.shtml
+
+    function combineData(geojson_data, csv_data, geojson_key, csv_key) {
+      geojson_data['features'].forEach( function(d_json) {
+        csv_data.forEach( function(d_csv) {
+          if(d_json['properties'][geojson_key] == d_csv[csv_key])
+            Object.keys(d_csv).forEach( function(key) { d_json['properties'][key] = d_csv[key]; });
+        });
+      });
+    }
+
+    queue()
+      .defer(d3.json, "nta.json")
+      .defer(d3.csv, "nycdata.csv")
+      .await( function(error, data, csv_data) {
+        // state_name is the column from the geojson
+        // name is the column from the csv
+        combineData(data, csv_data, "NTACode", "NTACode");
+
+        // Now your 'data' elements have the info from the csv file
+        // inside of their properties
+
+        
+        //console.log("Has the added data now, properties look like:");
+        //console.log(data['features'][0]);
+
+        var neighborhoods = data['features'];
+
+        neighborhoods.forEach( function(d){
+            d['properties']['Pop2010'] = +d['properties']['Pop2010'];
+            d['properties']['VacantUnits2010'] = +d['properties']['VacantUnits2010'];
+            d['properties']['PerVacantUnitsDec'] = +d['properties']['PerVacantUnitsDec'];
+            
+        });
+
+        //console.log(neighborhoods[0]);
+
+        // Map 1
+
+        // Build our chart space
+        var svg_height = 500, svg_width = 700;
+        var margins = 0;
+        var height = svg_height - margins * 2;
+        var width = svg_width - margins * 2;
+
+        // Map 1
+
+        // Append the svg inside of our div
+        var svg1 = d3.select("#map1")
+                    .append("svg")
+                    .attr('height', svg_height)
+                    .attr('width', svg_width);
+
+        // Add in the g to offset it with the margin space
+        var map1 = svg1.append("g").attr("transform", "translate(" + margins + "," + margins + ")");
+
+        // create our projection
+        var projection = d3.geo.mercator()
+                            .center([-73.97, 40.71])
+                            .scale(50000)
+                            .translate([width / 2, height / 2]);
+        
+        var path = d3.geo.path().projection(projection);
+
+        var max_pop = d3.max(neighborhoods, function(d) {
+          var name_temp = d['properties']['NTAName']
+          if (name_temp.indexOf("park-") == -1 && name_temp.indexOf("Airport") == -1) {
+            return d['properties']['Pop2010'];
+          }
+          else {
+            return 0;
+          }
+        });
+
+        var color_scale1 = d3.scale.linear()
+                            .domain([0, max_pop])
+                            .range(['beige','red']);
+
+        format = d3.format("0,000");
+        
+        map1.selectAll('path')
+            .data(neighborhoods)
+            .enter()
+            .append('path')
+            .attr('d', path)
+            .style('fill', function(d) {
+              var name_temp = d['properties']['NTAName']
+              if (name_temp.indexOf("park-") == -1 && name_temp.indexOf("Airport") == -1) {
+                return color_scale1(d['properties']['Pop2010']);
+              }
+              else {
+                return '#CCCCCC';
+              }
+            })
+            .style('stroke', '#333333')
+            .style('stroke-width', 0.5)
+            .on('mouseover', function(d) {
+              d3.select(this).style('fill', '#668ECC')
+              d3.select('.tooltip')
+                .style('visibility', 'visible')
+                .style("left", (d3.event.pageX + 20) + "px")
+                .style("top", (d3.event.pageY -20) + "px")
+                .html('<strong>'+d['properties']['NTAName']+'</strong><br/>Population in 2010: ' + format(d['properties']['Pop2010']))
+            })
+            .on('mouseout', function(d) {
+              d3.select(this).style('fill', function (d) {
+                var name_temp = d['properties']['NTAName']
+                if (name_temp.indexOf("park-") == -1 && name_temp.indexOf("Airport") == -1) {
+                  return color_scale1(d['properties']['Pop2010']);
+                }
+                else {
+                  return '#CCCCCC';
+                }
+              })
+              d3.select('.tooltip').style('visibility', 'hidden');
+            });
+
+
+
+        // Map 2
+
+
+        // Append the svg inside of our div
+        var svg2 = d3.select("#map2")
+                    .append("svg")
+                    .attr('height', svg_height)
+                    .attr('width', svg_width);
+
+        // Add in the g to offset it with the margin space
+        var map2 = svg2.append("g").attr("transform", "translate(" + margins + "," + margins + ")");
+
+        var max_vac = d3.max(neighborhoods, function(d) {
+          var name_temp = d['properties']['NTAName']
+          if (name_temp.indexOf("park-") == -1 && name_temp.indexOf("Airport") == -1) {
+            return d['properties']['PerVacantUnitsDec'];
+          }
+          else {
+            return 0;
+          }
+        });
+
+        // var color_scale2 = d3.scale.linear()
+        //                     .domain([0, max_vac])
+        //                     .range(['beige','red']);
+
+
+        // var median_vac = d3.median(neighborhoods, function(d) {
+        //   return d['properties']['PerVacantUnitsDec'];
+        // });
+        // var mean_vac = d3.mean(neighborhoods, function(d) {
+        //   return d['properties']['PerVacantUnitsDec'];
+        // });
+      
+        var color_scale2 = d3.scale.linear()
+                                    .domain([0, max_vac])
+                                    .range(['#CCF5FF', '#005266']);
+
+        
+        map2.selectAll('path')
+            .data(neighborhoods)
+            .enter()
+            .append('path')
+            .attr('d', path)
+            .style('fill', function(d) {
+              var name_temp = d['properties']['NTAName']
+              if (name_temp.indexOf("park-") == -1 && name_temp.indexOf("Airport") == -1) {
+                return color_scale2(d['properties']['PerVacantUnitsDec']);
+              }
+              else {
+                return '#CCCCCC';
+              }
+            })
+            .style('stroke', '#333333')
+            .style('stroke-width', 0.5)
+            .on('mouseover', function(d) {
+              d3.select(this).style('fill', '#668ECC')
+              d3.select('.tooltip')
+                .style('visibility', 'visible')
+                .style("left", (d3.event.pageX + 20) + "px")
+                .style("top", (d3.event.pageY - 20) + "px")
+                .html('<strong>'+d['properties']['NTAName']+'</strong><br/>Percentage of Units Vacant in 2010: ' + d['properties']['PerVacantUnits'] + '<br/>Vacant Units in 2010: ' + format(d['properties']['VacantUnits2010']))
+            })
+            .on('mouseout', function(d) {
+              d3.select(this).style('fill', function (d) {
+                var name_temp = d['properties']['NTAName']
+                if (name_temp.indexOf("park-") == -1 && name_temp.indexOf("Airport") == -1) {
+                  return color_scale2(d['properties']['PerVacantUnitsDec']);
+                }
+                else {
+                  return '#CCCCCC';
+                }
+              })
+              d3.select('.tooltip').style('visibility', 'hidden');
+            });
+
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1>Welcome to the US Weather Database!</h1>
+
+<p>We have data for {{ count }} cities around the US.</p>
+
+<p>Do you want to look yours up?</p>
+
+
+<ul>
+{% for city in cities %}
+	<li><a href="/cities/{{ city.id }}">{{ city.city_name }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
+
+
+
+
+
+
+
+
