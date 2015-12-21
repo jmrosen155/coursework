@@ -1,4 +1,4 @@
-# Social Network Analysis of Twitter
+# Social Network Analysis of Twitter (in partnership with Synergic Partners)
 
 *Casey Huang, Yang Liu, Jordan Rosenblum, and Steven Royce*
 
